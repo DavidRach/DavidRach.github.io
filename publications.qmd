@@ -1,0 +1,15 @@
+---
+title: "Publications"
+---
+
+# Co-Author Publications
+
+Age-related changes in PD-1 expression coincide with increased cytotoxic potential in Vδ2 T cells during infancy.\
+Hsu, Boudova, Mvula, Divala, Rach, Mungwira, Boldrin, Degiacomi, Manganelli, Laufer and Cairo.\
+*Cellular Immunology*, 2021.\
+[\[link\]](https://doi.org/10.1016/j.cellimm.2020.104244)
+
+NK Cells Negatively Regulate CD8 T Cells to Promote Immune Exhaustion and Chronic Toxoplasma gondii Infection\
+Ivanova, Krempels, Denton, Fettel, Saltz, Rach, Fatima, Mundhenke, Materi, Dunay and Gigley.\
+*Frontiers in Cellular and Infection Microbiology*, 2020.\
+[\[link\]](https://doi.org/10.3389/fcimb.2020.00313)

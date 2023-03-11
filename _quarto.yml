@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  title: "David Rach"
+  navbar:
+    right:
+      - href: about.qmd
+        text: Home
+      - research.qmd
+      - publications.qmd
+      - service.qmd
+      - cv.qmd
+      - icon: github
+        href: https://github.com/DavidRach/
+      - icon: twitter
+        href: https://twitter.com/DavidRach2
+        
+        
+
+format:
+  html:
+    theme: jolla
+    css: styles.css
+    toc: true
+
+editor: visual
+
