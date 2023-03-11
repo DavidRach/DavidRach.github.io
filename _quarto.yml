@@ -4,6 +4,8 @@ project:
 website:
   title: "David Rach"
   navbar:
+    background: white
+    search: FALSE
     right:
       - href: about.qmd
         text: Home
@@ -15,14 +17,10 @@ website:
         href: https://github.com/DavidRach/
       - icon: twitter
         href: https://twitter.com/DavidRach2
-        
-        
 
 format:
   html:
-    theme: jolla
     css: styles.css
-    toc: true
 
 editor: visual
 
