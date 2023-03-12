@@ -9,10 +9,10 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
       - href: research.qmd
         text: Research
+      - href: about.qmd
+        text: About
       - href: posts.qmd
         text: "My Blog"
       - href: publications.qmd

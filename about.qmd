@@ -3,6 +3,8 @@ title: ""
 format: 
   html: 
     code-fold: true
+toc: true
+toc-location: right
 engine: knitr
 page-layout: article
 ---
