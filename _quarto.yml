@@ -2,22 +2,26 @@ project:
   type: website
 
 website:
+  google-analytics: "UA-342215677"
   title: "David Rach"
   navbar:
     background: white
-    search: FALSE
     right:
-      - href: about.qmd
+      - href: index.qmd
         text: Home
-      - research.qmd
-      - publications.qmd
-      - service.qmd
-      - cv.qmd
+      - href: about.qmd
+        text: About
+      - href: research.qmd
+        text: Research
+      - href: posts.qmd
+        text: "My Blog"
+      - href: publications.qmd
+        text: Publications
       - icon: github
         href: https://github.com/DavidRach/
       - icon: twitter
         href: https://twitter.com/DavidRach2
-
+        
 format:
   html:
     css: styles.css
