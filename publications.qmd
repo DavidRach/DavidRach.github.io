@@ -1,8 +1,8 @@
 ---
-title: "Publications"
+title: ""
 ---
 
-# Co-Author Publications
+#### Co-Author Publications
 
 Age-related changes in PD-1 expression coincide with increased cytotoxic potential in Vδ2 T cells during infancy.\
 Hsu, Boudova, Mvula, Divala, Rach, Mungwira, Boldrin, Degiacomi, Manganelli, Laufer and Cairo.\

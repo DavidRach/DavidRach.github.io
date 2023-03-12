@@ -1,0 +1,20 @@
+---
+title: "Over-Caffenaited Rabbit Trails"
+description: "A story in procrastination"
+author:
+  - name: David Rach
+    url: https://davidrach.github.io/
+    orcid: 0000-0003-2235-5585
+    affiliation: Molecular Microbiology and Immunology PhD Candidate @ University      of Maryland, School of Medicine 
+    affiliation-url: https://lifesciences.umaryland.edu/microbiology/ 
+date: 03-11-2023
+categories: [Spectral, Autofluorescence, Cord]
+image: Agbagba.jpg
+draft: false
+---
+
+Should I be working on writing up my thesis right now? Yes.
+
+Would it be easier to do it in Word? Probably
+
+Am I using this as my excuse to learn how to use Quarto, so that I can use it for the Thesis writeup? Absolutely.

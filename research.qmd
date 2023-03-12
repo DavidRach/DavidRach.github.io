@@ -1,3 +1,31 @@
 ---
-title: "Research"
+title: ""
+toc: true
+toc-location: right
+format: 
+  html: 
+    code-fold: true
+engine: knitr
 ---
+
+#### HEU Infants
+<div> 
+<div style="float: left">
+![](images/HEUInfants.png){width=400}
+</div>
+It is estimated that 1.5 million HIV+ women give birth peryear. Thanks to improved antiretrovirals (and critically, access to them) vertical transmission from mother to child is increasingly prevented. These infants are exposed to effects of maternal virus (and viral proteins) in utero, but remain uninfected.
+
+Despite not being infected, these infants have increased morbidity for respiratory and gastrointestinal infections during their first six months of life, compared to infants born to HIV- women living in the same communities.
+
+</div>
+
+
+![](images/MalawiHEUCohort.png){width="600"}
+
+To address contribution that these prenatal exposures have on the infant immune system, we are following a cohort of Malawian infants, born to
+
+
+
+#### Innate-like T cells
+
+#### Spectral Flow Cytometry

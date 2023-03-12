@@ -1,14 +1,61 @@
 ---
-title: "About"
-image: Agbagba.jpg
-about:
-  template: jolla
+title: ""
+format: 
+  html: 
+    code-fold: true
+engine: knitr
+page-layout: article
 ---
 
-I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, School of Medicine in Baltimore, Maryland. My thesis advisers are Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
 
-For my thesis, I am interested in understanding the impact that prenatal exposure to maternal HIV and/or antiretrovirals have on the innate-like and adaptive T cells in HIV-exposed Uninfected (HEU) infants, and what are the consequences of these exposures during early life.\
+<p>
+<div> 
+#### Baltimore
+<div style="float: left; padding: 0 10px 0 0;">
+![](images/Baltimore.png){width=400}
+</div>
+I am a 5^th^ year PhD candidate in Molecular Microbiology and Immunology at the University of Maryland, Baltimore. My thesis project is focused on understanding how prenatal exposure to HIV affects the immune systems of HIV-exposed Uninfected (HEU) infants, and what the consequences of these exposures are in early life.
 
+</div>
+</p>
+
+<br></br>
+
+
+<p>
+<div> 
+<div style="float: right; padding: 0 0 0 10px;">
+![](images/Agbagba.jpg){width=400}
+</div>
+#### Volta Region, Ghana
+Before moving to Baltimore for graduate school, I served in the US Peace Corps as a Secondary Science Education Volunteer, in Ghana (West Africa) from 2016-2018, teaching biology and chemistry at a rural high school in the Volta region in the SE corner of the country.
+</div>
+</p>
+
+<br></br>
+<br></br>
+
+
+<p>
+<div> 
+#### Wyoming
+<div style="float: left; padding: 0 10px 0 0;">
+![](images/Wyo.jpg){width=400}
+</div>
 I received my A.S in Natural Resources Biology from [Northwest College](https://nwc.edu/), where thanks to the opportunities for undergraduate research supported by Wyoming [INBRE](http://www.uwyo.edu/wyominginbre/) I first became interested in Microbiology. I then transferred to the [University of Wyoming](http://www.uwyo.edu/) where I completed my B.S. in Molecular Biology and Microbiology in 2016. It was here I became interested in Immunology, as I researched NK cell responses in mice to *Toxoplasma gondii* infection in the lab of [Jason Gigley](http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html)
+</div>
+</p>
 
-Before moving to Baltimore for graduate school, I served in the US Peace Corps as a Secondary Science Teacher in Ghana from 2016-2018.
+<br></br>
+<br></br>
+
+
+<p>
+<div> 
+<div style="float: right; padding: 0 0 0 5px;">
+![](images/Palenque.jpg){width=400}
+</div>
+#### Chiapas, Mexico
+"Where are you from?" is a question I am frequently asked, but defies a simple answer. When I was two, my family moved to Chiapas, Mexico to work. And that's where we remained.
+</div>
+</p>
