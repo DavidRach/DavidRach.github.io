@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "David Rach",
+    "section": "",
+    "text": "Baltimore\n\n\n\nI am a 5th year PhD candidate in Molecular Microbiology and Immunology at the University of Maryland, Baltimore. My thesis project is focused on understanding how prenatal exposure to HIV affects the immune systems of HIV-exposed Uninfected (HEU) infants, and what the consequences of these exposures are in early life.\n\n\n\n\n\n\n\n\n\nVolta Region, Ghana\nAfter Wyoming, but before moving to Baltimore for graduate school, I served in the US Peace Corps as a Secondary Science Education Volunteer, in Ghana (West Africa) from 2016-2018, teaching biology and chemistry at a rural high school in the Volta region in the SE corner of the country.\n\n\n\n \n\n\nWyoming\n\n\n\nI received my A.S in Natural Resources Biology from Northwest College, where thanks to the opportunities for undergraduate research supported by Wyoming INBRE I first became interested in Microbiology. I then transferred to the University of Wyoming where I completed my B.S. in Molecular Biology and Microbiology in 2016. It was here I became interested in Immunology, as I researched NK cell responses in mice to Toxoplasma gondii infection in the lab of Jason Gigley\n\n\n \n\n\n\n\n\n\nChiapas, Mexico\n“Where are you from?” is a question I am frequently asked, but defies a simple answer. When I was two, my family moved to Chiapas, Mexico to work. And that’s where we remained."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "blog",
+    "section": "",
+    "text": "Over-Caffenaited Rabbit Trails\n\n\n\n\n\n\n\nSpectral\n\n\nAutofluorescence\n\n\nCord\n\n\n\n\nA story in procrastination\n\n\n\n\n\n\nMar 11, 2023\n\n\nDavid Rach\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "David Rach",
+    "section": "",
+    "text": "I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, School of Medicine in Baltimore, Maryland. My thesis advisers are Drs. Cristiana Cairo and Kirsten Lyke. My thesis is focused on understanding the impact that prenatal exposure to maternal HIV and/or antiretrovirals have on the innate-like and adaptive T cells in HIV-exposed Uninfected (HEU) infants, and what are the consequences of these exposures during early life."
+  },
+  {
+    "objectID": "posts/2023-03-11 Initial Test/index.html",
+    "href": "posts/2023-03-11 Initial Test/index.html",
+    "title": "Over-Caffenaited Rabbit Trails",
+    "section": "",
+    "text": "Should I be working on writing up my thesis right now? Yes.\nWould it be easier to do it in Word? Probably\nAm I using this as my excuse to learn how to use Quarto, so that I can use it for the Thesis writeup? Absolutely."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Over-Caffenaited Ramblings",
+    "section": "",
+    "text": "Over-Caffenaited Rabbit Trails\n\n\n\nSpectral\n\n\nAutofluorescence\n\n\nCord\n\n\n\nA story in procrastination\n\n\n\nDavid Rach\n\n\nMar 11, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "David Rach",
+    "section": "",
+    "text": "Co-Author Publications\nAge-related changes in PD-1 expression coincide with increased cytotoxic potential in Vδ2 T cells during infancy.\nHsu, Boudova, Mvula, Divala, Rach, Mungwira, Boldrin, Degiacomi, Manganelli, Laufer and Cairo.\nCellular Immunology, 2021.\n[link]\nNK Cells Negatively Regulate CD8 T Cells to Promote Immune Exhaustion and Chronic Toxoplasma gondii Infection\nIvanova, Krempels, Denton, Fettel, Saltz, Rach, Fatima, Mundhenke, Materi, Dunay and Gigley.\nFrontiers in Cellular and Infection Microbiology, 2020.\n[link]"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "David Rach",
+    "section": "",
+    "text": "HEU Infants\n\n\n\n\nIt is estimated that 1.5 million HIV+ women give birth peryear. Thanks to improved antiretrovirals (and critically, access to them) vertical transmission from mother to child is increasingly prevented. These infants are exposed to effects of maternal virus (and viral proteins) in utero, but remain uninfected.\nDespite not being infected, these infants have increased morbidity for respiratory and gastrointestinal infections during their first six months of life, compared to infants born to HIV- women living in the same communities.\n\n\nTo address contribution that these prenatal exposures have on the infant immune system, we are following a cohort of Malawian infants, born to\n\n\nInnate-like T cells\n\n\nSpectral Flow Cytometry"
+  }
+]
