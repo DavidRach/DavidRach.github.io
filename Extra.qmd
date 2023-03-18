@@ -1,8 +1,32 @@
 ---
 title: "Extra"
+subtitle: "Attempting this"
 format:
   html:
     theme: journal
     toc: true
+    code-fold: true
     number-sections: true
 ---
+<<<<<<< HEAD
+=======
+
+*italics* and **bold** superscript^2^ / subscript~2~ ~~strikethrough~~
+
+`library(ggplot)`
+
+```{r}
+#| output-location: column
+#| label: fig-airquality
+#| fig-cap: Temperature and ozone level. 
+#| warning: false
+#| eval: false
+#| echo: false
+
+#chunks are no longer inside {} thanks to #|
+
+library(ggplot2)
+ggplot(airquality, aes(Temp, Ozone)) +
+  geom_point() + geom_smooth(method = "loess")
+```
+>>>>>>> 9d2c468cb34590df7a83d349ac4850031548d11e
