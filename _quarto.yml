@@ -7,24 +7,23 @@ website:
   favicon: "images/Favicon.png"
   navbar:
     background: white
-    left:
+    right:
       - href: index.qmd
         text: Home
-    right:
       - href: research.qmd
         text: Research
       - href: about.qmd
         text: About
       - href: posts.qmd
         text: "My Blog"
-      - href: publications.qmd
-        text: Publications
+      - href: CV.qmd
+        text: CV
       - icon: github
         href: https://github.com/DavidRach/
       - icon: twitter
         href: https://twitter.com/DavidRach2
   page-footer: 
-   left: Made with [Quarto](https:quartopub.com)
+   left: Made with [Quarto](https://quarto.org/)
    right: View [Website Code](https://github.com/DavidRach/DavidRach.github.io)
 
 format:

@@ -8,8 +8,7 @@ format:
     code-fold: true
     number-sections: true
 ---
-<<<<<<< HEAD
-=======
+
 
 *italics* and **bold** superscript^2^ / subscript~2~ ~~strikethrough~~
 
@@ -29,4 +28,4 @@ library(ggplot2)
 ggplot(airquality, aes(Temp, Ozone)) +
   geom_point() + geom_smooth(method = "loess")
 ```
->>>>>>> 9d2c468cb34590df7a83d349ac4850031548d11e
+

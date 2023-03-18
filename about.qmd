@@ -6,58 +6,70 @@ format:
 toc: true
 toc-location: right
 engine: knitr
-page-layout: article
+page-layout: full
 ---
-
-
-<p>
-<div> 
-#### Baltimore
-<div style="float: left; padding: 0 10px 0 0;">
-![](images/Baltimore.png){width=400}
-</div>
-I am a 5^th^ year PhD candidate in Molecular Microbiology and Immunology at the University of Maryland, Baltimore. My thesis project is focused on understanding how prenatal exposure to HIV affects the immune systems of HIV-exposed Uninfected (HEU) infants, and what the consequences of these exposures are in early life.
-
-</div>
-</p>
-
-<br></br>
-
-
-<p>
-<div> 
-<div style="float: right; padding: 0 0 0 10px;">
-![](images/Agbagba.jpg){width=400}
-</div>
+:::: columns
 #### Volta Region, Ghana
+::: {.column width="5%"}
+:::
+
+::: {.column width="13%"}
+![](images/Agbagba.jpg)
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="75%"}
 Before moving to Baltimore for graduate school, I served in the US Peace Corps as a Secondary Science Education Volunteer, in Ghana (West Africa) from 2016-2018, teaching biology and chemistry at a rural high school in the Volta region in the SE corner of the country.
-</div>
-</p>
+:::
 
-<br></br>
-<br></br>
+::: {.column width="5%"}
+:::
+
+::::
 
 
-<p>
-<div> 
+
+:::: columns
 #### Wyoming
-<div style="float: left; padding: 0 10px 0 0;">
-![](images/Wyo.jpg){width=400}
-</div>
+::: {.column width="5%"}
+:::
+
+::: {.column width="43%"}
+![](images/Wyo.jpg)
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="45%"}
 I received my A.S in Natural Resources Biology from [Northwest College](https://nwc.edu/), where thanks to the opportunities for undergraduate research supported by Wyoming [INBRE](http://www.uwyo.edu/wyominginbre/) I first became interested in Microbiology. I then transferred to the [University of Wyoming](http://www.uwyo.edu/) where I completed my B.S. in Molecular Biology and Microbiology in 2016. It was here I became interested in Immunology, as I researched NK cell responses in mice to *Toxoplasma gondii* infection in the lab of [Jason Gigley](http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html)
-</div>
-</p>
+:::
 
-<br></br>
-<br></br>
+::: {.column width="5%"}
+:::
+
+:::::
 
 
-<p>
-<div> 
-<div style="float: right; padding: 0 0 0 5px;">
-![](images/Palenque.jpg){width=400}
-</div>
+:::: columns
 #### Chiapas, Mexico
+::: {.column width="5%"}
+:::
+
+::: {.column width="43%"}
+![](images/Palenque.jpg)
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="45%"}
 "Where are you from?" is a question I am frequently asked, but defies a simple answer. When I was two, my family moved to Chiapas, Mexico to work. And that's where we remained.
-</div>
-</p>
+:::
+
+::: {.column width="5%"}
+:::
+
+:::::

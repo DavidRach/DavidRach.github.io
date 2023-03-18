@@ -5,20 +5,31 @@ format:
     code-fold: true
 engine: knitr
 ---
-
 #### HEU Infants
 
-<div>
+:::: columns
+::: {.column width="5%"}
+:::
 
-::: {style="float: left"}
+::: {.column width="43%"}
 ![](images/HEUInfants.png){width="400"}
 :::
 
+::: {.column width="2%"}
+:::
+
+::: {.column width="45%"}
+::: {style="float: left"}
 It is estimated that 1.5 million HIV+ women give birth per year. Thanks to improved antiretrovirals (and critically, access to them) vertical transmission from mother to child is increasingly prevented. These infants are exposed to effects of maternal virus (and viral proteins) in utero, but remain uninfected.
+:::
+:::
+
+::: {.column width="5%"}
+:::
+
+::::
 
 Despite not being infected, these infants have increased morbidity for respiratory and gastrointestinal infections during their first six months of life, compared to infants born to HIV- women living in the same communities.
-
-</div>
 
 ![](images/MalawiHEUCohort.png){width="600"}
 

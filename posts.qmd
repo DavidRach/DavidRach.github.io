@@ -1,5 +1,6 @@
 ---
-title: ""
+title: "Overcaffeinated Rabbit Trails"
+subtitle: A study in procrastination
 page-layout: article
 listing:
   contents: posts
@@ -7,5 +8,12 @@ listing:
   sort: "date desc"
   categories: true
 ---
-
-#### Over-caffeinated Rabbit-Trails
+::::columns
+:::{.column width=50%}
+![](images/RabbitTrails.jpg)
+:::
+:::{.column width=50%}
+![](images/Coffee.jpg){width=56.5%}
+:::
+::::
+#### 
