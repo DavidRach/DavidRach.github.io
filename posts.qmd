@@ -8,4 +8,4 @@ listing:
   categories: true
 ---
 
-#### Over-caffenaited Rabbit-Trails
+#### Over-caffeinated Rabbit-Trails
