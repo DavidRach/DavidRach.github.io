@@ -2,11 +2,31 @@
 title: ""
 page-layout: full
 ---
+:::: columns
 
-I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, School of Medicine in Baltimore, Maryland in the labs of Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/) 
+::: {.column width="5%"}
+:::
 
-My thesis research focuses on understanding the impact pathogen exposure before birth has on neonatal and infant immune systems, with a special interest in innate-like and adaptive T cells in HIV-exposed Uninfected (HEU) infants.
+::: {.column width="30%"}
+![](images/RecentPicture.png)
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="55%"}
+I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, School of Medicine in Baltimore, Maryland. My thesis advisors are Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
+
+My [thesis research](research.qmd) focuses on understanding the impact that prenatal exposure to maternal HIV and/or antiretrovirals has on Innate-like and Adaptive T cells in HIV-exposed Uninfected (HEU) infants during early life.
 
 Using supervised and unsupervised analysis of spectral flow cytometry data, I am actively  learning systems immunology and statistical modeling approaches to better understand the heterogeneity in human immune responses to pathogens of global health relevance.  
 
 Outside lab, I enjoy trail running, birding, kayaking, coffee, learning languages, and have been known to occasionally have plants survive my summer gardening attempts. 
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::::
