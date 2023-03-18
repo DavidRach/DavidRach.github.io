@@ -1,21 +1,7 @@
 ---
 title: ""
-page-layout: custom
+page-layout: full
 ---
-
-::: grid
-::: g-col-1
-:::
-
-::: g-col-3
-::: column-margin
-![](images/RecentPicture.png){width="230"}
-:::
-:::
-
-::: g-col-7
-::: column-body-outset-left
-### 
 
 I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, School of Medicine in Baltimore, Maryland in the labs of Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/) 
 
@@ -24,10 +10,3 @@ My thesis research focuses on understanding the impact pathogen exposure before 
 Using supervised and unsupervised analysis of spectral flow cytometry data, I am actively  learning systems immunology and statistical modeling approaches to better understand the heterogeneity in human immune responses to pathogens of global health relevance.  
 
 Outside lab, I enjoy trail running, birding, kayaking, coffee, learning languages, and have been known to occasionally have plants survive my summer gardening attempts. 
-
-:::
-:::
-
-::: g-col-1
-:::
-:::

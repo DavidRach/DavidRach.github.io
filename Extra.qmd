@@ -6,8 +6,3 @@ format:
     toc: true
     number-sections: true
 ---
-
-```{r}
-
-```
-
