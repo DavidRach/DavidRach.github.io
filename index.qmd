@@ -1,11 +1,45 @@
 ---
 title: ""
+<<<<<<< HEAD
+page-layout: full
+=======
 image: images/RecentPicture.png
 about: trestles
+>>>>>>> 9d2c468cb34590df7a83d349ac4850031548d11e
 ---
+:::: columns
 
+<<<<<<< HEAD
+::: {.column width="5%"}
+:::
+
+::: {.column width="30%"}
+![](images/RecentPicture.png)
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="55%"}
+I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, School of Medicine in Baltimore, Maryland. My thesis advisors are Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
+
+My [thesis research](research.qmd) focuses on understanding the impact that prenatal exposure to maternal HIV and/or antiretrovirals has on Innate-like and Adaptive T cells in HIV-exposed Uninfected (HEU) infants during early life.
+
+Using supervised and unsupervised analysis of spectral flow cytometry data, I am actively  learning systems immunology and statistical modeling approaches to better understand the heterogeneity in human immune responses to pathogens of global health relevance.  
+
+Outside lab, I enjoy trail running, birding, kayaking, coffee, learning languages, and have been known to occasionally have plants survive my summer gardening attempts. 
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::::
+=======
 I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, School of Medicine in Baltimore, Maryland in the labs of Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
 
 My thesis research focuses on understanding the impact that pathogen exposure before birth has on neonatal and infant immune systems. I am specifically interested in innate-like and adaptive T cells in HIV-exposed Uninfected (HEU) infants, which I am characterizing by Spectral Flow Cytometry using both supervised and unsupervised analysis. I am also actively learning new systems immunology and statistical modeling techniques to better understand both my data and the heterogeneity in human immune responses to pathogens of global health relevance.
 
 Outside lab, I enjoy trail running, birding, kayaking, coffee, learning languages, and have been known to occasionally have plants survive my summer gardening attempts.
+>>>>>>> 9d2c468cb34590df7a83d349ac4850031548d11e

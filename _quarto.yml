@@ -4,11 +4,13 @@ project:
 website:
   google-analytics: "UA-342215677"
   title: "David Rach"
+  favicon: "images/Favicon.png"
   navbar:
     background: white
-    right:
+    left:
       - href: index.qmd
         text: Home
+    right:
       - href: research.qmd
         text: Research
       - href: about.qmd
@@ -21,7 +23,10 @@ website:
         href: https://github.com/DavidRach/
       - icon: twitter
         href: https://twitter.com/DavidRach2
-        
+  page-footer: 
+   left: Made with [Quarto](https:quartopub.com)
+   right: View [Website Code](https://github.com/DavidRach/DavidRach.github.io)
+
 format:
   html:
     css: styles.css
