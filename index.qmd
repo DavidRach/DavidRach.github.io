@@ -16,13 +16,13 @@ page-layout: full
 :::
 
 ::: {.column width="55%"}
-I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, School of Medicine in Baltimore, Maryland, USA. My thesis advisers are Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
+I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, Baltimore. My thesis advisers are Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
 
-My [thesis research](research.qmd) focuses on understanding the impact that prenatal exposure to maternal HIV and/or antiretrovirals has on Innate-like and Adaptive T cells in HIV-exposed Uninfected (HEU) infants during early life.
+My [thesis research](research.qmd) focuses on understanding the impact that prenatal exposure to maternal HIV and/or antiretrovirals has on the Innate-like and Adaptive T cells of HIV-exposed Uninfected (HEU) infants during early life. 
 
-I am interested in the potential of spectral flow cytometry to better understand the heterogeneity present in human immune responses to pathogens of global health relevance. To do so, I am actively learning systems immunology and statistical modeling approaches, with the goal of improving on existing supervised and unsupervised analysis techniques.    
+I am fascinated by the underlying heterogeneity in human immune responses to pathogens of global health relevance. I am actively learning systems immunology and statistical modeling approaches, with the goal of improving on existing supervised and unsupervised analysis techniques used for understanding cytometry data.
 
-When I am not in lab, I enjoy birding, trail running, kayaking, coffee, learning new languages and have occasionally had a plant survive my summer gardening attempts. 
+When not in lab, I enjoy birding, trail running, kayaking, coffee, learning new languages and occasionally have had a plant survive my summer gardening attempts. 
 :::
 
 ::: {.column width="5%"}

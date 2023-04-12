@@ -15,49 +15,77 @@ page-layout: full
 ```
 
 ::: {.justify}
-### Hi, I am David. This is my story.        
+### Hi, I am David. Who am I?    
 ::: 
 
 <p></p>
 
 :::: columns
 
-::: {.column width="49%"}
-![](images/Wyo.jpg){width=100%}
+::: {.column width="4%"}
+:::
+
+::: {.column width="35%"}
+![](images/Palenque.jpg){width=95%}
 :::
 
 ::: {.column width="2%"}
 :::
 
-::: {.column width="49%"}
-I am a graduate of [Northwest College](https://nwc.edu/), receiving my A.S in Natural Resources Biology. It was here thanks to undergraduate research opportunities through [INBRE](http://www.uwyo.edu/wyominginbre/) that I first became interested in Microbiology. After Northwest, I transferred to the [University of Wyoming](http://www.uwyo.edu/) where I received a B.S. in Molecular Biology and Microbiology, where I became interested in Immunology while researching NK cell responses to secondary *Toxoplasma gondii* infection in the lab of [Jason Gigley](http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html).
+::: {.column width="55%"}
+"Where are you from?" is the introductory question that as a [Third Culture Kid](https://www.nytimes.com/2020/09/11/t-magazine/luca-guadagnino-third-culture-kids.html?unlocked_article_code=gmcO6aItnbYg-KmwHkfF8V49bsFJUEw_TG4zMswnK6wfzIPWwdVQCigYDCQotX6SwgskywRMfIjReydmC_AgY5CXrYdDTdu-zpL9pjXpmyCFXNRqSYUGQD89Q-TpWgVdKExEBfq6RL8FjfZv2pbS6OYWdJylnwMqCaltK3D1v2GB0OhmrQLaFWP79LeDntEnmcM02jGZBOKQp4QdrP2NVTYmdR1bMJxX8bKPZAgYg_NQcJTgTK6nqKJpgLmdliWD4gbtdOYDQ5hVYlGgSfG2OSdjkqaKJ9RwweS-h6zHMj8DdBHckjMG46hnz6JBGMgE-gmUh3dC9pYWhjCnKiK4QZ83jK70Zxd7KqFEvmsZgg&smid=url-share") I grew up dreading, since I never had the simple concise answer that most people expect when you first meet. 
+
+My family is originally from southwest Michigan, but moved to Chiapas, Mexico to work on water-sanitation projects when I was two. I learned to read and write in Spanish before doing so in English, birdwatched around Mayan ruins growing up, and took my SAT exam in Cancun after a 22 hour bus ride to get there as it was the closest testing site. 
+:::
+
+::: {.column width="4%"}
 :::
 
 ::::
 
 <br></br>
 
-
 :::: columns
 
-::: {.column width="45%"}
-<br></br>
-Before moving to Baltimore for graduate school, I served in the [Peace Corps](https://www.peacecorps.gov/) as a Secondary Science Teacher in [Ghana](https://en.wikipedia.org/wiki/Ghana) from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region.
+::: {.column width="4%"}
 :::
 
-::: {.column width="10%"}
+::: {.column width="55%"}
+I moved myself back to the US for college when I was 17. I graduated from [Northwest College](https://nwc.edu/), receiving my A.S in Natural Resources Biology. It was here thanks to undergraduate research opportunities through [INBRE](http://www.uwyo.edu/wyominginbre/) that I first became interested in Microbiology. After Northwest, I transferred to the [University of Wyoming](http://www.uwyo.edu/) where I received a B.S. in Molecular Biology and Microbiology, where I became interested in Immunology while researching NK cell responses to secondary *Toxoplasma gondii* infection in the lab of [Jason Gigley](http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html).
 :::
 
-::: {.column width="45%"}
-![](images/Agbagba.jpg)
+::: {.column width="2%"}
+:::
+
+::: {.column width="35%"}
+![](images/Wyo.jpg){width=95%}
+:::
+
+::: {.column width="4%"}
 :::
 
 ::::
 
 
-:::: columns
-:::{.column width=}
 
-![](images/Palenque.jpg)
-"Where are you from?" is a question I am frequently asked, but defies a simple answer. When I was two, my family moved to Chiapas, Mexico to work. And that's where we remained.
+:::: columns
+::: {.column width="4%"}
+:::
+
+::: {.column width="35%"}
+![](images/Agbagba.jpg){width=95%}
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="55%"}
+<br></br>
+After college, I served in the [Peace Corps](https://www.peacecorps.gov/) as a Secondary Science Teacher in [Ghana](https://en.wikipedia.org/wiki/Ghana) from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region.
+:::
+
+::: {.column width="4%"}
+:::
+
+::::
 

@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "David Rach",
+    "section": "",
+    "text": "I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, Baltimore. My thesis advisers are Drs. Cristiana Cairo and Kirsten Lyke.\nMy thesis research focuses on understanding the impact that prenatal exposure to maternal HIV and/or antiretrovirals has on the Innate-like and Adaptive T cells of HIV-exposed Uninfected (HEU) infants during early life.\nI am fascinated by the underlying heterogeneity in human immune responses to pathogens of global health relevance. I am actively learning systems immunology and statistical modeling approaches, with the goal of improving on existing supervised and unsupervised analysis techniques used for understanding cytometry data.\nWhen not in lab, I enjoy birding, trail running, kayaking, coffee, learning new languages and occasionally have had a plant survive my summer gardening attempts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "David Rach",
+    "section": "",
+    "text": "Hi, I am David. Who am I?\n\n\n\n\n\n\n\n\n\n\n\n“Where are you from?” is the introductory question that as a Third Culture Kid I grew up dreading, since I never had the simple concise answer that most people expect when you first meet.\nMy family is originally from southwest Michigan, but moved to Chiapas, Mexico to work on water-sanitation projects when I was two. I learned to read and write in Spanish before doing so in English, birdwatched around Mayan ruins growing up, and took my SAT exam in Cancun after a 22 hour bus ride to get there as it was the closest testing site.\n\n\n\n\n\n\n\n\n\nI moved myself back to the US for college when I was 17. I graduated from Northwest College, receiving my A.S in Natural Resources Biology. It was here thanks to undergraduate research opportunities through INBRE that I first became interested in Microbiology. After Northwest, I transferred to the University of Wyoming where I received a B.S. in Molecular Biology and Microbiology, where I became interested in Immunology while researching NK cell responses to secondary Toxoplasma gondii infection in the lab of Jason Gigley.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n After college, I served in the Peace Corps as a Secondary Science Teacher in Ghana from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "blog",
+    "section": "",
+    "text": "Over-Caffenaited Rabbit Trails\n\n\n\n\n\n\n\nSpectral\n\n\nAutofluorescence\n\n\nCord\n\n\n\n\nA story in procrastination\n\n\n\n\n\n\nMar 11, 2023\n\n\nDavid Rach\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Extra.html",
+    "href": "Extra.html",
+    "title": "Extra",
+    "section": "",
+    "text": "italics and bold superscript2 / subscript2 strikethrough\nlibrary(ggplot)"
+  },
+  {
+    "objectID": "posts/2023-03-11 Initial Test/index.html",
+    "href": "posts/2023-03-11 Initial Test/index.html",
+    "title": "Over-Caffenaited Rabbit Trails",
+    "section": "",
+    "text": "Should I be working on writing up my thesis right now? Yes.\nWould it be easier to do it in Word? Probably\nAm I using this as my excuse to learn how to use Quarto, so that I can use it for the Thesis writeup? Absolutely."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Overcaffeinated Rabbit Trails",
+    "section": "",
+    "text": "Blogpost Test 1\n\n\n\nSpectral\n\n\nAutofluorescence\n\n\nCord\n\n\n\nFiguring Out Quarto Blog Formatting\n\n\n\nDavid Rach\n\n\nApr 11, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "David Rach",
+    "section": "",
+    "text": "Co-Author Publications\nAge-related changes in PD-1 expression coincide with increased cytotoxic potential in Vδ2 T cells during infancy.\nHsu, Boudova, Mvula, Divala, Rach, Mungwira, Boldrin, Degiacomi, Manganelli, Laufer and Cairo.\nCellular Immunology, 2021.\n[link]\nNK Cells Negatively Regulate CD8 T Cells to Promote Immune Exhaustion and Chronic Toxoplasma gondii Infection\nIvanova, Krempels, Denton, Fettel, Saltz, Rach, Fatima, Mundhenke, Materi, Dunay and Gigley.\nFrontiers in Cellular and Infection Microbiology, 2020.\n[link]"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "David Rach",
+    "section": "",
+    "text": "HEU Infants\n\n\n\n\n\n\n\n\n\nIt is estimated that 1.5 million HIV+ women give birth per year. Thanks to improved antiretrovirals (and critically, access to them in most affected countries), vertical transmission from mother to child is increasingly prevented. These infants are referred to as HIV-exposed Uninfected (HEU) infants, since they are exposed to the effects of maternal virus (and viral proteins) in utero, but remain uninfected.\n\n\n\n\n\nHEU infants have increased morbidity for respiratory and gastrointestinal infections during their first six months of life, compared to infants born to HIV- women living in the same communities.\n\nTo help understand the contribution of maternal viremia to infant immune perturbation, we are analyzing a cohort of Malawian infants with well-characterized prenatal HIV-exposure. Specifically, we are comparing three groups of infants born to women with: A) ART-treated HIV infection and undetectable viral load since before conception and through pregnancy (HEU-lo); B) HIV infection diagnosed and treated at mid-gestation or later, with high viral load at enrollment (HEU-hi); C) no HIV infection (HU).\n\n\nInnate-like T cells\nInnate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and V𝛾9V𝛿2 (V𝛿2) T cells may be perturbed due to elevated inflammation at the fetal-maternal interface during maternal HIV infection. ILTs, which are thought to play important roles against pathogens in early life, are activated by microbial metabolites as well as by innate cytokines, mounting Th1-like and cytotoxic responses in the early phase of infection. The effect exerted by in utero HIV exposure on infant ILTs is unknown, as the markers required for their identification are not routinely included in conventional flow cytometry panels, and their low abundance in infant blood makes mass cytometry impractical for their assessment.\n\n\nSpectral Flow Cytometry"
+  }
+]

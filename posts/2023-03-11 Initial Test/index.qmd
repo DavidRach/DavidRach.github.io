@@ -1,13 +1,13 @@
 ---
-title: "Over-Caffenaited Rabbit Trails"
-description: "A story in procrastination"
+title: "Blogpost Test 1"
+description: "Figuring Out Quarto Blog Formatting"
 author:
   - name: David Rach
     url: https://davidrach.github.io/
     orcid: 0000-0003-2235-5585
     affiliation: Molecular Microbiology and Immunology PhD Candidate @ University      of Maryland, School of Medicine 
     affiliation-url: https://lifesciences.umaryland.edu/microbiology/ 
-date: 03-11-2023
+date: 04-11-2023
 categories: [Spectral, Autofluorescence, Cord]
 image: Agbagba.jpg
 draft: false
