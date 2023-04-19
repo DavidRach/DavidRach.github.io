@@ -18,3 +18,5 @@ Should I be working on writing up my thesis right now? Yes.
 Would it be easier to do it in Word? Probably
 
 Am I using this as my excuse to learn how to use Quarto, so that I can use it for the Thesis writeup? Absolutely.
+
+Bugger This
