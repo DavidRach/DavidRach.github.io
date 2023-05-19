@@ -4,8 +4,8 @@ format:
   html: 
     code-fold: true
 engine: knitr
-bibliography: "https://api.citedrive.com/bib/f8c90ea6-0505-471a-935c-9512294a7c1f/references.bib?x=eyJpZCI6ICJmOGM5MGVhNi0wNTA1LTQ3MWEtOTM1Yy05NTEyMjk0YTdjMWYiLCAidXNlciI6ICIzNDQ3IiwgInNpZ25hdHVyZSI6ICJmNTk3NDI4OGJkM2VlZjNkYmVmNzMyNThmMzUzZThkMjBlMzM4OWEyN2IyYmEwZGI1YzUwNTRjMzU1YTk5YWUyIn0=/bibliography.bib"
-csl: nature-immunology
+#bibliography: "https://api.citedrive.com/bib/f8c90ea6-0505-471a-935c-9512294a7c1f/references.bib?x=eyJpZCI6ICJmOGM5MGVhNi0wNTA1LTQ3MWEtOTM1Yy05NTEyMjk0YTdjMWYiLCAidXNlciI6ICIzNDQ3IiwgInNpZ25hdHVyZSI6ICJmNTk3NDI4OGJkM2VlZjNkYmVmNzMyNThmMzUzZThkMjBlMzM4OWEyN2IyYmEwZGI1YzUwNTRjMzU1YTk5YWUyIn0=/bibliography.bib"
+#csl: nature-immunology
 ---
 
 #### HEU Infants
@@ -23,7 +23,7 @@ csl: nature-immunology
 
 ::: {.column width="45%"}
 ::: {style="float: left"}
-It is estimated that 1.5 million HIV+ women give birth per year[@Hsu_2021]. Thanks to improved antiretrovirals (and critically, access to them in most affected countries), vertical transmission from mother to child is increasingly prevented. These infants are referred to as HIV-exposed Uninfected (HEU) infants, since they are exposed to the effects of maternal virus (and viral proteins) in utero, but remain uninfected.
+An estimated 1.5 million HIV+ women give birth per year[@Hsu_2021]. Thanks to improved antiretrovirals (and critically, affordable access to them in the most affected countries), vertical transmission of HIV from mother to child is increasingly prevented. HIV-exposed Uninfected (HEU) infants are born uninfected, and a growing patient population. 
 :::
 :::
 
@@ -31,18 +31,15 @@ It is estimated that 1.5 million HIV+ women give birth per year[@Hsu_2021]. Than
 :::
 :::
 
-HEU infants have increased morbidity for respiratory and gastrointestinal infections during their first six months of life, compared to infants born to HIV- women living in the same communities.
+Despite being born uninfected, during their first six months of life, HEU infants have increased morbidity for respiratory and gastrointestinal infections compared to HIV-unexposed (HU) Infants living in the same communities. It's hypothesized that inflammation at the fetal-maternal interface driven by exposure to maternal virus (and viral proteins) may  perturb the developing infant immune system, resulting in the observed increased morbidity in early life. Confoundingly, antiretrovirals (ART) can also drive inflammation at the fetal-maternal interface, and are reported to alter mitochondrial function. 
 
 ![](images/MalawiHEUCohort.png){width="600"}
 
-To help understand the contribution of maternal viremia to infant immune perturbation, we are analyzing a cohort of Malawian infants with well-characterized prenatal HIV-exposure. Specifically, we are comparing three groups of infants born to women with: A) ART-treated HIV infection and undetectable viral load since before conception and through pregnancy (HEU-lo); B) HIV infection diagnosed and treated at mid-gestation or later, with high viral load at enrollment (HEU-hi); C) no HIV infection (HU).
+To better understand the contribution of maternal viremia to infant immune perturbation, we are analyzing a clinical cohort of Malawian infants with well-characterized prenatal HIV-exposure. Specifically, we are comparing three groups of infants born to women with: A) ART-treated HIV infection and undetectable viral load since before conception and through pregnancy (HEU-lo); B) HIV infection diagnosed and treated at mid-gestation or later, with high viral load (>10,000 copies/mL) at enrollment (HEU-hi); and C) no HIV infection (HU).
 
-#### Innate-like T cells
+Cord Blood Mononuclear Cells are collected at birth, and cryopreserved. Additional peripheral blood samples are collected at 4 and 9 months after initial childhood vaccinations. Upon arrival in Baltimore, the cells are thawed and processed for Spectral Flow Cytometry. In cord blood, we are looking at Innate-like T cells and Myeloid Cells, and longitudinally at conventional T cells.
 
-Innate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and V𝛾9V𝛿2 (V𝛿2) T cells may be perturbed due to elevated inflammation at the fetal-maternal interface during maternal HIV infection. ILTs, which are thought to play important roles against pathogens in early life, are activated by microbial metabolites as well as by innate cytokines, mounting Th1-like and cytotoxic responses in the early phase of infection. The effect exerted by in utero HIV exposure on infant ILTs is unknown, as the markers required for their identification are not routinely included in conventional flow cytometry panels, and their low abundance in infant blood makes mass cytometry impractical for their assessment.
+Innate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and V𝛾9V𝛿2 (V𝛿2) T cells, are activated by both microbial metabolites as well as by innate cytokines. Once activated, they mount TH1-like cytokine and cytotoxic responses, playing important roles against pathogens in adults. The effect exerted by in utero HIV exposure on infant ILTs is unknown.  
 
-#### Spectral Flow Cytometry
-
-### References
 ::: {#refs}
 :::

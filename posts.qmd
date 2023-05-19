@@ -1,6 +1,6 @@
 ---
 title: "Overcaffeinated Rabbit Trails"
-subtitle: A study in procrastination
+subtitle: A collection of small interesting research observations
 page-layout: article
 listing:
   contents: posts

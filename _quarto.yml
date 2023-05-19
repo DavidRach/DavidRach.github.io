@@ -16,8 +16,6 @@ website:
         text: About
       - href: posts.qmd
         text: "My Blog"
-      - href: CV.qmd
-        text: CV
       - icon: github
         href: https://github.com/DavidRach/
       - icon: twitter
