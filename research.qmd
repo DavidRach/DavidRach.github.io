@@ -4,8 +4,8 @@ format:
   html: 
     code-fold: true
 engine: knitr
-#bibliography: "https://api.citedrive.com/bib/f8c90ea6-0505-471a-935c-9512294a7c1f/references.bib?x=eyJpZCI6ICJmOGM5MGVhNi0wNTA1LTQ3MWEtOTM1Yy05NTEyMjk0YTdjMWYiLCAidXNlciI6ICIzNDQ3IiwgInNpZ25hdHVyZSI6ICJmNTk3NDI4OGJkM2VlZjNkYmVmNzMyNThmMzUzZThkMjBlMzM4OWEyN2IyYmEwZGI1YzUwNTRjMzU1YTk5YWUyIn0=/bibliography.bib"
-#csl: nature-immunology
+bibliography: "https://api.citedrive.com/bib/f8c90ea6-0505-471a-935c-9512294a7c1f/references.bib?x=eyJpZCI6ICJmOGM5MGVhNi0wNTA1LTQ3MWEtOTM1Yy05NTEyMjk0YTdjMWYiLCAidXNlciI6ICIzNDQ3IiwgInNpZ25hdHVyZSI6ICJmNTk3NDI4OGJkM2VlZjNkYmVmNzMyNThmMzUzZThkMjBlMzM4OWEyN2IyYmEwZGI1YzUwNTRjMzU1YTk5YWUyIn0=/bibliography.bib"
+csl: nature-immunology
 ---
 
 #### HEU Infants
