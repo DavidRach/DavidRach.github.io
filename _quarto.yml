@@ -16,7 +16,7 @@ website:
       - href: about.qmd
         text: About
       - href: posts.qmd
-        text: Extra
+        text: Blog
       - icon: github
         href: https://github.com/DavidRach/
       - icon: twitter
