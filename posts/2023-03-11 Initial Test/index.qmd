@@ -13,6 +13,8 @@ image: Agbagba.jpg
 draft: True
 ---
 
+!\[\](images/Palenque.jpg){width="95%"}
+
 Waiting at the Airport for my flight to Cyto2023, so I am using this time 1) figure out logistics of blogging with Quarto, 2) write down some thoughts on Autofluorescence (AF) that have until now mostly been to scrawled margin notes on my acquisition datasheets. It's these questions that ultimately motivated me enough to find answers that I learned how to use R to be able to answer them both qualitatively and quantitatively, but still mostly springs from my own tinkering. Consequently, reaching out to find what others experience and thoughts are as I work on actually using the tools I built to better understand the implications that Autofluorescence has when I unmix on a Spectral Flow Cytometer.
 
 (I will work at incorporating in illustrating figures using acquired data once I reconnect to internet and can pull/push from GitHub).
