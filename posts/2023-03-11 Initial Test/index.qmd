@@ -1,6 +1,6 @@
 ---
 title: "Autofluorescence"
-description: "Is it a single color or is it a mix???"
+description: "Single Color or it's own antibody mix"
 author:
   - name: David Rach
     url: https://davidrach.github.io/
@@ -10,26 +10,18 @@ author:
 date: 05-19-2023
 categories: [Spectral, Autofluorescence, Cord]
 image: SpectraHallPackage.png
-draft: True
+draft: FALSE
 engine: knitr
 ---
 
 ![](SpectraHallPackage.png)
 
-Waiting at the Airport for my flight to Cyto2023, so I am using this time 1) figure out logistics of blogging with Quarto, 2) write down some thoughts on Autofluorescence (AF) that have until now mostly been to scrawled margin notes on my acquisition datasheets. It's these questions that ultimately motivated me enough to find answers that I learned how to use R to be able to answer them both qualitatively and quantitatively, but still mostly springs from my own tinkering. Consequently, reaching out to find what others experience and thoughts are as I work on actually using the tools I built to better understand the implications that Autofluorescence has when I unmix on a Spectral Flow Cytometer.
+Thanks for dropping by my website and getting this far! Unfortunately, I didn't have enough time before Cyto2023 to polish up this blogpost with all my thoughts about Autofluorescence (AF). But please reach out (or drop by my poster #195) and ask, because I have been thinking about the topic a lot these past couple months, and have some interesting preliminary data from my R script about how AF impacts my Spectral Flow Panels. Best- David
 
-(I will work at incorporating in illustrating figures using acquired data once I reconnect to internet and can pull/push from GitHub).
+![](FlowJoWorkflow.jpg) ![](AutofluorescentTags.jpg)
 
-This all started late 2021 when while learning how to unmix I was curious, what difference to our unmixing does gating on the brightest part of single color positive peak make compared to gating average bright cells in the positive peak? When unmixing with SpectroFlo, going back and unmixing everything exactly the same with only changing the location of the single gate is not easy, and the end result is going through the two generated .fcs files comparing the results across all parameter combinations. Cursory investigation didn't reveal anything particularly different, so I went on to other projects.
+![](AutofluorescentWorkflow.png)
 
-Shortly after attending Cyto virtually last year (and seeing the talk by Dr. Gonzales on using dimensionality reduction algorithms to visualize different autofluorescences) I started work optimizing our myeloid panel.
+![](Lineplots.png)
 
-It was at this time that I first noticed that for some specimens, particularly under activating conditions, I began to see separate spread around the UV when acquiring on SpectroFlo from the main spectral signature. When I took these raw files, gated for monocytes, dimensionality visualized them with algorithm of choice, gated the islands and overlaid them in FlowJo's layout, this edge represented around 5% of monocytes that had a co-equal brightness peak between UV7 and V7, whereas the main monocyte population was primarily V7.
-
-Around this time, I discovered how to incorportate in autofluorescent tags. When I incorporated the specific signature in, some previous unmixing errors would be resolved and get some improved resolution for these specific cells. But, if I also accounted with an additional tag for the main monocyte autofluorescence, the spread around the negative for autofluorescent similar colors (like BUV496 and BV510) also increased, affecting resolution. So the question I had, how similar or different were these autofluorescences? Visually in FlowJo Layout, they looked very different, but as Dr. Gonzales pointed out, those values were raw values, not normalized.
-
-Around this time I had begun tinkering with R. Rather than just do a Pearson Correlation using GraphPad Prism, how much more effort would it be to compare the two FlowJo gated islands by Cosine in R? And could it take the same inputs, generate normalized spectra, and then overlay them in a lineplot? A few days of "How to copy/paste columns in R? later, and I had a basic R script that would do what I wanted..... as long as it was exactly 4 clusters. You put in 3 or 5, the system broke down and I got an error returned on the script.
-
-Turns out, the visually distinct overlaid raw values I saw in FlowJo layout often were identical when it came to T cells. For my monocytes, this wasn't the case, but they were still very similar by Cosine Similiarity, ranging from (0.93-0.97). I determined I wanted a heatmap similar to the Similarity Matrix for single colors in SpectroFlo. A couple weeks later (and more google searches) and in addition to a line plot I could now see the similarities in a heatmap.
-
-To unmix, we derive the inputs that define the single colors in the matrix through gating on individually stained cells, subtracting background autofluorescence. But what happens when there are two separate background autofluorescences present? Does the more prevalent one get picked as default? Does the input become an averaged signature? How does this subtraction impact how the spectral flow cytometer defines a single color? Does this contribute to the challenges in attempting to re-use cell single colors on experiments collected weeks later when you supposedly already accounted for autofluorescence by incorporating in a specific autofluorescence from that same day?
+![](Cosine.png)

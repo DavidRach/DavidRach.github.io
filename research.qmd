@@ -39,17 +39,15 @@ To better understand the contribution of maternal viremia to infant immune pertu
 
 At birth, Cord Blood Mononuclear Cells were collected, and cryopreserved in liquid nitrogen. After initial childhood vaccination, peripheral blood from the infants was also collected at 4 and 9 months being similarly processed and stored. Ultimately, the cells were shipped here to Baltimore for flow cytometry analysis.
 
-![](images/Timeline.png){width="400"}
+![](images/Timeline.png)
 
-For my thesis project, I am interested in how the maternal viral and antiretroviral exposure affects HEU-infant's 1) Innate-like T cells, and 2) conventional alpha beta T cells at baseline and upon activation.
+Upon arrival in Baltimore, the cells are thawed and processed for Spectral Flow Cytometry. For my thesis project, I am interested in how the maternal viral and antiretroviral exposure affects HEU-infant's 1) Innate-like T cells, and 2) conventional alpha beta T cells, both at baseline and upon activation.
 
-Innate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and V𝛾9V𝛿2 (V𝛿2) T cells, are activated by both microbial metabolites as well as by innate cytokines. Once activated, they mount TH1-like cytokine and cytotoxic responses, playing important roles against pathogens in adults. The effect exerted by in utero HIV exposure on infant ILTs is unknown.
-
-Upon arrival in Baltimore, the cells are thawed and processed for Spectral Flow Cytometry.
+Innate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and V𝛾9V𝛿2 (V𝛿2) T cells, are activated by both microbial metabolites as well as by innate cytokines. Once activated, they mount TH1-like cytokine and cytotoxic responses, playing important roles against pathogens in adults. The effect exerted by in utero HIV exposure on infant ILTs is unknown. 
 
 ![](images/Processing.png){width="600"}
 
-[@Hsu_2021]
+#[@Hsu_2021]
 
 ::: {#refs}
 :::
