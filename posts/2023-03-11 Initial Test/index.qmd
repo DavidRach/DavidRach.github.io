@@ -16,7 +16,7 @@ engine: knitr
 
 ![](SpectraHallPackage.png)
 
-Thanks for dropping by my website and getting this far! Unfortunately, I didn't have enough time before Cyto2023 to polish up this blogpost with all my thoughts about Autofluorescence (AF). But please reach out (or drop by my poster #195) and ask, because I have been thinking about the topic a lot these past couple months, and have some interesting preliminary data from my R script about how AF impacts my Spectral Flow Panels. Best- David.
+Thanks for dropping by my website and getting this far! Unfortunately, I didn't have enough time before Cyto2023 to polish up this blogpost with all my thoughts about Autofluorescence (AF). But please reach out (or drop by my poster #195) and ask, because I have been thinking about the topic a lot these past couple months, and have some interesting preliminary data from my R script about how AF impacts my Spectral Flow Panels. Best- David
 
 ![](FlowJoWorkflow.jpg) ![](AutofluorescentTags.jpg)
 
