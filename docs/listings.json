@@ -1,10 +1,14 @@
 [
   {
     "listing": "/blog.html",
-    "items": []
+    "items": [
+      "/posts/2023-03-11 Initial Test/index.html"
+    ]
   },
   {
     "listing": "/posts.html",
-    "items": []
+    "items": [
+      "/posts/2023-03-11 Initial Test/index.html"
+    ]
   }
 ]
