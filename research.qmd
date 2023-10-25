@@ -4,8 +4,8 @@ format:
   html: 
     code-fold: true
 engine: knitr
-bibliography: "https://api.citedrive.com/bib/f8c90ea6-0505-471a-935c-9512294a7c1f/references.bib?x=eyJpZCI6ICJmOGM5MGVhNi0wNTA1LTQ3MWEtOTM1Yy05NTEyMjk0YTdjMWYiLCAidXNlciI6ICIzNDQ3IiwgInNpZ25hdHVyZSI6ICJmNTk3NDI4OGJkM2VlZjNkYmVmNzMyNThmMzUzZThkMjBlMzM4OWEyN2IyYmEwZGI1YzUwNTRjMzU1YTk5YWUyIn0=/bibliography.bib"
-csl: nature-immunology
+bibliography: citations.bib
+csl: nature-immunology.csl
 ---
 
 #### HEU Infants
@@ -23,7 +23,7 @@ csl: nature-immunology
 
 ::: {.column width="45%"}
 ::: {style="float: left"}
-An estimated 1.5 million HIV+ women give birth per year[@Slogrove_2020]. Thanks to improved antiretrovirals (and critically, affordable access to them in the most affected countries), vertical transmission of HIV from mother to child is increasingly prevented. These HIV-exposed uninfected (HEU) infants are a growing patient population in many countries[@Eckard_2019].
+An estimated 1.5 million HIV+ women give birth per year. Thanks to improved antiretrovirals (and critically, affordable access to them in the most affected countries), vertical transmission of HIV from mother to child is increasingly prevented. These HIV-exposed uninfected (HEU) infants are a growing patient population in many countries.[@eckard2019]
 :::
 :::
 
@@ -31,7 +31,7 @@ An estimated 1.5 million HIV+ women give birth per year[@Slogrove_2020]. Thanks 
 :::
 :::
 
-Despite being born uninfected, during their first six months of life, HEU infants have increased morbidity for respiratory and gastrointestinal infections compared to HIV-unexposed (HU) Infants living in the same communities[@le_Roux_2020]. It's hypothesized that inflammation at the fetal-maternal interface driven by exposure to maternal virus (and viral proteins) may perturb the developing infant immune system, resulting in the observed increased morbidity in early life [@Ikumi_2021, @Goetghebuer_2018] Confoundingly, antiretrovirals (ART) can also drive inflammation at the fetal-maternal interface, and are reported to alter mitochondrial function[@Schoeman_2017].
+Despite being born uninfected, during their first six months of life, HEU infants have increased morbidity for respiratory and gastrointestinal infections compared to HIV-unexposed (HU) Infants living in the same communities[@leroux2020a]. It's hypothesized that inflammation at the fetal-maternal interface driven by exposure to maternal virus (and viral proteins) may perturb the developing infant immune system, resulting in the observed increased morbidity in early life.[@ikumi2021; @goetghebuer2019] Confoundingly, antiretrovirals (ART) can also drive inflammation at the fetal-maternal interface, and are reported to alter mitochondrial function[@schoeman2017].
 
 ![](images/MalawiHEUCohort.png){width="600"}
 
@@ -43,11 +43,9 @@ At birth, Cord Blood Mononuclear Cells were collected, and cryopreserved in liqu
 
 Upon arrival in Baltimore, the cells are thawed and processed for Spectral Flow Cytometry. For my thesis project, I am interested in how the maternal viral and antiretroviral exposure affects HEU-infant's 1) Innate-like T cells, and 2) conventional alpha beta T cells, both at baseline and upon activation.
 
-Innate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and V𝛾9V𝛿2 (V𝛿2) T cells, are activated by both microbial metabolites as well as by innate cytokines. Once activated, they mount TH1-like cytokine and cytotoxic responses, playing important roles against pathogens in adults. The effect exerted by in utero HIV exposure on infant ILTs is unknown. 
+Innate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and V𝛾9V𝛿2 (V𝛿2) T cells, are activated by both microbial metabolites as well as by innate cytokines. Once activated, they mount TH1-like cytokine and cytotoxic responses, playing important roles against pathogens in adults. The effect exerted by in utero HIV exposure on infant ILTs is unknown.
 
 ![](images/Processing.png){width="600"}
-
-#[@Hsu_2021]
 
 ::: {#refs}
 :::
