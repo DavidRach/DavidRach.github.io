@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.4.424">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -56,7 +62,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -84,45 +91,47 @@ ga('send', {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">David Rach</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
- <span class="menu-text">About</span></a>
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="./posts.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/DavidRach/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/DavidRach/"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/DavidRach2"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/DavidRach2"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -133,6 +142,7 @@ ga('send', {
     
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
+
 
 
 
@@ -156,8 +166,8 @@ ga('send', {
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:55%;">
-<p>“Where are you from?” is the introductory question that as a <a href="https://www.nytimes.com/2020/09/11/t-magazine/luca-guadagnino-third-culture-kids.html?unlocked_article_code=gmcO6aItnbYg-KmwHkfF8V49bsFJUEw_TG4zMswnK6wfzIPWwdVQCigYDCQotX6SwgskywRMfIjReydmC_AgY5CXrYdDTdu-zpL9pjXpmyCFXNRqSYUGQD89Q-TpWgVdKExEBfq6RL8FjfZv2pbS6OYWdJylnwMqCaltK3D1v2GB0OhmrQLaFWP79LeDntEnmcM02jGZBOKQp4QdrP2NVTYmdR1bMJxX8bKPZAgYg_NQcJTgTK6nqKJpgLmdliWD4gbtdOYDQ5hVYlGgSfG2OSdjkqaKJ9RwweS-h6zHMj8DdBHckjMG46hnz6JBGMgE-gmUh3dC9pYWhjCnKiK4QZ83jK70Zxd7KqFEvmsZgg&amp;smid=url-share%22">Third Culture Kid</a> I grew up dreading, since I never had the simple concise answer that most people expect when you first meet.</p>
-<p>My family is originally from southwest Michigan, but moved to Chiapas, Mexico to work on when I was two. I learned to read and write in Spanish long before doing so in English, birdwatched around Mayan ruins growing up, and the only time I have been to Cancun was after a 22 hour bus ride to get there to take my SAT exam needed as part of the US university admissions process (it was the closest testing site).</p>
+<p>When meeting someone, “Where are you from?” is the question that growing up as a <a href="https://www.nytimes.com/2020/09/11/t-magazine/luca-guadagnino-third-culture-kids.html?unlocked_article_code=gmcO6aItnbYg-KmwHkfF8V49bsFJUEw_TG4zMswnK6wfzIPWwdVQCigYDCQotX6SwgskywRMfIjReydmC_AgY5CXrYdDTdu-zpL9pjXpmyCFXNRqSYUGQD89Q-TpWgVdKExEBfq6RL8FjfZv2pbS6OYWdJylnwMqCaltK3D1v2GB0OhmrQLaFWP79LeDntEnmcM02jGZBOKQp4QdrP2NVTYmdR1bMJxX8bKPZAgYg_NQcJTgTK6nqKJpgLmdliWD4gbtdOYDQ5hVYlGgSfG2OSdjkqaKJ9RwweS-h6zHMj8DdBHckjMG46hnz6JBGMgE-gmUh3dC9pYWhjCnKiK4QZ83jK70Zxd7KqFEvmsZgg&amp;smid=url-share%22">Third Culture Kid</a> I dreaded, as the simple concise answer most people expected quickly detoured down a rabbit-hole.</p>
+<p>My family, originally from southwest Michigan, moved to Chiapas, Mexico for work when I was two. I learned to read and write in Spanish long before I did in English; my childhood memories include birding around the <a href="https://ebird.org/hotspot/L688365?yr=all&amp;m=&amp;sortBy=spp">local</a> Mayan ruins on the weekends; and the only time I have ever been to Cancun was after enduring a 22 hour bus ride through the mountains so that I could take my SAT exam for the US university admissions process, as it was the closest testing site.</p>
 </div><div class="column" style="width:4%;">
 
 </div>
@@ -167,7 +177,7 @@ ga('send', {
 <div class="column" style="width:4%;">
 
 </div><div class="column" style="width:55%;">
-<p>I moved myself back to the US for college when I was 17. I graduated from <a href="https://nwc.edu/">Northwest College</a>, receiving my A.S in Natural Resources Biology. It was here thanks to undergraduate research opportunities through <a href="http://www.uwyo.edu/wyominginbre/">INBRE</a> that I first became interested in Microbiology. After Northwest, I transferred to the <a href="http://www.uwyo.edu/">University of Wyoming</a> where I received a B.S. in Molecular Biology and Microbiology, and got my first taste of immunology researching NK cell responses to secondary <em>Toxoplasma gondii</em> infection in the lab of <a href="http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html">Jason Gigley</a>.</p>
+<p>I moved back to the US for university when I was 17. I graduated from <a href="https://nwc.edu/">Northwest College</a>, receiving my A.S in Natural Resources Biology. It was during my time in Powell, Wyoming that thanks to undergraduate research opportunities through <a href="http://www.uwyo.edu/wyominginbre/">INBRE</a> that I first became interested in Microbiology. After Northwest, I transferred to the <a href="http://www.uwyo.edu/">University of Wyoming</a> where I received a B.S. in Molecular Biology and Microbiology, and got my first taste of immunology researching Natural Killer cell responses in mice to secondary <em>Toxoplasma gondii</em> infection in the lab of Dr.<a href="http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html">Jason Gigley</a>.</p>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:35%;">
@@ -184,7 +194,7 @@ ga('send', {
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:55%;">
-<p><br><br> After college, I served in the <a href="https://www.peacecorps.gov/">Peace Corps</a> as a Secondary Science Teacher in <a href="https://en.wikipedia.org/wiki/Ghana">Ghana</a> from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region. It was during my time in Ghana working on secondary projects focused on Malaria that I decided to enter a Microbiology and Immunology PhD program.</p>
+<p><br><br> After university, I served in the <a href="https://www.peacecorps.gov/">Peace Corps</a> as a Secondary Science Teacher in <a href="https://en.wikipedia.org/wiki/Ghana">Ghana</a> from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region. During my time in Ghana, I worked on secondary projects focused on Malaria that led to my decision to enter a Microbiology and Immunology PhD program.</p>
 </div><div class="column" style="width:4%;">
 
 </div>
@@ -193,7 +203,7 @@ ga('send', {
 <div class="column" style="width:4%;">
 
 </div><div class="column" style="width:55%;">
-<p><br><br> I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. This was March 2020, and it was not to be. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the <a href="https://www.medschool.umaryland.edu/cvd/trials/">University of Maryland Center for Vaccine Development</a> and somehow ended up for the next nine months with friends and family telling me they saw my arm in their newspaper again. But <a href="https://wjla.com/news/local/university-of-maryland-covid-trial-vaccine-recipient-success-indicators">this</a> was my favorite headline.</p>
+<p><br><br> I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. Since that was March 2020, that was not going to happen. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the <a href="https://www.medschool.umaryland.edu/cvd/trials/">University of Maryland Center for Vaccine Development</a> and somehow ended up having family and friends telling me they saw my arm in the newspaper for the next nine <a href="https://wjla.com/news/local/university-of-maryland-covid-trial-vaccine-recipient-success-indicators">months</a>.</p>
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:35%;">
@@ -233,9 +243,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -271,10 +295,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -284,8 +307,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -300,6 +332,241 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -342,10 +609,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Made with <a href="https://quarto.org/">Quarto</a></div>   
-    <div class="nav-footer-right">View <a href="https://github.com/DavidRach/DavidRach.github.io">Website Code</a></div>
+    <div class="nav-footer-left">
+<p>Made with <a href="https://quarto.org/">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>View <a href="https://github.com/DavidRach/DavidRach.github.io">Website Code</a></p>
+</div>
   </div>
 </footer>
+
 
 
 

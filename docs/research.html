@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.4.424">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,16 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +40,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -65,7 +66,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -75,7 +82,8 @@ div.csl-indent {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -93,7 +101,6 @@ ga('send', {
 });
 </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -104,45 +111,47 @@ ga('send', {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">David Rach</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page">
- <span class="menu-text">Research</span></a>
+    <a class="nav-link active" href="./research.html" aria-current="page"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="./posts.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/DavidRach/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/DavidRach/"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/DavidRach2"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/DavidRach2"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -153,6 +162,7 @@ ga('send', {
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
 
 
 
@@ -167,13 +177,13 @@ ga('send', {
 
 </div><div class="column" style="width:45%;">
 <div style="float: left">
-<p>An estimated 1.5 million HIV+ women give birth per year<span class="citation" data-cites="Slogrove_2020"><sup><a href="#ref-Slogrove_2020" role="doc-biblioref">1</a></sup></span>. Thanks to improved antiretrovirals (and critically, affordable access to them in the most affected countries), vertical transmission of HIV from mother to child is increasingly prevented. These HIV-exposed uninfected (HEU) infants are a growing patient population in many countries<span class="citation" data-cites="Eckard_2019"><sup><a href="#ref-Eckard_2019" role="doc-biblioref">2</a></sup></span>.</p>
+<p>An estimated 1.5 million HIV+ women give birth per year. Thanks to improved antiretrovirals (and critically, affordable access to them in the most affected countries), vertical transmission of HIV from mother to child is increasingly prevented. These HIV-exposed uninfected (HEU) infants are a growing patient population in many countries.<span class="citation" data-cites="eckard2019"><sup><a href="#ref-eckard2019" role="doc-biblioref">1</a></sup></span></p>
 </div>
 </div><div class="column" style="width:5%;">
 
 </div>
 </div>
-<p>Despite being born uninfected, during their first six months of life, HEU infants have increased morbidity for respiratory and gastrointestinal infections compared to HIV-unexposed (HU) Infants living in the same communities<span class="citation" data-cites="le_Roux_2020"><sup><a href="#ref-le_Roux_2020" role="doc-biblioref">3</a></sup></span>. It’s hypothesized that inflammation at the fetal-maternal interface driven by exposure to maternal virus (and viral proteins) may perturb the developing infant immune system, resulting in the observed increased morbidity in early life<span class="citation" data-cites="Ikumi_2021"><sup><a href="#ref-Goetghebuer_2018" role="doc-biblioref">5</a></sup></span> Confoundingly, antiretrovirals (ART) can also drive inflammation at the fetal-maternal interface, and are reported to alter mitochondrial function<span class="citation" data-cites="Schoeman_2017"><sup><a href="#ref-Schoeman_2017" role="doc-biblioref">6</a></sup></span>.</p>
+<p>Despite being born uninfected, during their first six months of life, HEU infants have increased morbidity for respiratory and gastrointestinal infections compared to HIV-unexposed (HU) Infants living in the same communities<span class="citation" data-cites="leroux2020a"><sup><a href="#ref-leroux2020a" role="doc-biblioref">2</a></sup></span>. It’s hypothesized that inflammation at the fetal-maternal interface driven by exposure to maternal virus (and viral proteins) may perturb the developing infant immune system, resulting in the observed increased morbidity in early life.<span class="citation" data-cites="ikumi2021 goetghebuer2019"><sup><a href="#ref-ikumi2021" role="doc-biblioref">3</a>,<a href="#ref-goetghebuer2019" role="doc-biblioref">4</a></sup></span> Confoundingly, antiretrovirals (ART) can also drive inflammation at the fetal-maternal interface, and are reported to alter mitochondrial function<span class="citation" data-cites="schoeman2017"><sup><a href="#ref-schoeman2017" role="doc-biblioref">5</a></sup></span>.</p>
 <p><img src="images/MalawiHEUCohort.png" class="img-fluid" width="600"></p>
 <p>To better understand the contribution of maternal viremia to infant immune perturbation, we are analyzing a clinical cohort of Malawian infants with well-characterized prenatal HIV-exposure. Specifically, we are comparing three groups of infants born to women with: A) ART-treated HIV infection and undetectable viral load since before conception and through pregnancy (HEU-lo); B) HIV infection diagnosed and treated at mid-gestation or later, with high viral load (&gt;10,000 copies/mL) at enrollment (HEU-hi); and C) no HIV infection (HU).</p>
 <p>At birth, Cord Blood Mononuclear Cells were collected, and cryopreserved in liquid nitrogen. After initial childhood vaccination, peripheral blood from the infants was also collected at 4 and 9 months being similarly processed and stored. Ultimately, the cells were shipped here to Baltimore for flow cytometry analysis.</p>
@@ -181,28 +191,21 @@ ga('send', {
 <p>Upon arrival in Baltimore, the cells are thawed and processed for Spectral Flow Cytometry. For my thesis project, I am interested in how the maternal viral and antiretroviral exposure affects HEU-infant’s 1) Innate-like T cells, and 2) conventional alpha beta T cells, both at baseline and upon activation.</p>
 <p>Innate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and V𝛾9V𝛿2 (V𝛿2) T cells, are activated by both microbial metabolites as well as by innate cytokines. Once activated, they mount TH1-like cytokine and cytotoxic responses, playing important roles against pathogens in adults. The effect exerted by in utero HIV exposure on infant ILTs is unknown.</p>
 <p><img src="images/Processing.png" class="img-fluid" width="600"></p>
-<p>#<span class="citation" data-cites="Hsu_2021"><sup><a href="#ref-Hsu_2021" role="doc-biblioref">7</a></sup></span></p>
-<div id="refs" class="references csl-bib-body" data-line-spacing="2" role="doc-bibliography">
-<div id="ref-Slogrove_2020" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Slogrove, A. L., Powis, K. M., Johnson, L. F., Stover, J. &amp; Mahy, M. <a href="https://doi.org/10.1016/s2214-109x(19)30448-6">Estimates of the global population of children who are <span>HIV</span>-exposed and uninfected, 2000<span></span>18: A modelling study</a>. <em>The Lancet Global Health</em> <strong>8</strong>, e67–e75 (2020).</div>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-eckard2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Eckard, A. R., Kirk, S. E. &amp; Hagood, N. L. <a href="https://doi.org/10.1007/s11904-019-00465-2">Contemporary Issues in Pregnancy (and Offspring) in the Current HIV Era</a>. <em>Current HIV/AIDS Reports</em> <strong>16</strong>, 492–500 (2019).</div>
 </div>
-<div id="ref-Eckard_2019" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Eckard, A. R., Kirk, S. E. &amp; Hagood, N. L. <a href="https://doi.org/10.1007/s11904-019-00465-2">Contemporary issues in pregnancy (and offspring) in the current <span>HIV</span> era</a>. <em>Current <span>HIV</span>/<span>AIDS</span> Reports</em> <strong>16</strong>, 492–500 (2019).</div>
+<div id="ref-leroux2020a" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Roux, S. M. le <em>et al.</em> <a href="https://doi.org/10.1016/S2352-4642(19)30375-X">Infectious morbidity of breastfed, HIV-exposed uninfected infants under conditions of universal antiretroviral therapy in south africa: A prospective cohort study</a>. <em>The Lancet Child &amp; Adolescent Health</em> <strong>4</strong>, 220–231 (2020).</div>
 </div>
-<div id="ref-le_Roux_2020" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline">Roux, S. M. le <em>et al.</em> <a href="https://doi.org/10.1016/s2352-4642(19)30375-x">Infectious morbidity of breastfed, <span>HIV</span>-exposed uninfected infants under conditions of universal antiretroviral therapy in south africa: A prospective cohort study</a>. <em>The Lancet Child <span>&amp;</span>amp<span class="math inline">\(\mathsemicolon\)</span> Adolescent Health</em> <strong>4</strong>, 220–231 (2020).</div>
+<div id="ref-ikumi2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Ikumi, N. M. <em>et al.</em> <a href="https://doi.org/10.1097/QAD.0000000000002824">Differential impact of antiretroviral therapy initiated before or during pregnancy on placenta pathology in HIV-positive women</a>. <em>AIDS (London, England)</em> <strong>35</strong>, 717–726 (2021).</div>
 </div>
-<div id="ref-Ikumi_2021" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline">Ikumi, N. M. <em>et al.</em> <a href="https://doi.org/10.1093/infdis/jiab192">T-cell homeostatic imbalance in placentas from women with human immunodeficiency virus in the absence of vertical transmission</a>. <em>The Journal of Infectious Diseases</em> <strong>224</strong>, S670–S682 (2021).</div>
+<div id="ref-goetghebuer2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Goetghebuer, T. <em>et al.</em> <a href="https://doi.org/10.1093/cid/ciy673">Initiation of antiretroviral therapy before pregnancy reduces the risk of infection-related hospitalization in human immunodeficiency virus<span></span>exposed uninfected infants born in a high-income country</a>. <em>Clinical Infectious Diseases</em> <strong>68</strong>, 1193–1203 (2019).</div>
 </div>
-<div id="ref-Goetghebuer_2018" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline">Goetghebuer, T. <em>et al.</em> <a href="https://doi.org/10.1093/cid/ciy673">Initiation of antiretroviral therapy before pregnancy reduces the risk of infection-related hospitalization in human immunodeficiency virus<span></span>exposed uninfected infants born in a high-income country</a>. <em>Clinical Infectious Diseases</em> <strong>68</strong>, 1193–1203 (2018).</div>
-</div>
-<div id="ref-Schoeman_2017" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline">Schoeman, J. C. <em>et al.</em> <a href="https://doi.org/10.1093/infdis/jix291">Fetal metabolic stress disrupts immune homeostasis and induces proinflammatory responses in human immunodeficiency virus type 1<span></span> and combination antiretroviral therapy<span></span>exposed infants</a>. <em>The Journal of Infectious Diseases</em> <strong>216</strong>, 436–446 (2017).</div>
-</div>
-<div id="ref-Hsu_2021" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline">Hsu, H. <em>et al.</em> <a href="https://doi.org/10.1016/j.cellimm.2020.104244">Age-related changes in <span>PD</span>-1 expression coincide with increased cytotoxic potential in v<span class="math inline">\(\updelta\)</span>2 t cells during infancy</a>. <em>Cellular Immunology</em> <strong>359</strong>, 104244 (2021).</div>
+<div id="ref-schoeman2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Schoeman, J. C. <em>et al.</em> <a href="https://doi.org/10.1093/infdis/jix291">Fetal metabolic stress disrupts immune homeostasis and induces proinflammatory responses in human immunodeficiency virus type 1<span></span> and combination antiretroviral therapy<span></span>exposed infants</a>. <em>The Journal of Infectious Diseases</em> <strong>216</strong>, 436–446 (2017).</div>
 </div>
 </div>
 
@@ -237,9 +240,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -275,10 +292,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -288,8 +304,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -304,6 +329,241 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -346,10 +606,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Made with <a href="https://quarto.org/">Quarto</a></div>   
-    <div class="nav-footer-right">View <a href="https://github.com/DavidRach/DavidRach.github.io">Website Code</a></div>
+    <div class="nav-footer-left">
+<p>Made with <a href="https://quarto.org/">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>View <a href="https://github.com/DavidRach/DavidRach.github.io">Website Code</a></p>
+</div>
   </div>
 </footer>
+
 
 
 

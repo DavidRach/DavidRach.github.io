@@ -35,9 +35,9 @@ page-layout: full
 :::
 
 ::: {.column width="55%"}
-"Where are you from?" is the introductory question that as a [Third Culture Kid](https://www.nytimes.com/2020/09/11/t-magazine/luca-guadagnino-third-culture-kids.html?unlocked_article_code=gmcO6aItnbYg-KmwHkfF8V49bsFJUEw_TG4zMswnK6wfzIPWwdVQCigYDCQotX6SwgskywRMfIjReydmC_AgY5CXrYdDTdu-zpL9pjXpmyCFXNRqSYUGQD89Q-TpWgVdKExEBfq6RL8FjfZv2pbS6OYWdJylnwMqCaltK3D1v2GB0OhmrQLaFWP79LeDntEnmcM02jGZBOKQp4QdrP2NVTYmdR1bMJxX8bKPZAgYg_NQcJTgTK6nqKJpgLmdliWD4gbtdOYDQ5hVYlGgSfG2OSdjkqaKJ9RwweS-h6zHMj8DdBHckjMG46hnz6JBGMgE-gmUh3dC9pYWhjCnKiK4QZ83jK70Zxd7KqFEvmsZgg&smid=url-share%22) I grew up dreading, since I never had the simple concise answer that most people expect when you first meet.
+When meeting someone, "Where are you from?" is the question that growing up as a [Third Culture Kid](https://www.nytimes.com/2020/09/11/t-magazine/luca-guadagnino-third-culture-kids.html?unlocked_article_code=gmcO6aItnbYg-KmwHkfF8V49bsFJUEw_TG4zMswnK6wfzIPWwdVQCigYDCQotX6SwgskywRMfIjReydmC_AgY5CXrYdDTdu-zpL9pjXpmyCFXNRqSYUGQD89Q-TpWgVdKExEBfq6RL8FjfZv2pbS6OYWdJylnwMqCaltK3D1v2GB0OhmrQLaFWP79LeDntEnmcM02jGZBOKQp4QdrP2NVTYmdR1bMJxX8bKPZAgYg_NQcJTgTK6nqKJpgLmdliWD4gbtdOYDQ5hVYlGgSfG2OSdjkqaKJ9RwweS-h6zHMj8DdBHckjMG46hnz6JBGMgE-gmUh3dC9pYWhjCnKiK4QZ83jK70Zxd7KqFEvmsZgg&smid=url-share%22) I dreaded, as the simple concise answer most people expected quickly detoured down a rabbit-hole.
 
-My family is originally from southwest Michigan, but moved to Chiapas, Mexico to work on when I was two. I learned to read and write in Spanish long before doing so in English, birdwatched around Mayan ruins growing up, and the only time I have been to Cancun was after a 22 hour bus ride to get there to take my SAT exam needed as part of the US university admissions process (it was the closest testing site).
+My family, originally from southwest Michigan, moved to Chiapas, Mexico for work when I was two. I learned to read and write in Spanish long before I did in English; my childhood memories include birding around the [local](https://ebird.org/hotspot/L688365?yr=all&m=&sortBy=spp) Mayan ruins on the weekends; and the only time I have ever been to Cancun was after enduring a 22 hour bus ride through the mountains so that I could take my SAT exam for the US university admissions process,  as it was the closest testing site.
 :::
 
 ::: {.column width="4%"}
@@ -51,7 +51,7 @@ My family is originally from southwest Michigan, but moved to Chiapas, Mexico to
 :::
 
 ::: {.column width="55%"}
-I moved myself back to the US for college when I was 17. I graduated from [Northwest College](https://nwc.edu/), receiving my A.S in Natural Resources Biology. It was here thanks to undergraduate research opportunities through [INBRE](http://www.uwyo.edu/wyominginbre/) that I first became interested in Microbiology. After Northwest, I transferred to the [University of Wyoming](http://www.uwyo.edu/) where I received a B.S. in Molecular Biology and Microbiology, and got my first taste of immunology researching NK cell responses to secondary *Toxoplasma gondii* infection in the lab of [Jason Gigley](http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html).
+I moved back to the US for university when I was 17. I graduated from [Northwest College](https://nwc.edu/), receiving my A.S in Natural Resources Biology. It was during my time in Powell, Wyoming that thanks to undergraduate research opportunities through [INBRE](http://www.uwyo.edu/wyominginbre/) that I first became interested in Microbiology. After Northwest, I transferred to the [University of Wyoming](http://www.uwyo.edu/) where I received a B.S. in Molecular Biology and Microbiology, and got my first taste of immunology researching Natural Killer cell responses in mice to secondary *Toxoplasma gondii* infection in the lab of Dr.[Jason Gigley](http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html).
 :::
 
 ::: {.column width="2%"}
@@ -77,7 +77,7 @@ I moved myself back to the US for college when I was 17. I graduated from [North
 :::
 
 ::: {.column width="55%"}
-<br></br> After college, I served in the [Peace Corps](https://www.peacecorps.gov/) as a Secondary Science Teacher in [Ghana](https://en.wikipedia.org/wiki/Ghana) from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region. It was during my time in Ghana working on secondary projects focused on Malaria that I decided to enter a Microbiology and Immunology PhD program.
+<br></br> After university, I served in the [Peace Corps](https://www.peacecorps.gov/) as a Secondary Science Teacher in [Ghana](https://en.wikipedia.org/wiki/Ghana) from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region. During my time in Ghana, I worked on secondary projects focused on Malaria that led to my decision to enter a Microbiology and Immunology PhD program.
 :::
 
 ::: {.column width="4%"}
@@ -89,7 +89,7 @@ I moved myself back to the US for college when I was 17. I graduated from [North
 :::
 
 ::: {.column width="55%"}
-<br></br> I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. This was March 2020, and it was not to be. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the [University of Maryland Center for Vaccine Development](https://www.medschool.umaryland.edu/cvd/trials/) and somehow ended up for the next nine months with friends and family telling me they saw my arm in their newspaper again. But [this](https://wjla.com/news/local/university-of-maryland-covid-trial-vaccine-recipient-success-indicators) was my favorite headline.
+<br></br> I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. Since that was March 2020, that was not going to happen. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the [University of Maryland Center for Vaccine Development](https://www.medschool.umaryland.edu/cvd/trials/) and somehow ended up having family and friends telling me they saw my arm in the newspaper for the next nine [months](https://wjla.com/news/local/university-of-maryland-covid-trial-vaccine-recipient-success-indicators).
 :::
 
 ::: {.column width="2%"}

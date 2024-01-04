@@ -16,13 +16,21 @@ page-layout: full
 :::
 
 ::: {.column width="55%"}
+
+<br></br>
+
+<br></br>
+
 I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, Baltimore. My thesis advisers are Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
 
-My [thesis research](research.qmd) focuses on understanding the impact prenatal exposure to maternal HIV and/or antiretrovirals have on HIV-exposed Uninfected (HEU) infant's Innate-like and Adaptive T cells during early life. Working with a Malawian clinical cohort, we are analyzing cryopreserved cord blood mononuclear cells (CBMCs) and peripheral blood mononuclear cells (PBMCs) with Spectral Flow Cytometry. 
+My [thesis research](research.qmd) seeks to understand the impact that prenatal exposure to maternal viral load and antiretrovirals has on Innate-like and Adaptive T cells of HIV-exposed Uninfected Infants during early life. Working with a Malawian clinical cohort, I process cryopreserved cord blood mononuclear cells (CBMCs) and peripheral blood mononuclear cells (PBMCs) for Spectral Flow Cytometry. 
 
-The heterogeneity underlying human immune responses to pathogens of global health relevance is something I find fascinating. Interpreting biological signal from experimental, technical and instrumental noise in these context is the kicker. To better understand these issues, I am currently learning statistical inference and system immunology approaches with eventual goal of improving on existing supervised and unsupervised analysis of cytometry data. Because it's tragic to collect 3 million cells to only ultimately use the median value. 
+When not in lab or thinking about autofluorescence, I enjoy birding, trail running, kayaking, coffee, learning new languages and have occasionally had a plant survive my summer gardening attempts. 
 
-When not in lab, I enjoy birding, trail running, kayaking, coffee, learning new languages and occasionally have had a plant survive my summer gardening attempts. 
+
+
+
+
 :::
 
 ::: {.column width="5%"}

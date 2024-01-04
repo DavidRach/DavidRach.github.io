@@ -4,6 +4,11 @@ title: ""
 
 #### Co-Author Publications
 
+Concomitant assessment of PD-1 and CD56 expression identifies subsets of resting cord blood Vδ2 T cells with disparate cytotoxic potential.\
+Hsu, Zanettini, Coker, Boudova, Rach, Mvula, Divala, Mungwira, Boldrin, Degiacomi, Mazzabo, Manganelli, Laufer, Zhang, Marchionni and Cairo.\
+*Cellular Immunology*, 2023.\
+[\[link\]](https://doi.org/10.1016/j.cellimm.2023.104797)
+
 Age-related changes in PD-1 expression coincide with increased cytotoxic potential in Vδ2 T cells during infancy.\
 Hsu, Boudova, Mvula, Divala, Rach, Mungwira, Boldrin, Degiacomi, Manganelli, Laufer and Cairo.\
 *Cellular Immunology*, 2021.\
