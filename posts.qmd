@@ -10,6 +10,12 @@ listing:
 engine: knitr
 ---
 
+::: {style="text-align: center;"}
+<h1>Overcaffeinated Rabbit Trails</h1>
+
+<h3>A collection of small interesting research observations</h3>
+:::
+
 ```{css, echo = FALSE}
 .justify{
   text-align: center
