@@ -5,7 +5,6 @@ project:
 website:
   google-analytics: "UA-342215677"
   title: "David Rach"
-  favicon: "images/Favicon.png"
   navbar:
     background: white
     right:
@@ -26,6 +25,4 @@ website:
 format:
   html:
     css: styles.css
-
-editor: visual
 

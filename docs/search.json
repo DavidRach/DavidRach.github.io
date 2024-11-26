@@ -14,11 +14,11 @@
     "text": "Thanks for dropping by my website and getting this far! Unfortunately, I didn’t have enough time before Cyto2023 to polish up this blogpost with all my thoughts about Autofluorescence (AF). But please reach out (or drop by my poster #195) and ask, because I have been thinking about the topic a lot these past couple months, and have some interesting preliminary data from my R script about how AF impacts my Spectral Flow Panels. Best- David"
   },
   {
-    "objectID": "Extra.html",
-    "href": "Extra.html",
-    "title": "Extra",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "David Rach",
     "section": "",
-    "text": "italics and bold superscript2 / subscript2 strikethrough\nlibrary(ggplot)"
+    "text": "So where are you from?\n\n\n\n\n\n\n\n\n\n\n\nGrowing up as a Third Culture Kid, “Where are you from?” is a question I always hated. The simple concise answers that the majority of my peers would provide when introductions were being made inevitably detoured down a rabbit-hole when it was my turn to introduce myself.\nMy family, originally from southwest Michigan, USA moved to Chiapas, Mexico for work when I was two. I learned to read and write in Spanish long before I did in English; my childhood memories include birding around the local Mayan ruins on the weekends; and the only time in my life I had ever been to Cancun was after a grueling 22 hour bus ride through the mountains so that I could take my SAT exam for the US university admissions process, as it was the closest testing site.\n\n\n\n\n\n\n\n\n\nI moved back to the US for university when I was 17. I graduated from Northwest College, receiving my A.S in Natural Resources Biology. It was during my time in Powell, Wyoming that thanks to undergraduate research opportunities through INBRE that I first became interested in Microbiology. After Northwest, I transferred to the University of Wyoming where I received a B.S. in Molecular Biology and Microbiology, and got my first taste of immunology researching Natural Killer cell responses in mice to secondary Toxoplasma gondii infection in the lab of Dr.Jason Gigley.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n After university, I served in the Peace Corps as a Secondary Science Teacher in Ghana from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region. During my time in Ghana, I worked on secondary projects focused on Malaria that led to my decision to enter a Microbiology and Immunology PhD program.\n\n\n\n\n\n\n\n\n I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. Since that was March 2020, that was not going to happen. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the University of Maryland Center for Vaccine Development and somehow ended up having family and friends telling me they saw my arm in the newspaper for the next nine months.\n My PhD was focused on understanding the impact that exposure to maternal HIV infection and antiretrovirals before birth had on immune systems of HIV-exposed uninfected infants. The main cell types of interest were Innate-like T cells (gamma-delta T cells, MAIT, and NKTs) and more conventional T cell subsets. We started off with conventional flow cytometry, before transitioning to spectral flow cytometry during the pandemic.\n As an early adopters of the technology at our local institution, we re-discovered through trial-and-error that we couldn’t treat spectral flow cytometry like a conventional flow cytometry experiment and just throw compensation at the problem after the fact. As we learned from our early mistakes and improved, we consistently got really good unmixing and I quickly became interested in exploring unsupervised analysis."
   },
   {
     "objectID": "blog.html",
@@ -26,13 +26,6 @@
     "title": "blog",
     "section": "",
     "text": "Autofluorescence\n\n\n\n\n\n\nSpectral\n\n\nAutofluorescence\n\n\nCord\n\n\n\nSingle Color or it’s own antibody mix\n\n\n\n\n\nMay 19, 2023\n\n\nDavid Rach\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "David Rach",
-    "section": "",
-    "text": "Hi, I am David. Who am I?\n\n\n\n\n\n\n\n\n\n\n\nWhen meeting someone, “Where are you from?” is the question that growing up as a Third Culture Kid I dreaded, as the simple concise answer most people expected quickly detoured down a rabbit-hole.\nMy family, originally from southwest Michigan, moved to Chiapas, Mexico for work when I was two. I learned to read and write in Spanish long before I did in English; my childhood memories include birding around the local Mayan ruins on the weekends; and the only time I have ever been to Cancun was after enduring a 22 hour bus ride through the mountains so that I could take my SAT exam for the US university admissions process, as it was the closest testing site.\n\n\n\n\n\n\n\n\n\nI moved back to the US for university when I was 17. I graduated from Northwest College, receiving my A.S in Natural Resources Biology. It was during my time in Powell, Wyoming that thanks to undergraduate research opportunities through INBRE that I first became interested in Microbiology. After Northwest, I transferred to the University of Wyoming where I received a B.S. in Molecular Biology and Microbiology, and got my first taste of immunology researching Natural Killer cell responses in mice to secondary Toxoplasma gondii infection in the lab of Dr.Jason Gigley.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n After university, I served in the Peace Corps as a Secondary Science Teacher in Ghana from 2016-2018. I taught biology and chemistry at a rural high school in the Volta Region. During my time in Ghana, I worked on secondary projects focused on Malaria that led to my decision to enter a Microbiology and Immunology PhD program.\n\n\n\n\n\n\n\n\n I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. Since that was March 2020, that was not going to happen. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the University of Maryland Center for Vaccine Development and somehow ended up having family and friends telling me they saw my arm in the newspaper for the next nine months."
   },
   {
     "objectID": "index.html",
@@ -46,7 +39,7 @@
     "href": "posts.html",
     "title": "Overcaffeinated Rabbit Trails",
     "section": "",
-    "text": "Overcaffeinated Rabbit Trails\n\n\nA collection of small interesting research observations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutofluorescence\n\n\n\nSpectral\n\n\nAutofluorescence\n\n\nCord\n\n\n\nSingle Color or it’s own antibody mix\n\n\n\nDavid Rach\n\n\nMay 19, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Autofluorescence\n\n\n\nSpectral\n\n\nAutofluorescence\n\n\nCord\n\n\n\nSingle Color or it’s own antibody mix\n\n\n\nDavid Rach\n\n\nMay 19, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "research.html",

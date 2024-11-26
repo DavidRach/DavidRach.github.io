@@ -10,7 +10,7 @@ csl: nature-immunology.csl
 
 #### HEU Infants
 
-::: columns
+::::::::: columns
 ::: {.column width="5%"}
 :::
 
@@ -21,15 +21,15 @@ csl: nature-immunology.csl
 ::: {.column width="2%"}
 :::
 
-::: {.column width="45%"}
+:::: {.column width="45%"}
 ::: {style="float: left"}
 An estimated 1.5 million HIV+ women give birth per year. Thanks to improved antiretrovirals (and critically, affordable access to them in the most affected countries), vertical transmission of HIV from mother to child is increasingly prevented. These HIV-exposed uninfected (HEU) infants are a growing patient population in many countries.[@eckard2019]
 :::
-:::
+::::
 
 ::: {.column width="5%"}
 :::
-:::
+:::::::::
 
 Despite being born uninfected, during their first six months of life, HEU infants have increased morbidity for respiratory and gastrointestinal infections compared to HIV-unexposed (HU) Infants living in the same communities[@leroux2020a]. It's hypothesized that inflammation at the fetal-maternal interface driven by exposure to maternal virus (and viral proteins) may perturb the developing infant immune system, resulting in the observed increased morbidity in early life.[@ikumi2021; @goetghebuer2019] Confoundingly, antiretrovirals (ART) can also drive inflammation at the fetal-maternal interface, and are reported to alter mitochondrial function[@schoeman2017].
 

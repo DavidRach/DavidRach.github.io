@@ -16,14 +16,14 @@ page-layout: full
 ```
 
 ::: justify
-### Hi, I am David. Who am I?
+### So where are you from?
 :::
 
 <p>
 
 </p>
 
-::: columns
+:::::::: columns
 ::: {.column width="4%"}
 :::
 
@@ -35,18 +35,18 @@ page-layout: full
 :::
 
 ::: {.column width="55%"}
-When meeting someone, "Where are you from?" is the question that growing up as a [Third Culture Kid](https://www.nytimes.com/2020/09/11/t-magazine/luca-guadagnino-third-culture-kids.html?unlocked_article_code=gmcO6aItnbYg-KmwHkfF8V49bsFJUEw_TG4zMswnK6wfzIPWwdVQCigYDCQotX6SwgskywRMfIjReydmC_AgY5CXrYdDTdu-zpL9pjXpmyCFXNRqSYUGQD89Q-TpWgVdKExEBfq6RL8FjfZv2pbS6OYWdJylnwMqCaltK3D1v2GB0OhmrQLaFWP79LeDntEnmcM02jGZBOKQp4QdrP2NVTYmdR1bMJxX8bKPZAgYg_NQcJTgTK6nqKJpgLmdliWD4gbtdOYDQ5hVYlGgSfG2OSdjkqaKJ9RwweS-h6zHMj8DdBHckjMG46hnz6JBGMgE-gmUh3dC9pYWhjCnKiK4QZ83jK70Zxd7KqFEvmsZgg&smid=url-share%22) I dreaded, as the simple concise answer most people expected quickly detoured down a rabbit-hole.
+Growing up as a [Third Culture Kid](https://www.nytimes.com/2020/09/11/t-magazine/luca-guadagnino-third-culture-kids.html?unlocked_article_code=gmcO6aItnbYg-KmwHkfF8V49bsFJUEw_TG4zMswnK6wfzIPWwdVQCigYDCQotX6SwgskywRMfIjReydmC_AgY5CXrYdDTdu-zpL9pjXpmyCFXNRqSYUGQD89Q-TpWgVdKExEBfq6RL8FjfZv2pbS6OYWdJylnwMqCaltK3D1v2GB0OhmrQLaFWP79LeDntEnmcM02jGZBOKQp4QdrP2NVTYmdR1bMJxX8bKPZAgYg_NQcJTgTK6nqKJpgLmdliWD4gbtdOYDQ5hVYlGgSfG2OSdjkqaKJ9RwweS-h6zHMj8DdBHckjMG46hnz6JBGMgE-gmUh3dC9pYWhjCnKiK4QZ83jK70Zxd7KqFEvmsZgg&smid=url-share%22), "Where are you from?" is a question I always hated. The simple concise answers that the majority of my peers would provide when introductions were being made inevitably detoured down a rabbit-hole when it was my turn to introduce myself.
 
-My family, originally from southwest Michigan, moved to Chiapas, Mexico for work when I was two. I learned to read and write in Spanish long before I did in English; my childhood memories include birding around the [local](https://ebird.org/hotspot/L688365?yr=all&m=&sortBy=spp) Mayan ruins on the weekends; and the only time I have ever been to Cancun was after enduring a 22 hour bus ride through the mountains so that I could take my SAT exam for the US university admissions process,  as it was the closest testing site.
+My family, originally from southwest Michigan, USA moved to Chiapas, Mexico for work when I was two. I learned to read and write in Spanish long before I did in English; my childhood memories include birding around the [local](https://ebird.org/hotspot/L688365?yr=all&m=&sortBy=spp) Mayan ruins on the weekends; and the only time in my life I had ever been to Cancun was after a grueling 22 hour bus ride through the mountains so that I could take my SAT exam for the US university admissions process, as it was the closest testing site.
 :::
 
 ::: {.column width="4%"}
 :::
-:::
+::::::::
 
 <br></br>
 
-::: columns
+:::::::: columns
 ::: {.column width="4%"}
 :::
 
@@ -63,9 +63,9 @@ I moved back to the US for university when I was 17. I graduated from [Northwest
 
 ::: {.column width="4%"}
 :::
-:::
+::::::::
 
-::: columns
+:::::::: columns
 ::: {.column width="4%"}
 :::
 
@@ -82,14 +82,20 @@ I moved back to the US for university when I was 17. I graduated from [Northwest
 
 ::: {.column width="4%"}
 :::
-:::
+::::::::
 
-::: columns
+:::::::: columns
 ::: {.column width="4%"}
 :::
 
 ::: {.column width="55%"}
 <br></br> I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. Since that was March 2020, that was not going to happen. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the [University of Maryland Center for Vaccine Development](https://www.medschool.umaryland.edu/cvd/trials/) and somehow ended up having family and friends telling me they saw my arm in the newspaper for the next nine [months](https://wjla.com/news/local/university-of-maryland-covid-trial-vaccine-recipient-success-indicators).
+
+<br></br>  My PhD was focused on understanding the impact that exposure to maternal HIV infection and antiretrovirals before birth had on immune systems of HIV-exposed uninfected infants. The main cell types of interest were Innate-like T cells (gamma-delta T cells, MAIT, and NKTs) and more conventional T cell subsets. We started off with conventional flow cytometry, before transitioning to spectral flow cytometry during the pandemic.
+
+<br></br>  As an early adopters of the technology at our local institution, we re-discovered through trial-and-error that we couldn't treat spectral flow cytometry like a conventional flow cytometry experiment and just throw compensation at the problem after the fact. As we learned from our early mistakes and improved, we consistently got really good unmixing and I quickly became interested in exploring unsupervised analysis. 
+
+
 :::
 
 ::: {.column width="2%"}
@@ -101,4 +107,4 @@ I moved back to the US for university when I was 17. I graduated from [Northwest
 
 ::: {.column width="4%"}
 :::
-:::
+::::::::

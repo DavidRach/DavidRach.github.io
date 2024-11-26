@@ -1,6 +1,6 @@
 ---
 title: "Overcaffeinated Rabbit Trails"
-subtitle: A collection of small interesting research observations
+subtitle: A small collection of interesting detours
 page-layout: article
 listing:
   contents: posts
@@ -10,28 +10,22 @@ listing:
 engine: knitr
 ---
 
-::: {style="text-align: center;"}
-<h1>Overcaffeinated Rabbit Trails</h1>
-
-<h3>A collection of small interesting research observations</h3>
-:::
-
 ```{css, echo = FALSE}
 .justify{
   text-align: center
 }
 ```
 
-::: columns
+:::::: columns
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="90%"}
-![](images/RabbitTrails.jpg){width="100%"}
+![](images/RabbitTrails.jpg){width="50%"}
 :::
 
 ::: {.column width="5%"}
 :::
-:::
+::::::
 
 #### 

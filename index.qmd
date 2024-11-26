@@ -2,8 +2,8 @@
 title: ""
 page-layout: full
 ---
-:::: columns
 
+:::::::: columns
 ::: {.column width="5%"}
 :::
 
@@ -12,30 +12,20 @@ page-layout: full
 :::
 
 ::: {.column width="5%"}
-
 :::
 
 ::: {.column width="55%"}
-
 <br></br>
 
 <br></br>
 
 I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, Baltimore. My thesis advisers are Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
 
-My [thesis research](research.qmd) seeks to understand the impact that prenatal exposure to maternal viral load and antiretrovirals has on Innate-like and Adaptive T cells of HIV-exposed Uninfected Infants during early life. Working with a Malawian clinical cohort, I process cryopreserved cord blood mononuclear cells (CBMCs) and peripheral blood mononuclear cells (PBMCs) for Spectral Flow Cytometry. 
+My [thesis research](research.qmd) seeks to understand the impact that prenatal exposure to maternal viral load and antiretrovirals has on Innate-like and Adaptive T cells of HIV-exposed Uninfected Infants during early life. Working with a Malawian clinical cohort, I process cryopreserved cord blood mononuclear cells (CBMCs) and peripheral blood mononuclear cells (PBMCs) for Spectral Flow Cytometry.
 
-When not in lab or thinking about autofluorescence, I enjoy birding, trail running, kayaking, coffee, learning new languages and have occasionally had a plant survive my summer gardening attempts. 
-
-
-
-
-
+When not in lab or thinking about autofluorescence, I enjoy birding, trail running, kayaking, coffee, learning new languages and have occasionally had a plant survive my summer gardening attempts.
 :::
 
 ::: {.column width="5%"}
-
 :::
-
-::::
-
+::::::::
