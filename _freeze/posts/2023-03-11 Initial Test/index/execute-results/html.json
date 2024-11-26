@@ -1,0 +1,15 @@
+{
+  "hash": "4de05e4b2a85ba931adcbee77abd9256",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Autofluorescence\"\ndescription: \"Single Color or it's own antibody mix\"\nauthor:\n  - name: David Rach\n    url: https://davidrach.github.io/\n    orcid: 0000-0003-2235-5585\n    affiliation: Molecular Microbiology and Immunology PhD Candidate @ University      of Maryland, School of Medicine \n    affiliation-url: https://lifesciences.umaryland.edu/microbiology/ \ndate: 05-19-2023\ncategories: [Spectral, Autofluorescence, Cord]\nimage: SpectraHallPackage.png\ndraft: FALSE\nengine: knitr\n---\n\n\n\n\n![](SpectraHallPackage.png)\n\nThanks for dropping by my website and getting this far! Unfortunately, I didn't have enough time before Cyto2023 to polish up this blogpost with all my thoughts about Autofluorescence (AF). But please reach out (or drop by my poster #195) and ask, because I have been thinking about the topic a lot these past couple months, and have some interesting preliminary data from my R script about how AF impacts my Spectral Flow Panels. Best- David\n\n![](FlowJoWorkflow.jpg) ![](AutofluorescentTags.jpg)\n\n![](AutofluorescentWorkflow.png)\n\n![](Lineplots.png)\n\n![](Cosine.png)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
