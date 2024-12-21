@@ -15,6 +15,10 @@ website:
         text: About
       - href: posts.qmd
         text: Blog
+      - href: Research
+        menu: 
+          - href: abstracts.qmd
+            text: Abstracts
       - icon: github
         href: https://github.com/DavidRach/
   page-footer: 

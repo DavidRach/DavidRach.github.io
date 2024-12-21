@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overcaffeinated Rabbit Trails – David Rach</title>
+<title>abstracts – David Rach</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,35 +66,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
 <script type="text/javascript">
 
@@ -112,35 +81,6 @@ ga('send', {
 });
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -173,7 +113,7 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="./posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
@@ -197,100 +137,47 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Luciernaga">Luciernaga <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SFC">SFC <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Spectral">Spectral <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Unmixing">Unmixing <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cyto-2025---single-colors" id="toc-cyto-2025---single-colors" class="nav-link active" data-scroll-target="#cyto-2025---single-colors">Cyto 2025 - Single Colors</a></li>
+  <li><a href="#cyto-2025---autofluorescence" id="toc-cyto-2025---autofluorescence" class="nav-link" data-scroll-target="#cyto-2025---autofluorescence">Cyto 2025 - Autofluorescence</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Overcaffeinated Rabbit Trails</h1>
-<p class="subtitle lead">A small collection of interesting detours</p>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="cell">
-<style type="text/css">
-.justify{
-  text-align: center
-}
-</style>
-</div>
-<div class="columns">
-<div class="column" style="width:5%;">
-
-</div><div class="column" style="width:90%;">
-<p><img src="images/RabbitTrails.jpg" class="img-fluid" style="width:50.0%"></p>
-</div><div class="column" style="width:5%;">
-
-</div>
-</div>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section"></h4>
-
+<section id="cyto-2025---single-colors" class="level2">
+<h2 class="anchored" data-anchor-id="cyto-2025---single-colors">Cyto 2025 - Single Colors</h2>
+<p><strong>“Well, how bright does it need to be?”: Investigating the interplay of fluorescent signature and brightness in single-color unmixing controls.</strong></p>
+<p>David Rach1, Kirsten E. Lyke2, Cristiana Cairo3</p>
+<p><em>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, USA 3 Department of Microbiology and Immunology, University of Maryland School of Medicine, Baltimore, MD, United States.</em></p>
+<p>Spectral flow cytometry (SFC), with its capacity to resolve similar fluorophores and ability to rapidly acquire large number of events, enables more comprehensive phenotypic and functional analyses than conventional flow cytometry. Unmixing controls (both single-color and unstained) are critical for proper unmixing of high-dimensional panels, as their fluorescence signatures provision the reference matrix.</p>
+<p>Discrepancies between the fluorescence signatures of unmixing controls and full-stained samples add uncertainty to the unmixing calculationsand can lead to loss of resolution for individual fluorophores, (particularly in large panels with broader co-expression of markers) producing batch effects.</p>
+<p>These batch effects can affect performance, increase complexity, and impact reproducibility of unsupervised analysis methods that rely on median fluorescent intensity (MFI) for clustering, dimensionality visualization and normalization. While previous efforts at quality control have focused on factors related to instruments and/or full-stained samples, few tools exist to evaluate unmixing controls despite their critical importance. At the same time, the criteria for delineating a good unmixing control and re-using previous controls without affecting the unmixing remain loosely defined.</p>
+<p>We therefore set out to quantitatively assess how variation in the fluorescence signature and/or brightness of controls impacts unmixing of full-stained samples. To this end, we have been working on an R package called Luciernaga, which includes a collection of tools for quality control and fluorescence signature profiling of unmixing controls. Leveraging its ability to characterize normalized fluorescence signatures for individual cells, we grouped and quantified, in every unmixing control, cells with similar signatures across 20 experiments. In the process, we identified “variant” signatures indicative of tandem degradation and non-specific binding of decoupled fluorophores associated with specific unmixing issues. We then grouped cells with shared variant signatures in each unmixing control and used them to generate a .fcs file containing a single variant signature. Keeping all unmixing controls but one constant, we swapped in a variant signature at a time, performing iterative unmixing in R with ordinary least squares. This process allowed us to characterize how variations in fluorescence signature, brightness, or both factors impact the unmixing of the full-stained sample. Our work builds on fluorescence signature, brightness, or both factors impact the unmixing of the full-stained sample.</p>
+<p>Our work builds on the existing guidelines for good unmixing controls, while providing mechanistic explanations for each. We also highlight advantages of profiling control signatures before performing unmixing as a means to mitigate unmixing issues.</p>
+</section>
+<section id="cyto-2025---autofluorescence" class="level2">
+<h2 class="anchored" data-anchor-id="cyto-2025---autofluorescence">Cyto 2025 - Autofluorescence</h2>
+<p><strong>“Are these autofluorescences in the room with us right now?” Quantifying impact of autofluorescence variation on unmixing</strong></p>
+<p>David Rach1, Kirsten E. Lyke2, Cristiana Cairo3</p>
+<p><em>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, USA 3 Department of Microbiology and Immunology, University of Maryland School of Medicine, Baltimore, MD, United States.</em></p>
+<p>Proper unmixing controls (both single-color and unstained) are critical for successful resolution of similar fluorophores in spectral flow cytometry (SFC). When using cells in the place of beads, the unstained unmixing controls are particularly important, given that they enable subtraction of the autofluorescence background present within single-color unmixing controls, and potentially serve as an additional fluorophore.</p>
+<p>Autofluorescence, especially in context of human cord and peripheral mononuclear cells (CBMCs and PBMCs), is often treated as a single fluorophore, primarily differing between cell populations in brightness. However, the sources of autofluorescence within a cell may vary and are affected by cell activation, cryopreservation, and fixation during processing. Thus, at the single cell level, autofluorescence signatures may be slightly different. The point at which variation in autofluorescence at the individual cell level goes from being negligible to impacting the resolution of a complex panel is still being addressed. If multiple autofluorescence signatures are present in a population but unaccounted for in the unmixing matrix, uncertainty is introduced, reducing the ability to resolve other fluorophores. This is particularly problematic within large spectral panels with closely related fluorophores and complex marker co-expression patterns. However, the addition of multiple highly similar autofluorescence signatures to an unmixing matrix can increase the complexity with further loss of resolution.</p>
+<p>We set out to quantitatively interrogate at which point differences in autofluorescence signatures within human mononuclear cells begin to impact panel resolution. Using our R package Luciernaga, we profiled autofluorescence signatures in more than 150 cryopreserved CBMC and PBMC specimens, treated with different activation conditions and with different fixatives. For each .fcs file, we quantified the normalized signatures of individual cells, grouped and enumerated cells based on shared signatures, and visualized the data across specimens and treatments. Since we had samples stained with complex panels matching many of the unstained controls, we used autofluorescence signatures isolated from the unstained controls to iteratively unmix the samples in R, employing ordinary least squares to evaluate the effect these signatures had upon unmixing.</p>
+<p>We found that the majority of the autofluorescence signatures within human mononuclear cells acquired on a 5-laser Cytek Aurora® share a common primary peak (typically on detector V7). Variation in the relative height of the second and third peak (typically UV7 and B3, respectively) was noted between CBMC and PBMC, as well as treatment conditions. A degree of variation in the height of the second and third peak was tolerated without impacting the unmixing. This pattern held true for rare “variant” signatures that did not have a primary peak on V7, as long as they shared the same primary peak. These variant signatures were different enough to cause unmixing errors when present in &gt;1% of PBMC, explaining unmixing issues we previously encountered.</p>
+<p>Our work highlights variation in autofluorescence signatures within human CBMC and PBMC cells activated with different stimuli, and established thresholds at which we observe impacts on the effect that unmixing controls had on resolving complex SFC panels. We provide a method by which shared variant autofluorescence signatures can be isolated and highlight the importanc</p>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Spectral,SFC,Unmixing,Luciernaga" data-listing-date-sort="1734670800000" data-listing-file-modified-sort="1734748730142" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
-<a href="./posts/2024-12-20 Unmixing Matrices/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/2024-12-20 Unmixing Matrices/Descent_BV786.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Increasingly large unmixing matrices
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Spectral'); return false;">
-Spectral
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SFC'); return false;">
-SFC
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Unmixing'); return false;">
-Unmixing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Luciernaga'); return false;">
-Luciernaga
-</div>
-</div>
-<div class="card-text listing-description">
-and their impact on stain index of single-color controls
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-David Rach
-</div>
-<div class="listing-date">
-Dec 20, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
