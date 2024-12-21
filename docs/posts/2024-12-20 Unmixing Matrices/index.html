@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="David Rach">
-<meta name="dcterms.date" content="2023-05-19">
-<meta name="description" content="Single Color or it’s own antibody mix">
+<meta name="dcterms.date" content="2024-12-20">
+<meta name="description" content="and their impact on stain index of single-color controls">
 
-<title>Autofluorescence – David Rach</title>
+<title>Increasingly large unmixing matrices – David Rach</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -104,26 +104,28 @@ ga('send', {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">index.html</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research.html"> 
-<span class="menu-text">Research</span></a>
+    <span class="nav-link">
+<span class="menu-text">Home</span>
+    </span>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/DavidRach/"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/DavidRach2"> <i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/DavidRach/"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -138,16 +140,17 @@ ga('send', {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Autofluorescence</h1>
+      <h1 class="title">Increasingly large unmixing matrices</h1>
                   <div>
         <div class="description">
-          Single Color or it’s own antibody mix
+          and their impact on stain index of single-color controls
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">Spectral</div>
-                <div class="quarto-category">Autofluorescence</div>
-                <div class="quarto-category">Cord</div>
+                <div class="quarto-category">SFC</div>
+                <div class="quarto-category">Unmixing</div>
+                <div class="quarto-category">Luciernaga</div>
               </div>
                   </div>
   </div>
@@ -174,7 +177,7 @@ ga('send', {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 19, 2023</p>
+        <p class="date">December 20, 2024</p>
       </div>
     </div>
     
@@ -193,12 +196,15 @@ ga('send', {
 
 
 
-<p><img src="SpectraHallPackage.png" class="img-fluid"></p>
-<p>Thanks for dropping by my website and getting this far! Unfortunately, I didn’t have enough time before Cyto2023 to polish up this blogpost with all my thoughts about Autofluorescence (AF). But please reach out (or drop by my poster #195) and ask, because I have been thinking about the topic a lot these past couple months, and have some interesting preliminary data from my R script about how AF impacts my Spectral Flow Panels. Best- David</p>
-<p><img src="FlowJoWorkflow.jpg" class="img-fluid"> <img src="AutofluorescentTags.jpg" class="img-fluid"></p>
-<p><img src="AutofluorescentWorkflow.png" class="img-fluid"></p>
-<p><img src="Lineplots.png" class="img-fluid"></p>
-<p><img src="Cosine.png" class="img-fluid"></p>
+<p>After seeing Florian Mair’s <a href="https://youtu.be/koEP6azuc38?si=tLzyhoNQUyN8VM4R">talk</a> at MetroFlow last month, I was curious how increasingly complex unmixing matrices would affect the staining index of my individual single color controls. This spawned an early-morning spectral flow cytometry meets coding rabbit-hole. Seeing as I have shared also on this on <a href="https://bsky.app/profile/davidrach.bsky.social/post/3ldior3c6v22y">Bluesky</a>, I have decided this a good-enough topic to expand in my reattempt at blogging random rabbit holes and topics that I find fascinating.</p>
+<p>Having access to fluorophore reference signatures as part of my <a href="https://github.com/DavidRach/Luciernaga">Luciernaga</a> R package, I started working on some code that when given a certain number of fluorophores, it would randomly select that many non-identical fluorophores from the available reference signatures. These would be added to the unmixing matrix, and then the single-color unstained control would be unmixed with that matrix. Finally, a stain index measurement would be calculated from the unmixed single-color control to measure separation of the positive from the negative. Then this process would be repeated 20 times with different combination of reference signatures. I then iterated the data-generation process from 2 to 55 fluorophores in the unmixing matrix, getting these pretty results 😍</p>
+<p><img src="Decent_BUV805.png" class="img-fluid"> For the case above, this was was for a BUV805 CD4 single-color control. It has a good staining index in our panel, so it was fascinating watching the switch from great to OK becoming complete once it approached 40-colors.</p>
+<p>Meanwhile, fluorophore BV786 (CCR6 as antigen in this case) was a slow descent into madness.</p>
+<p><img src="Descent_BV786.png" class="img-fluid"></p>
+<p>And Fluorophore BUV563 (CD69 as antigen in this case) somewhere in between.</p>
+<p><img src="Descent_BUV563.png" class="img-fluid"></p>
+<p>My preliminary exploration past this point suggested the switch from high plateau to descent/low plateau coincides with the decline in total percentage contribution for the individual fluorophores peak detector relative to the contributions from the other fluorophores. For the BUV805 example, it maintained the high-ground when above 30% total signal for that detector, but dropped to low plateau when it’s overall contribution was decreased to ~20%.</p>
+<p>But this was an early morning rabbit-hole, not a deep-dive, so validating this initial observation will have to wait for another day.</p>
 
 
 

@@ -1,0 +1,35 @@
+---
+title: "Increasingly large unmixing matrices"
+description: "and their impact on stain index of single-color controls"
+author:
+  - name: David Rach
+    url: https://davidrach.github.io/
+    orcid: 0000-0003-2235-5585
+    affiliation: Molecular Microbiology and Immunology PhD Candidate @ University of Maryland, School of Medicine 
+    affiliation-url: https://lifesciences.umaryland.edu/microbiology/ 
+date: 12-20-2024
+categories: [Spectral, SFC, Unmixing, Luciernaga]
+image: Descent_BV786.png
+draft: FALSE
+engine: knitr
+---
+
+After seeing Florian Mair's [talk](https://youtu.be/koEP6azuc38?si=tLzyhoNQUyN8VM4R) at MetroFlow last month, I was curious how increasingly complex unmixing matrices would affect the staining index of my individual single color controls. This spawned an early-morning spectral flow cytometry meets coding rabbit-hole. Seeing as I have shared also on this on [Bluesky](https://bsky.app/profile/davidrach.bsky.social/post/3ldior3c6v22y), I have decided this a good-enough topic to expand in my reattempt at blogging random rabbit holes and topics that I find fascinating.
+
+Having access to fluorophore reference signatures as part of my [Luciernaga](https://github.com/DavidRach/Luciernaga) R package, I started working on some code that when given a certain number of fluorophores, it would randomly select that many non-identical fluorophores from the available reference signatures. These would be added to the unmixing matrix, and then the single-color unstained control would be unmixed with that matrix. Finally, a stain index measurement would be calculated from the unmixed single-color control to measure separation of the positive from the negative. Then this process would be repeated 20 times with different combination of reference signatures. I then iterated the data-generation process from 2 to 55 fluorophores in the unmixing matrix, getting these pretty results 😍 
+
+![](Decent_BUV805.png)
+For the case above, this was was for a BUV805 CD4 single-color control. It has a good staining index in our panel, so it was fascinating watching the switch from great to OK becoming complete once it approached 40-colors.
+
+Meanwhile, fluorophore BV786 (CCR6 as antigen in this case) was a slow descent into madness. 
+
+![](Descent_BV786.png)
+
+And Fluorophore BUV563 (CD69 as antigen in this case) somewhere in between.
+
+![](Descent_BUV563.png)
+
+My preliminary exploration past this point suggested the switch from high plateau to descent/low plateau coincides with the decline in total percentage contribution for the individual fluorophores peak detector relative to the contributions from the other fluorophores. For the BUV805 example, it maintained the high-ground when above 30% total signal for that detector, but dropped to low plateau when it's overall contribution was decreased to ~20%. 
+
+But this was an early morning rabbit-hole, not a deep-dive, so validating this initial observation will have to wait for another day. 
+

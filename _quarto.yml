@@ -7,17 +7,16 @@ website:
   title: "David Rach"
   navbar:
     background: white
-    right:
+    left:
       - href: index.qmd
-        text: Home
-      - href: research.qmd
-        text: Research
+      - text: Home
+    right:
       - href: about.qmd
         text: About
+      - href: blog.qmd
+        text: Blog
       - icon: github
         href: https://github.com/DavidRach/
-      - icon: twitter
-        href: https://twitter.com/DavidRach2
   page-footer: 
    left: Made with [Quarto](https://quarto.org/)
    right: View [Website Code](https://github.com/DavidRach/DavidRach.github.io)

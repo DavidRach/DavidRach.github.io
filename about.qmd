@@ -91,11 +91,6 @@ I moved back to the US for university when I was 17. I graduated from [Northwest
 ::: {.column width="55%"}
 <br></br> I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. Since that was March 2020, that was not going to happen. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the [University of Maryland Center for Vaccine Development](https://www.medschool.umaryland.edu/cvd/trials/) and somehow ended up having family and friends telling me they saw my arm in the newspaper for the next nine [months](https://wjla.com/news/local/university-of-maryland-covid-trial-vaccine-recipient-success-indicators).
 
-<br></br>  My PhD was focused on understanding the impact that exposure to maternal HIV infection and antiretrovirals before birth had on immune systems of HIV-exposed uninfected infants. The main cell types of interest were Innate-like T cells (gamma-delta T cells, MAIT, and NKTs) and more conventional T cell subsets. We started off with conventional flow cytometry, before transitioning to spectral flow cytometry during the pandemic.
-
-<br></br>  As an early adopters of the technology at our local institution, we re-discovered through trial-and-error that we couldn't treat spectral flow cytometry like a conventional flow cytometry experiment and just throw compensation at the problem after the fact. As we learned from our early mistakes and improved, we consistently got really good unmixing and I quickly became interested in exploring unsupervised analysis. 
-
-
 :::
 
 ::: {.column width="2%"}
@@ -104,6 +99,15 @@ I moved back to the US for university when I was 17. I graduated from [Northwest
 ::: {.column width="35%"}
 ![](images/Covid.jpeg){width="95%"}
 :::
+
+<br></br>  My PhD research was focused on understanding the impact that exposure to maternal HIV infection and antiretrovirals before birth had on immune systems of HIV-exposed uninfected (HEU) infants. Our main cell types of interest were Innate-like T cells (gamma-delta T cells, MAIT, and NKTs) and adaptive T cell subsets (specifically antigen-specific CD4 and CD8 T cells). While we started off working with conventional flow cytometry while planning on doing mass cytometry, we transitioned to spectral flow cytometry (SFC) during the pandemic due to availability.
+
+<br></br>  As early adopters of the technology at our local institution, through trial-and-error we re-discovered that you can't treat spectral flow cytometry like a conventional flow cytometry and just throw compensation at it to fix the problem. From these early mistakes and encountering best practices shared by the University of Chicago (thanks Laura!) we quickly progressed to getting good unmixing and building larger panels. 
+
+Around this time I became interested in unsupervised analysis. I ended up teaching myself R in the course of the year, but encountered issues where existing R packages wouldn't scale to our SFC dataset size when we were acquiring 3 million cells per sample to get decent ILT numbers from cord blood. After discovering Bioconductor, I started working on two R packages (Luciernaga and Coereba) to address some of these areas. 
+
+And that's journey here. The current questions that wake me up at 2 AM are figuring out how to work with uncertainty in unmixing to get better resolution and consistency in SFC experiments, and more robust ways to analyse and draw meaning from the results where we are not just unaware of what is happening in the other 99% of the collected sample. 
+
 
 ::: {.column width="4%"}
 :::
