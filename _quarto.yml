@@ -15,7 +15,7 @@ website:
         text: About
       - href: posts.qmd
         text: Blog
-      - href: Research
+      - text: Research
         menu: 
           - href: abstracts.qmd
             text: Abstracts
