@@ -9,7 +9,6 @@ author:
     affiliation-url: https://lifesciences.umaryland.edu/microbiology/ 
 date: 01-18-2025
 categories: [Spectral, SFC, Unmixing, Luciernaga, Rstats, Rustlang]
-image: 
 draft: FALSE
 engine: knitr
 ---
@@ -26,7 +25,7 @@ One of the figures that always stood out to me was Figure 2:
 
 I was fascinated by the differences in spreading for the different unmixing methods and was curious to test on my own samples. Unfortunately, that was beyond my ability at the time. I read curiously at the methods description, having only recently managed to get a PCA plot and MANOVA to output correctly in R. 
 
-It wasn't until early 2023 that I encountered Christopher Hall's [flowUnmix]() package that attempted to provide some unmixing options for the mentioned unmixing methods. I managed to get every one to work for my samples, but the non-negative least squares (NNLS) failed for all but the most downsampled .fcs file due to being so slow to run. 
+It wasn't until early 2023 that I encountered Christopher Hall's [flowUnmix](https://github.com/hally166/flowUnmix) package that attempted to provide some unmixing options for the mentioned unmixing methods. I managed to get every one to work for my samples, but the non-negative least squares (NNLS) failed for all but the most downsampled .fcs file due to being so slow to run. 
 
 Fast forward a couple years (and a lot more coding in R) I circled back to this problem. The nnls function comes from the nnls R package, taking two arguments, 1) a matrix of unmixing control signatures, and the raw sample values iterated over in a row-fashion. 
 
