@@ -2,12 +2,14 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/2025-01-18_NNLS_Unmixing/index.html",
       "/posts/2024-12-20 Unmixing Matrices/index.html"
     ]
   },
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/2025-01-18_NNLS_Unmixing/index.html",
       "/posts/2024-12-20 Unmixing Matrices/index.html"
     ]
   }

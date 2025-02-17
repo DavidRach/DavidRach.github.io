@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="David Rach">
+<meta name="dcterms.date" content="2025-01-18">
+<meta name="description" content="a first foray into Rust">
 
-<title>Overcaffeinated Rabbit Trails – David Rach</title>
+<title>Speeding up NNLS Unmixing – David Rach</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-B7X33YDF5P"></script>
 
 <script type="text/javascript">
@@ -107,47 +79,18 @@ gtag('js', new Date());
 gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">David Rach</span>
     </a>
   </div>
@@ -158,17 +101,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -177,7 +120,7 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-research">    
         <li>
-    <a class="dropdown-item" href="./abstracts.html">
+    <a class="dropdown-item" href="../../abstracts.html">
  <span class="dropdown-text">Abstracts</span></a>
   </li>  
     </ul>
@@ -195,147 +138,85 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Speeding up NNLS Unmixing</h1>
+                  <div>
+        <div class="description">
+          a first foray into Rust
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Spectral</div>
+                <div class="quarto-category">SFC</div>
+                <div class="quarto-category">Unmixing</div>
+                <div class="quarto-category">Luciernaga</div>
+                <div class="quarto-category">Rstats</div>
+                <div class="quarto-category">Rustlang</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://davidrach.github.io/">David Rach</a> <a href="https://orcid.org/0000-0003-2235-5585" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://lifesciences.umaryland.edu/microbiology/">
+              Molecular Microbiology and Immunology PhD Candidate @ University of Maryland, School of Medicine
+              </a>
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 18, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Luciernaga">Luciernaga <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Rstats">Rstats <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Rustlang">Rustlang <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SFC">SFC <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Spectral">Spectral <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Unmixing">Unmixing <span class="quarto-category-count">(2)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Overcaffeinated Rabbit Trails</h1>
-<p class="subtitle lead">A small collection of interesting detours</p>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<div class="cell">
-<style type="text/css">
-.justify{
-  text-align: center
-}
-</style>
-</div>
-<div class="columns">
-<div class="column" style="width:5%;">
-
-</div><div class="column" style="width:90%;">
-<p><img src="images/RabbitTrails.jpg" class="img-fluid" style="width:50.0%"></p>
-</div><div class="column" style="width:5%;">
-
-</div>
-</div>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section"></h4>
+<p>Rapid tested positive for SARS-CoV-2 earlier this week so have been out-of-comission lab-wise. Now that the fever has retreated and needing a break from dissertation writing, taking some time this evening to document some of the more-interesting rabbit-holes from the last couple months.</p>
+<p>For context, my thesis lab first switched to using the spectral flow cytometry back in 2020 when a 6-month backlog of clinical COVID specimens monopolized the mass cytometers on campus disrupting the original plans for specimen processing. Looking back, those first few months were wild, as we attempted to treat the experiments like simply larger conventional experiments (by taking three hours to manually compensate each fcs file… <em>shudder</em>). It wasn’t until after encountering Laura Johnston tutorial videos on the University of Chicago Flow’s <a href="https://youtu.be/A2rV8feuwww?si=1fvwfyciTrAyvFmk">Youtube</a> channel in early 2021 that our unmixing control practices changed and the data resolution (and reproducibiltiy) improved dramatically.</p>
+<p>In terms of my descent into spectral flow cytometry madness, my first independent experiment on the 4L Cytek Aurora was in August 2021. It was probably in early 2022 when I first encountered this <a href="https://doi.org/10.1002/cyto.a.22272">2013 paper</a> from David Novo, Gerald Gregori and Bartek Rajwa. In it, they both simulated data and used data from an early spectral flow cytometer to compare different methods of unmixing.</p>
+<p>One of the figures that always stood out to me was Figure 2:</p>
+<p><img src="NovoGregoriRajwaFigure.png" class="img-fluid"></p>
+<p>I was fascinated by the differences in spreading for the different unmixing methods and was curious to test on my own samples. Unfortunately, that was beyond my ability at the time. I read curiously at the methods description, having only recently managed to get a PCA plot and MANOVA to output correctly in R.</p>
+<p>It wasn’t until early 2023 that I encountered Christopher Hall’s <a href="https://github.com/hally166/flowUnmix">flowUnmix</a> package that attempted to provide some unmixing options for the mentioned unmixing methods. I managed to get every one to work for my samples, but the non-negative least squares (NNLS) failed for all but the most downsampled .fcs file due to being so slow to run.</p>
+<p>Fast forward a couple years (and a lot more coding in R) I circled back to this problem. The nnls function comes from the nnls R package, taking two arguments, 1) a matrix of unmixing control signatures, and the raw sample values iterated over in a row-fashion.</p>
+<p>Like everyone else on Twitter these last two years on the Bioinformatics side, we all know someone who has been proselytizing the gospel of Rust (Josiah Parry and Rob Patro in the case of my feed). Similar to how the RCPP and cpp11 R packages can be used to connect C++ functions within an R package, extendr does something similar for Rust.</p>
+<p>So I decided this would be a good target example.</p>
+<p>After some effort, it worked!</p>
+<p>When I run OLS, the test-data completes in around 0.015 seconds (there’s a reason it is used for live unmixing). By comparison, the nnls package’s nnls (running Fortran77 in the background) takes 0.144 seconds (approximate 9x as long). My first attempt in Rust using the nnls crate took 0.075, so some improvement. However, I was still iterating in R and passing individual vectors to rust. Would it be faster if I iterated over the sample matrix within Rust? I proceeded to modify, and sure enough, completes at 0.047 seconds.</p>
+<p>So in the end, I managed to get nnls from taking 9x as long as OLS to 3x with an initial attempt with only introductory rust knowledge. Not bad for now, but room to improve going forward.</p>
+<p>However, looking at it, I realized my mental image of NNLS from the Novo et al.&nbsp;2013 paper was inverted, I had actually been thinking of the WLS/Poisson-regression unmixing approaches. Implementing those approaches into my code-base will need to wait for another day (and hopefully not involve hand-coding my own Rust crate :D ).</p>
 
 
 
-</section>
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Spectral,SFC,Unmixing,Luciernaga,Rstats,Rustlang" data-listing-date-sort="1737176400000" data-listing-file-modified-sort="1737261612145" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="639">
-<a href="./posts/2025-01-18_NNLS_Unmixing/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/2025-01-18_NNLS_Unmixing/NovoGregoriRajwaFigure.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Speeding up NNLS Unmixing
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Spectral'); return false;">
-Spectral
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SFC'); return false;">
-SFC
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Unmixing'); return false;">
-Unmixing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Luciernaga'); return false;">
-Luciernaga
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Rstats'); return false;">
-Rstats
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Rustlang'); return false;">
-Rustlang
-</div>
-</div>
-<div class="card-text listing-description">
-a first foray into Rust
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-David Rach
-</div>
-<div class="listing-date">
-Jan 18, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Spectral,SFC,Unmixing,Luciernaga" data-listing-date-sort="1734670800000" data-listing-file-modified-sort="1737257505530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
-<a href="./posts/2024-12-20 Unmixing Matrices/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/2024-12-20 Unmixing Matrices/Descent_BV786.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Increasingly large unmixing matrices
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Spectral'); return false;">
-Spectral
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('SFC'); return false;">
-SFC
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Unmixing'); return false;">
-Unmixing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Luciernaga'); return false;">
-Luciernaga
-</div>
-</div>
-<div class="card-text listing-description">
-and their impact on stain index of single-color controls
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-David Rach
-</div>
-<div class="listing-date">
-Dec 20, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

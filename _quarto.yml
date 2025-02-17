@@ -1,9 +1,9 @@
 project:
   type: website
   output-dir: docs
-
 website:
-  google-analytics: "UA-342215677"
+  google-analytics:
+    tracking-id: "G-B7X33YDF5P"
   title: "David Rach"
   navbar:
     background: white
