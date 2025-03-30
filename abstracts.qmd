@@ -3,7 +3,7 @@ toc: true
 toc-location: right
 ---
 
-## Cyto 2025 - Single Colors
+## Cyto 2025 - Single Colors - P299
 
 **“Well, how bright does it need to be?”: Investigating the interplay of fluorescent signature and brightness in single-color unmixing controls.**
 
@@ -21,7 +21,7 @@ We therefore set out to quantitatively assess how variation in the fluorescence 
 
 Our work builds on the existing guidelines for good unmixing controls, while providing mechanistic explanations for each. We also highlight advantages of profiling control signatures before performing unmixing as a means to mitigate unmixing issues.
 
-## Cyto 2025 - Autofluorescence
+## Cyto 2025 - Autofluorescence - P267
 
 **"Are these autofluorescences in the room with us right now?” Quantifying impact of autofluorescence variation on unmixing**
 
@@ -37,5 +37,121 @@ We set out to quantitatively interrogate at which point differences in autofluor
 
 We found that the majority of the autofluorescence signatures within human mononuclear cells acquired on a 5-laser Cytek Aurora® share a common primary peak (typically on detector V7). Variation in the relative height of the second and third peak (typically UV7 and B3, respectively) was noted between CBMC and PBMC, as well as treatment conditions. A degree of variation in the height of the second and third peak was tolerated without impacting the unmixing. This pattern held true for rare “variant” signatures that did not have a primary peak on V7, as long as they shared the same primary peak. These variant signatures were different enough to cause unmixing errors when present in >1% of PBMC, explaining unmixing issues we previously encountered. 
 
-Our work highlights variation in autofluorescence signatures within human CBMC and PBMC cells activated with different stimuli, and established thresholds at which we observe impacts on the effect that unmixing controls had on resolving complex SFC panels. We provide a method by which shared variant autofluorescence signatures can be isolated and highlight the importanc
+Our work highlights variation in autofluorescence signatures within human CBMC and PBMC cells activated with different stimuli, and established thresholds at which we observe impacts on the effect that unmixing controls had on resolving complex SFC panels. We provide a method by which shared variant autofluorescence signatures can be isolated and highlight the importance 
+
+# 10th International γδ T cell Conference - P55
+
+**Vγ9Vδ2 T cell responses in HIV‑exposed Uninfected (HEU) Infants**
+
+David Rach1, Hao-Ting Hsu2, Nginache Nampota3, Godfrey Mvula3, Felix A. Mkandawire3, Osward M. Nyirenda3, Bernadette Hritzo1, Ingrid Peterson4, Franklin R Toapanta4, Marcelo B Sztein4, Miriam Laufer4, Kirsten E. Lyke4, Cristiana Cairo2
+
+*1Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA. 2Institute
+of Human Virology, University of Maryland School of Medicine, Baltimore, USA. 3Blantyre Malaria Project, Kamuzu University of
+Health Sciences, Blantyre, Malawi. 4Center for Vaccine Development and Global Health, University of Maryland School of Medicine,
+Baltimore, USA*
+
+Maternal antiretroviral therapy (ART) effectively prevents perinatal infection of infants born to HIV+ women. However, during the first six months of life HIV-exposed, uninfected (HEU) infants exhibit increased infectious morbidity compared to HIV unexposed (HU) infants. Dysfunction of the infant immune system, driven directly or indirectly by prenatal HIV/ART exposure, is thought to contribute to this outcome. Vγ9Vδ2 T (Vδ2) cells, with their ability to rapidly release Th1 cytokines and respond to IL-23, are likely to play a key role against pathogens in early life. Due to elevated inflammation at the fetal-maternal interface, Vδ2 cells, which are sensitive to inflammatory cytokines, may be dysfunctional in HEU infants. This issue, however, has not been investigated. We are analyzing a well-characterized Malawian infant cohort, comparing infants born to
+women with: A) ART-treated HIV infection, with undetectable viral load since before conception (HEU-lo); B) HIV infection diagnosed and treated at mid-gestation or later, with high viral load at enrollment (HEU-hi); C) no HIV infection (HU). We are employing conventional and spectral flow cytometry for a detailed assessment of cord blood Vδ2 cells.Ex vivo, we observed an increased frequency of Vδ2 cells in cord blood of HEU-hi
+infants compared to HU infants. Following short polyclonal stimulation, the frequency of Vδ2 cells producing IFNγ, or both INFγ and TNFα was only significantly elevated in HEU-lo infants. TCR-mediated restimulation of Vδ2 cells resulted in lower frequency of Th1 cytokine producing cells and CD107a+ cells in HEU-hi infants after expansion with BCG, but not after expansion with Zoledronate. Results for our Malawian neonates confirm elevated Vδ2 cell frequencies in the cord blood of HEU infants, which we previously
+observed in a Nigerian cohort.To optimize the use of precious clinical specimens and extend the analyses to the other human innate-like subsets, we designed a 29-color spectral flow cytometry panel that enables a comprehensive profiling of Vδ2 T, MAIT and NKT cells. The direct comparison of conventional and spectral data for Vδ2 cells will help validate the performance of large spectral flow cytometry panels to highlight the impact of HIV prenatal exposure on these rare subsets. 
+
+## Cyto 2023 - P195
+
+**Spectral flow cytometry analysis of Innate-like T cell responses in Malawian HIV-exposed Uninfected (HEU) Infants.**
+
+David Rach1, Hao-Ting Hsu2, Nginache Nampota3, Godfrey Mvula3, Felix A. Mkandawire3, Osward M. Nyirenda3, Ingrid Peterson4, Franklin R.
+Toapanta4, Marcelo B. Sztein4, Miriam Laufer4, Kirsten E. Lyke4,
+Cristiana Cairo2
+
+*1 Molecular Microbiology and Immunology Graduate Program, University
+of Maryland School of Medicine, Baltimore, USA. 2 Institute of Human
+Virology, University of Maryland School of Medicine, Baltimore, USA.
+3 Blantyre Malaria Project, Kamuzu University of Health Sciences,
+Blantyre, Malawi. 4 Center for Vaccine Development and Global Health,
+University of Maryland School of Medicine, Baltimore, USA*
+
+Maternal antiretroviral therapy (ART) effectively prevents perinatal
+infection of infants born to HIV+ women. However, during the
+first six months of life HIV-exposed, uninfected (HEU) infants
+exhibit increased morbidity due to lower respiratory tract and
+diarrheal infections, compared to HIV unexposed (HU) infants. It is
+hypothesized that exposure to HIV and/or ART before birth perturbs
+the developing fetal immune system, which contributes to the
+increased infectious morbidity seen in HEU infants. The specific
+immunological mechanisms underlying this clinical outcome are still
+under investigation. To help understand the contribution of maternal
+viremia to infant immune perturbation, we are analyzing a cohort
+of Malawian infants with well-characterized prenatal HIV-exposure.
+Specifically, we are comparing three groups of infants born to women
+with: A) ART-treated HIV infection and undetectable viral load since
+before conception and through pregnancy (HEU-lo); B) HIV infection
+diagnosed and treated at mid-gestation or later, with high viral load at
+enrollment (HEU-hi); C) no HIV infection (HU).
+
+Innate-like T cells (ILTs), including Natural Killer T cells (NKTs),
+Mucosal-associated Invariant T cells (MAITs), and Vg9Vd2 (Vd2) T
+cells may be perturbed due to elevated inflammation at the fetal maternal interface during maternal HIV infection. ILTs, which are
+thought to play important roles against pathogens in early life, are
+activated by microbial metabolites as well as by innate cytokines,
+mounting Th1-like and cytotoxic responses in the early phase of
+infection. The effect exerted by in utero HIV exposure on infant ILTs
+is unknown, as the markers required for their identification are not
+routinely included in conventional flow cytometry panels, and their
+low abundance in infant blood makes mass cytometry impractical for
+their assessment.
+
+To overcome these limitations, we designed a 29-color spectral
+flow cytometry panel that allows for concomitant assessment of
+ILT subsets, employing human CD1d and MR1 tetramers to identify
+NKTs and MAITs, respectively. A preliminary analysis of cord blood
+specimens from neonates in our Malawian cohort by conventional
+flow cytometry has shown an increased Vd2 cell frequency,
+differentiation, and activation in HEU-hi infants, while the frequency
+of Vd2 cells producing IFNg or both INFg and TNFa upon polyclonal
+stimulation was significantly elevated in HEU-lo infants. In a distinct
+African cohort, HEU infants also displayed elevated MAIT frequency
+at birth. We thus incorporated markers that characterize ILT subset
+activation, differentiation, and function. The spectral flow cytometry
+results that we will present will be corroborated by direct comparison
+to conventional flow cytometry data. The implementation of this
+optimized spectral panel will allow a comprehensive profiling of these
+rare subsets in infants and help highlight effects arising in context of
+HIV prenatal exposure.
+
+# ASTMH 2021 - P369
+
+**INNATE-LIKE T CELL RESPONSES IN HIV EXPOSED UNINFECTED MALAWIAN INFANTS**
+
+David Thomas Rach1, Hao-Ting Hsu2, Nginache Nampota3, Godfrey Mvula3, Franklin R. Toapanta4, Marcelo B. Sztein4, Miriam Laufer4, Kirsten E. Lyke4, Cristiana Cairo2
+
+*1 Molecular Microbiology and Immunology Graduate Program, University
+of Maryland School of Medicine, Baltimore, MD, United States, 2
+Institute for Human Virology, University of Maryland School of Medicine, Baltimore, MD, United States, 3 Blantyre Malaria Project, University of Malawi College of Medicine, Blantyre, Malawi, 4 Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, MD, United States*
+
+Each year, an estimated 1.5 million HIV+ women give birth. Increased
+access to antiretroviral therapy (ART) ensures most infants born to HIV+
+women do not contract the infection vertically, and thus remain HIV
+exposed but uninfected (HEU). During their first year of life, HEU infants
+exhibit increased rates of lower respiratory tract infections and diarrheal
+diseases, compared to HIV unexposed (HU) infants. It is hypothesized
+that exposure to HIV (and ART) before birth perturbs the developing fetal
+immune system by increasing inflammation at the fetal-maternal interface
+and induces long term effects that contribute to the increased infectious
+morbidity in HEU infants. The specific immunologic mechanisms behind
+this clinical outcome remain unclear. Among the subsets that may be
+perturbed by increased inflammation, innate-like T cells (γδ, MAIT, NKT
+cells) may play an important role against pathogens in early life. We
+hypothesize that prenatal HIV exposure results in early life activation of
+innate-like T cell subsets. Utilizing a well-characterized cohort of Malawianinfants, we compare three groups of infants born to women with: 1) HIV infection but undetectable viremia through pregnancy (HEU-lo); 2) HIV
+infection diagnosed at mid-gestation or later, with high viral loads (HEUhi); 3) no HIV infection (HU). A preliminary analysis of cord blood Vδ2 T cells suggests that production of Th1 cytokines in response to polyclonal
+stimulation is increased in HEU neonates. The frequency of TNFα+ Vδ2 T
+cells is highest in HEU-hi neonates, while the frequency of polyfunctional
+(IFNγ+TNFα+) Vδ2 cells is highest in HEU-lo neonates. These findings,
+if confirmed, would suggest that exposure to replicating maternal HIV
+results in more robust TNFα production, while prolonged exposure to
+ART in HEU-lo neonates may contribute to the observed differences in
+Vδ2 cells polyfunctionality. This study provides an opportunity to assess
+immune perturbation of innate-like subsets in HEU infants, contributing
+to our understanding of immune responses and mechanisms of increased
+infectious morbidity in this vulnerable population.
 
