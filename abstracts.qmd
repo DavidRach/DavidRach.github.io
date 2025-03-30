@@ -55,7 +55,7 @@ women with: A) ART-treated HIV infection, with undetectable viral load since bef
 infants compared to HU infants. Following short polyclonal stimulation, the frequency of Vδ2 cells producing IFNγ, or both INFγ and TNFα was only significantly elevated in HEU-lo infants. TCR-mediated restimulation of Vδ2 cells resulted in lower frequency of Th1 cytokine producing cells and CD107a+ cells in HEU-hi infants after expansion with BCG, but not after expansion with Zoledronate. Results for our Malawian neonates confirm elevated Vδ2 cell frequencies in the cord blood of HEU infants, which we previously
 observed in a Nigerian cohort.To optimize the use of precious clinical specimens and extend the analyses to the other human innate-like subsets, we designed a 29-color spectral flow cytometry panel that enables a comprehensive profiling of Vδ2 T, MAIT and NKT cells. The direct comparison of conventional and spectral data for Vδ2 cells will help validate the performance of large spectral flow cytometry panels to highlight the impact of HIV prenatal exposure on these rare subsets. 
 
-## Cyto 2023 - P195
+# Cyto 2023 - P195
 
 **Spectral flow cytometry analysis of Innate-like T cell responses in Malawian HIV-exposed Uninfected (HEU) Infants.**
 
