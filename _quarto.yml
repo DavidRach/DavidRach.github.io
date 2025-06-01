@@ -19,6 +19,8 @@ website:
         menu: 
           - href: abstracts.qmd
             text: Abstracts
+      - href: Resume.qmd
+        text: Resume
       - icon: github
         href: https://github.com/DavidRach/
   page-footer: 

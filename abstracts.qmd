@@ -19,8 +19,7 @@ We set out to quantitatively interrogate at which point differences in autofluor
 
 We found that the majority of the autofluorescence signatures within human mononuclear cells acquired on a 5-laser Cytek Aurora® share a common primary peak (typically on detector V7). Variation in the relative height of the second and third peak (typically UV7 and B3, respectively) was noted between CBMC and PBMC, as well as treatment conditions. A degree of variation in the height of the second and third peak was tolerated without impacting the unmixing. This pattern held true for rare “variant” signatures that did not have a primary peak on V7, as long as they shared the same primary peak. These variant signatures were different enough to cause unmixing errors when present in \>1% of PBMC, explaining unmixing issues we previously encountered.
 
-Our work highlights variation in autofluorescence signatures within human CBMC and PBMC cells activated with different
-stimuli, and established thresholds at which we observe impacts on the effect that unmixing controls had on resolving complex SFC panels. We provide a method by which shared variant autofluorescence signatures can be isolated and highlight the importance of collecting sufficient unstained cells to profile rarer variation in autofluorescence that might otherwise be missed.
+Our work highlights variation in autofluorescence signatures within human CBMC and PBMC cells activated with different stimuli, and established thresholds at which we observe impacts on the effect that unmixing controls had on resolving complex SFC panels. We provide a method by which shared variant autofluorescence signatures can be isolated and highlight the importance of collecting sufficient unstained cells to profile rarer variation in autofluorescence that might otherwise be missed.
 
 ## Cyto 2025 - Single Colors - P299
 

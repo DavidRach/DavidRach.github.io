@@ -1,0 +1,22 @@
+---
+title: "Resume"
+format: html
+---
+
+```{r}
+library(htmltools)
+```
+
+
+```{r}
+#| content: valuebox
+#| title: "Resume"
+#| icon: cup-hot
+
+HTML("
+<ul>
+  <li><a href='data/Resume_2025.pdf'>Plots</a></li>
+</ul>
+")
+```
+
