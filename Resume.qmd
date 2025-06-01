@@ -1,12 +1,18 @@
 ---
-title: "Resume"
-format: html
+format:
+  dashboard:
+    orientation: columns
+project:
+  output-dir: docs/
 ---
 
 ```{r}
 library(htmltools)
 ```
 
+::: {.card title="" width="33%"}
+
+:::
 
 ```{r}
 #| content: valuebox
@@ -15,8 +21,12 @@ library(htmltools)
 
 HTML("
 <ul>
-  <li><a href='data/Resume_2025.pdf'>Plots</a></li>
+  <li><a href='Resume_2025.pdf'>2025</a></li>
 </ul>
 ")
 ```
+
+::: {.card title="" width="33%"}
+
+:::
 
