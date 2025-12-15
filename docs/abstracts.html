@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-94769f26640f148b1920299d3d381484.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cc3299c05e4203ab5e65823739f33412.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -148,7 +148,9 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cyto-2025---autofluorescence---p267" id="toc-cyto-2025---autofluorescence---p267" class="nav-link active" data-scroll-target="#cyto-2025---autofluorescence---p267">Cyto 2025 - Autofluorescence - P267</a></li>
+  <li><a href="#cyto-2026---flow-awarenesss" id="toc-cyto-2026---flow-awarenesss" class="nav-link active" data-scroll-target="#cyto-2026---flow-awarenesss">Cyto 2026 - Flow Awarenesss</a></li>
+  <li><a href="#cyto-2026---alpha-beta" id="toc-cyto-2026---alpha-beta" class="nav-link" data-scroll-target="#cyto-2026---alpha-beta">Cyto 2026 - Alpha Beta</a></li>
+  <li><a href="#cyto-2025---autofluorescence---p267" id="toc-cyto-2025---autofluorescence---p267" class="nav-link" data-scroll-target="#cyto-2025---autofluorescence---p267">Cyto 2025 - Autofluorescence - P267</a></li>
   <li><a href="#cyto-2025---single-colors---p299" id="toc-cyto-2025---single-colors---p299" class="nav-link" data-scroll-target="#cyto-2025---single-colors---p299">Cyto 2025 - Single Colors - P299</a></li>
   <li><a href="#cyto-2025---mfi-drift-after-qc---p310" id="toc-cyto-2025---mfi-drift-after-qc---p310" class="nav-link" data-scroll-target="#cyto-2025---mfi-drift-after-qc---p310">Cyto 2025 - MFI Drift After QC - P310</a></li>
   <li><a href="#th-international-γδ-t-cell-conference-2023---p55" id="toc-th-international-γδ-t-cell-conference-2023---p55" class="nav-link" data-scroll-target="#th-international-γδ-t-cell-conference-2023---p55">10th International γδ T cell Conference 2023 - P55</a></li>
@@ -163,6 +165,29 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 
 
 
+<section id="cyto-2026---flow-awarenesss" class="level2">
+<h2 class="anchored" data-anchor-id="cyto-2026---flow-awarenesss">Cyto 2026 - Flow Awarenesss</h2>
+<p><strong>Being Everything, Everywhere, All at Once: Open-Source Automation for Situational Awareness in SRLs</strong></p>
+<p>David Rach1,2, Natarajan Ayithan2, Xiaoxuan Fan2</p>
+<p>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</p>
+<p>Operating a flow cytometry shared resource laboratory (SRL) is the art of daily handling issues as they arise, while staying situationally aware enough to avoid a complete meltdown. Given that time is a precious commodity, tools that can provide timely situational awareness of impending issues and thus permit a staged intervention are highly desirable. With the current fiscal environment, free and open-source software tools could assist these efforts, but need to not impose significant additional burden on the staff.</p>
+<p>Over the last 18 months, we have sequentially designed and implemented enhanced monitoring tools for all the instruments at our core, using open-source software (R, Python and Rust). These have utilized existing computational resources (as well as computers repurposed following Windows 10 end-of-life) with automation scheduled for off-peak hours to survey for a range of issues across all acquired experiment and .fcs files.</p>
+<p>These tools have collectively enabled us to monitor user/laboratory instrument usage over time, track cancellations and altered reservations, build a database of markers and fluorophores by users, and determine their panels respective stain indexes and unmixing-dependent spreading (UDS) hotspots. The system spot checks unmixing controls to identify multiple autofluorescences and tandem fluorophore degradation, with a similar process monitoring for debris build up in the fluidic lines. Additionally, the system reports computer storage space occupancy by user, processes the cytometer logs to classify and record the frequency of returned errors, visualizes instrument QC metrics, as well as tracks cell sorter specific metrics by nozzle.</p>
+<p>This framework has expanded our situational awareness beyond what any individual vendor system can provide. It has allowed staff to intervene proactively—reaching out to users before substantial time, samples, and reagents are wasted—at a scale that would have seemed implausible only a few years ago. By standardizing oversight, reducing operator-dependent variability, and documenting performance trends, the system strengthens rigor and reproducibility across SRL workflows.</p>
+<p>We emphasize the piecemeal nature of our implementation, highlight what worked well and offer lessons learned from our experience in pursuit to orchestrate situational awareness in an SRL environment.</p>
+</section>
+<section id="cyto-2026---alpha-beta" class="level2">
+<h2 class="anchored" data-anchor-id="cyto-2026---alpha-beta">Cyto 2026 - Alpha Beta</h2>
+<p><strong>A semi-supervised pipeline for a comprehensive and scalable analysis of immune heterogeneity in human samples</strong></p>
+<p>David Rach1,2, Nginache Nampota-Nkomba3,4, Godfrey Mvula3, Felix A. Mkandawire3, Osward M. Nyirenda3, Winter A. Okoth5,6, Daniela Franco4, Andrea G. Buchwald5, Franklin R. Toapanta5, Marcelo B. Sztein5, Miriam K. Laufer5, Kirsten E. Lyke5, Cristiana Cairo7.</p>
+<p>1Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, MD, United States 2Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, MD, United States 3Blantyre Malaria Project, Kamuzu University of Health Sciences, Blantyre, Malawi 4Graduate Program in Life Sciences, University of Maryland School of Medicine, Baltimore, MD, United States 5Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, MD, United States 6Geographic Medicine Division, Department of Medicine, University of Maryland School of Medicine, Baltimore, MD, United States 7Department of Microbiology and Immunology, University of Maryland School of Medicine, Baltimore, MD, United States</p>
+<p>Spectral flow cytometry (SFC) holds enormous potential for immune profiling in both breadth and depth. For studies of early life human immunology, where the quantity of biospecimen is limited, SFC may allow for a more thorough interrogation of immune responses following immunization or infection.</p>
+<p>The increased number of fluorophores does come with increased uncertainty, affecting the estimation of marker abundance during unmixing. Factors such as additional or varied autofluorescence, non-specific binding or tandem degradation of fluorophores, and increased unmixing-dependent spread due to co-expression of markers on rare subsets, introduce uncertainty when analyzing datasets. Developing systematic bioinformatic methods to distinguish heterogeneity from underlying technical artifacts is critical to the production of interpretable, accurate data using SFC.</p>
+<p>Additionally, analysis of complex SFC datasets remains a challenge. Manual gating of pre-determined cell populations of interest risks introducing bias by defaulting to past immunologic assumptions and by design narrows our ability to detect changes in other cell subsets. On the other hand, while existing unsupervised methods may capture a broader picture, it may be difficult to discern findings with biologic relevance.</p>
+<p>Studying a cohort of Malawian infants with well-characterized prenatal HIV-exposure, we demonstrate a systematic method of analysis suitable for rare subsets. The cohort consisted of three groups of infants born to women with: A) ART-treated HIV infection and undetectable viral load since before conception and through pregnancy (HEU-lo); B) HIV infection diagnosed and treated at mid-gestation or later, with high viral load at enrollment (HEU-hi); C) no HIV infection (HU). Cryopreserved cord blood mononuclear cells and longitudinal peripheral blood mononuclear cells collected at 4 and 9-months following routine childhood immunizations were thawed, rested for 6 hours, and stimulated in the presence of purified protein derivative (PPD) or Staphylococcal enterotoxin B (SEB). Cells were stained with a 32-color SFC panel to characterize phenotype, activation-induced markers and cytokine production with same day acquisition using a 5-laser Cytek Aurora.</p>
+<p>Following acquisition, we carried out a semi-supervised analysis with a custom pipeline that we implemented in R and Rust. Briefly, we performed quality assurance of unmixing controls using the Luciernaga and PeacoQC R packages, replacing problematic single-colors and/or autofluorescence controls as appropriate before unmixing. Samples were biexponentially transformed and automated gating was implemented using the openCyto and flowMagic R packages. Using the interactive Shiny App in our R package Coereba, the calculated split-points between positive and negative events were visualized for each marker and manually adjusted as needed. Identity columns for the marker expression of individual cells were then generated and appended to the .fcs files.</p>
+<p>For select cell populations, all events were concatenated, normalized with CytoNorm v2, clustered with flowSOM, and visualized with PaCMAP. Identity data associated with cells across clusters was retrieved, allowing a comparison between algorithm and manual gating performance. In parallel, cells sorted into clusters on the basis of shared marker identity were analyzed to compare their abundance between exposure groups using existing Bioconductor workflows. This mixed approach allowed us to examine the immune response across timepoints, treatment conditions and exposure groups, enabling an exhaustive, comprehensive and scalable characterization of individual heterogeneity.</p>
+</section>
 <section id="cyto-2025---autofluorescence---p267" class="level2">
 <h2 class="anchored" data-anchor-id="cyto-2025---autofluorescence---p267">Cyto 2025 - Autofluorescence - P267</h2>
 <p><strong>“Are these autofluorescences in the room with us right now?” Quantifying impact of autofluorescence variation on unmixing</strong></p>
