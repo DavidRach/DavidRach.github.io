@@ -5,6 +5,8 @@ toc-location: right
 
 ## Cyto 2026 - Flow Awarenesss
 
+![](images/Everything.png){fig-align="center" width="50%"}
+
 **Being Everything, Everywhere, All at Once: Open-Source Automation for Situational Awareness in SRLs**
 
 David Rach1,2, Natarajan Ayithan2, Xiaoxuan Fan2  
