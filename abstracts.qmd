@@ -3,6 +3,32 @@ toc: true
 toc-location: right
 ---
 
+## BioC 2026 - Cytometry in R
+
+**Cytometry in R: A free weekly course for flow cytometrist with no-to-little coding experience**
+
+David Rach1,2, Natarajan Ayithan2, Xiaoxuan Fan2  
+
+1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA 
+
+Within Bioconductor there are 72 packages that list flow cytometry in their BiocViews, collectively permitting analysis of conventional, spectral and mass cytometry data. However, the majority of the packages are underutilized, with only 15 surpassing 4000 yearly downloads. A contributing factor to this is that traditionaly, flow cytometry analysis is carried out using commercial software (ex. FlowJo and FCSExpress), with a graphical-user interface being used to draw gates around a cell population of interest on 2-D plots. Cells falling within this gate are filtered for, additional gates are subsequently drawn, resulting in a gating hierarchy enabling the isolation of a cell population of interest for statistical analysis.
+
+With the emergence of spectral flow cytometry in the last decade, which is capable of profiling 20-50 markers on millions of cells within a few minutes, the resulting datasets are growing increasingly complex. Semi-supervised and unsupervised analytical methods (often implemented as Bioconductor packages) will need to be used in the analysis.
+
+For most flow cytometrist, with no-to-limited coding skills, this presents a barrier to entry. While learning resources exist for those with intermediate coding skills (such as individual package vignetters, workflows, and the odd workshop recording), these are not aimed at beginners. Consequently, many self-study attempts end in frustration.  
+
+To address this urgent community need (and reduce the barrier to entry), starting in February 2026 we have been offering a free weekly “Cytometry in R” course, offered both in-person and online, aimed at flow cytometrists with no coding experience. The community response was outstanding, with over 1993 worldwide participants filling out the interest form, 529 participants creating new GitHub accounts and forking the course repository, and between 300-500 distinct viewers per weekly topic.
+
+This course covers one topic per week, with multiple livestream offerings to accomodate different timezones. Recordings are available via our YouTube channel (https://www.youtube.com/@CytometryInR). The course is run out of a GitHub repository (https://github.com/UMGCCCFCSR/CytometryInR), with all course materials, code and datasets being offered under CC-BY-SA and AGPL3-0 licenses. This permits hosting the course website (built using Quarto) as a GitHub page, and utilization of the Discussion page as a community forum to field beginner questions ranging from installation errors, missed library calls, etc. 
+
+In addition to teaching R fundamentals to beginners within a cytometry-focused context, we also reinforce how to use Git for version control, Quarto for reproducible documentation, and other good coding practices. 
+
+The course is scheduled to continue for 30 weeks, gradually covering intermediate and advanced content (https://umgcccfcsr.github.io/CytometryInR/Schedule). All recordings and course materials will remain available after the course concludes, providing a framework that future self-learners can utilize to make their learning journeys smoother than the ones we experienced when first getting started. 
+
+We highlight what has worked, things we wish we had done differently, and unappreciated elements encountered while reducing barriers to entry to a community that would “rather die than ever touch a command line”. We hope the resources made available through the course enable wider utilization of Bioconductor flow cytometry packages, and inspire next generation of package maintainers and developers. 
+
+
+
 ## Cyto 2026 - Flow Awarenesss
 
 ![](images/Everything.png){fig-align="center" width="50%"}
@@ -42,6 +68,26 @@ Studying a cohort of Malawian infants with well-characterized prenatal HIV-expos
 Following acquisition, we carried out a semi-supervised analysis with a custom pipeline that we implemented in R and Rust. Briefly, we performed quality assurance of unmixing controls using the Luciernaga and PeacoQC R packages, replacing problematic single-colors and/or autofluorescence controls as appropriate before unmixing. Samples were biexponentially transformed and automated gating was implemented using the openCyto and flowMagic R packages. Using the interactive Shiny App in our R package Coereba, the calculated split-points between positive and negative events were visualized for each marker and manually adjusted as needed. Identity columns for the marker expression of individual cells were then generated and appended to the .fcs files. 
 
 For select cell populations, all events were concatenated, normalized with CytoNorm v2, clustered with flowSOM, and visualized with PaCMAP. Identity data associated with cells across clusters was retrieved, allowing a comparison between algorithm and manual gating performance. In parallel, cells sorted into clusters on the basis of shared marker identity were analyzed to compare their abundance between exposure groups using existing Bioconductor workflows. This mixed approach allowed us to examine the immune response across timepoints, treatment conditions and exposure groups, enabling an exhaustive, comprehensive and scalable characterization of individual heterogeneity. 
+
+## Cyto 2026 - Cytometry In R
+
+**Cytometry in R: A free weekly course for coding beginners**
+
+David Rach1,2, Natarajan Ayithan2, Xiaoxuan Fan2 1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA
+
+As spectral flow cytometry panels continue to expand in complexity, comprehensive analysis of the resulting high-dimensional datasets becomes increasingly challenging. The identification of previously uncharacterized cell populations within this multidimensional space remains a significant obstacle. To address this, both semi-supervised and unsupervised analytical approaches are required to enable unbiased discovery of cell subsets. Many of these advanced computational methods and algorithmic frameworks are implemented and readily accessible through R-based packages. 
+
+While cytometry enthusiasts often express interests in learning R, significant barriers to learning exist. For those without access to institutional computational cytometry expertise, the question is often where to start. As the few existing online resources are primarily aimed at those with intermediate bioinformatic skills, self-study attempts often end in frustration due to lack of beginner suitable materials and troubleshooting support. 
+
+To address this community need, we developed free weekly 'Cytometry in R' course, designed for researchers with prior flow cytometry experience but no coding background. The course focuses on one topic each week, and is offered both in-person and via YouTube livestream, with recordings made available immediately after (https://www.youtube.com/@CytometryInR). All code and course materials are accessible via a GitHub repository(https://umgcccfcsr.github.io/CytometryInR/). In our commitment to open-science, all teaching materials are licensed under CC-BY-SA, and code is distributed under the copyleft AGPL3-0 license. A moderated discussion forum further supports participants by enabling troubleshooting, Q&A, and continued exploration of course topics. 
+
+Launched in February 2026, the course has generated substantial community interest, with over 1988 individuals completing the interest form. Using various metrics (Google Analytics, YouTube views, GitHub fork updates) around 500 participants have started the course, with between 250 and 350 active weekly participants. Overall reception has been highly positive, and the course continues to evolve in response to participant feedback and ongoing evaluation.
+
+The course is comprehensive, with over 30 weeks of topics planned, intended to provide beginners solid foundations in R before moving on to intermediate and advanced cytometry topics as their coding skills and troubleshooting expertise develops. As all recordings and teaching materials will remain freely available after course completion, we hope to significantly reduce the existing barriers to analyzing cytometry data in R, permitting anyone who starts their own self-study journey in the future has a smoother journey than the one we ourselves experienced when first getting started. 
+
+## ABRF 2026 - Complex Data Analysis
+
+As flow cytometry advances with new technologies and techniques, the data generated becomes increasingly rich and complex. This session features a panel of three speakers who are tackling these modern datasets head-on. The presentations are designed not only to inform attendees about the current state of the field but to inspire them to engage with these powerful tools. By breaking down the "art" of dealing with complex data, this session aims to strip away the intimidation factor and make high-dimensional analysis accessible to the wider flow community.
 
 ## Cyto 2025 - Autofluorescence - P267
 
