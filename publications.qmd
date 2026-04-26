@@ -4,6 +4,11 @@ title: ""
 
 #### Co-Author Publications
 
+Cord Blood Innate-like T cell responses in neonates born to healthy women and women living with HIV. \
+Rach, Hsu, Nampota, Mvula, Mkandawire, Nyirenda, Hritzo, Boldrin, Degiacomi, Mazzabò, Manganelli, Buchwald, Toapanta, Sztein, Laufer, Lyke and Cairo.\
+*Frontiers in Immunology*, 2025.\
+[\[link\]](https://doi:10.3389/fimmu.2025.1628145)
+
 Concomitant assessment of PD-1 and CD56 expression identifies subsets of resting cord blood Vδ2 T cells with disparate cytotoxic potential.\
 Hsu, Zanettini, Coker, Boudova, Rach, Mvula, Divala, Mungwira, Boldrin, Degiacomi, Mazzabo, Manganelli, Laufer, Zhang, Marchionni and Cairo.\
 *Cellular Immunology*, 2023.\

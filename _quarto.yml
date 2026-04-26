@@ -19,7 +19,7 @@ website:
         menu: 
           - href: abstracts.qmd
             text: Abstracts
-      - href: https://davidrach.github.io/Resume_2025.pdf
+      - href: Resume_2026.pdf
         text: Resume
       - icon: github
         href: https://github.com/DavidRach/

@@ -89,6 +89,9 @@ The course is comprehensive, with over 30 weeks of topics planned, intended to p
 
 As flow cytometry advances with new technologies and techniques, the data generated becomes increasingly rich and complex. This session features a panel of three speakers who are tackling these modern datasets head-on. The presentations are designed not only to inform attendees about the current state of the field but to inspire them to engage with these powerful tools. By breaking down the "art" of dealing with complex data, this session aims to strip away the intimidation factor and make high-dimensional analysis accessible to the wider flow community.
 
+[Click Here for Presentation PDF](/ABRF_2026.pdf)
+
+
 ## Cyto 2025 - Autofluorescence - P267
 
 **"Are these autofluorescences in the room with us right now?” Quantifying impact of autofluorescence variation on unmixing**
