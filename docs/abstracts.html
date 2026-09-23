@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>abstracts – David Rach</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -36,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8eaec6b9941db0f18eecf13b95a46332.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6f6aba0dcc0820cd94830540b68c7d73.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -148,17 +154,34 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#bioc-2026---cytometry-in-r" id="toc-bioc-2026---cytometry-in-r" class="nav-link active" data-scroll-target="#bioc-2026---cytometry-in-r">BioC 2026 - Cytometry in R</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2026</a>
+  <ul>
+  <li><a href="#necyto-2026---deciphering-the-black-box" id="toc-necyto-2026---deciphering-the-black-box" class="nav-link" data-scroll-target="#necyto-2026---deciphering-the-black-box">NECyto 2026 - Deciphering the Black Box</a></li>
+  <li><a href="#cytek-ugm-2026---why-not-both" id="toc-cytek-ugm-2026---why-not-both" class="nav-link" data-scroll-target="#cytek-ugm-2026---why-not-both">Cytek UGM 2026 - Why Not Both</a></li>
+  <li><a href="#metroflow-2026---no-cell-left-behind" id="toc-metroflow-2026---no-cell-left-behind" class="nav-link" data-scroll-target="#metroflow-2026---no-cell-left-behind">MetroFlow 2026 - No Cell Left Behind</a></li>
+  <li><a href="#cytek-internal-2026---semisupervised-pipeline" id="toc-cytek-internal-2026---semisupervised-pipeline" class="nav-link" data-scroll-target="#cytek-internal-2026---semisupervised-pipeline">Cytek Internal 2026 - Semisupervised Pipeline</a></li>
+  <li><a href="#ccc-2026---quirks-and-all" id="toc-ccc-2026---quirks-and-all" class="nav-link" data-scroll-target="#ccc-2026---quirks-and-all">CCC 2026 - Quirks and All</a></li>
+  <li><a href="#bioc-2026---cytometry-in-r" id="toc-bioc-2026---cytometry-in-r" class="nav-link" data-scroll-target="#bioc-2026---cytometry-in-r">BioC 2026 - Cytometry in R</a></li>
   <li><a href="#cyto-2026---flow-awarenesss" id="toc-cyto-2026---flow-awarenesss" class="nav-link" data-scroll-target="#cyto-2026---flow-awarenesss">Cyto 2026 - Flow Awarenesss</a></li>
   <li><a href="#cyto-2026---alpha-beta" id="toc-cyto-2026---alpha-beta" class="nav-link" data-scroll-target="#cyto-2026---alpha-beta">Cyto 2026 - Alpha Beta</a></li>
   <li><a href="#cyto-2026---cytometry-in-r" id="toc-cyto-2026---cytometry-in-r" class="nav-link" data-scroll-target="#cyto-2026---cytometry-in-r">Cyto 2026 - Cytometry In R</a></li>
   <li><a href="#abrf-2026---complex-data-analysis" id="toc-abrf-2026---complex-data-analysis" class="nav-link" data-scroll-target="#abrf-2026---complex-data-analysis">ABRF 2026 - Complex Data Analysis</a></li>
+  </ul></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2025</a>
+  <ul>
   <li><a href="#cyto-2025---autofluorescence---p267" id="toc-cyto-2025---autofluorescence---p267" class="nav-link" data-scroll-target="#cyto-2025---autofluorescence---p267">Cyto 2025 - Autofluorescence - P267</a></li>
   <li><a href="#cyto-2025---single-colors---p299" id="toc-cyto-2025---single-colors---p299" class="nav-link" data-scroll-target="#cyto-2025---single-colors---p299">Cyto 2025 - Single Colors - P299</a></li>
   <li><a href="#cyto-2025---mfi-drift-after-qc---p310" id="toc-cyto-2025---mfi-drift-after-qc---p310" class="nav-link" data-scroll-target="#cyto-2025---mfi-drift-after-qc---p310">Cyto 2025 - MFI Drift After QC - P310</a></li>
+  </ul></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2023</a>
+  <ul>
   <li><a href="#th-international-γδ-t-cell-conference-2023---p55" id="toc-th-international-γδ-t-cell-conference-2023---p55" class="nav-link" data-scroll-target="#th-international-γδ-t-cell-conference-2023---p55">10th International γδ T cell Conference 2023 - P55</a></li>
   <li><a href="#cyto-2023---p195" id="toc-cyto-2023---p195" class="nav-link" data-scroll-target="#cyto-2023---p195">Cyto 2023 - P195</a></li>
+  </ul></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2021</a>
+  <ul>
   <li><a href="#astmh-2021---p369" id="toc-astmh-2021---p369" class="nav-link" data-scroll-target="#astmh-2021---p369">ASTMH 2021 - P369</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -168,8 +191,49 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 
 
 
-<section id="bioc-2026---cytometry-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="bioc-2026---cytometry-in-r">BioC 2026 - Cytometry in R</h2>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">2026</h2>
+<section id="necyto-2026---deciphering-the-black-box" class="level3">
+<h3 class="anchored" data-anchor-id="necyto-2026---deciphering-the-black-box">NECyto 2026 - Deciphering the Black Box</h3>
+<p><strong>Deciphering the black box: leveraging shared-resource laboratory resources to tackle spectral flow cytometry’s quirks</strong></p>
+<p>David Rach1</p>
+<p>Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</p>
+</section>
+<section id="cytek-ugm-2026---why-not-both" class="level3">
+<h3 class="anchored" data-anchor-id="cytek-ugm-2026---why-not-both">Cytek UGM 2026 - Why Not Both</h3>
+<p><strong>“Why not both? A semi-supervised pipeline for a comprehensive and scalable analysis of immune heterogeneity in human samples”.</strong></p>
+<p>David Rach1</p>
+<p>Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</p>
+<p>As spectral panels grow increasingly complex, unlocking their full potential for biological discovery depends on our ability to handle uncertainty, and systematically profile the higher-dimensional space. Leveraging open-source tools, we share our approach at tackling these challenges for rare clinical cohorts acquired on our core’s Cytek Auroras.&nbsp;</p>
+</section>
+<section id="metroflow-2026---no-cell-left-behind" class="level3">
+<h3 class="anchored" data-anchor-id="metroflow-2026---no-cell-left-behind">MetroFlow 2026 - No Cell Left Behind</h3>
+<p><strong>Towards ‘No Cell Left Behind’: open-source toolsets to leverage Spectral Flow Cytometry’s full biological discovery potential</strong></p>
+<p>David Rach1</p>
+<p>Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</p>
+<p>Spectral Flow Cytometry (SFC) with its increased analytical breadth and width, has been a game changer for researchers working with limited biospecimen, enabling greater profiling of immune systems, and responses to infection and immunization. While community adoption of the technology has been rapid, the capacity to analyze the resulting high-dimensional datasets has not similarly scaled.</p>
+<p>While analysis of a single cell population remains essentially unchanged, to fully explore the acquired datasets requires the use of unsupervised and semi-supervised algorithmic approaches. Existing methods, many originally intended for use with mass cytometry and single-cell RNA seq data, often struggle with SFC datasets due to increased number of events, and batch effects arising from the uncertainty inherent in the unmixing process. Consequently, the biological discovery potential of the technology remains under-leveraged for most datasets, with existing analysis just skimming the surface.</p>
+<p>To address these technology specific challenges, we have been developing open-source toolsets in R and Rust. These have allowed us to screen unmixing controls for tandem degradation and additional autofluorescence, as well as detect failures in instrument quality control. We highlight some of our on-going work in the context of a semi-supervised analysis of a rare clinical cohort of HIV-exposed uninfected (HEU) neonates, additionally leveraging existing tool-sets from the R/Bioconductor ecosystem to provide a more replicable framework in the analysis of multiple SFC panels.</p>
+<p>All the while, we contemplate the broader question: “What good is any tool, if the vast majority of the community is unable to use it?”</p>
+</section>
+<section id="cytek-internal-2026---semisupervised-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="cytek-internal-2026---semisupervised-pipeline">Cytek Internal 2026 - Semisupervised Pipeline</h3>
+<p><strong>A semi-supervised pipeline for a comprehensive and scalable analysis of immune heterogeneity in human samples</strong></p>
+<p>David Rach1</p>
+<p>Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</p>
+<p>As spectral panels grow increasingly complex, unlocking their full potential for biological discovery depends on our ability to handle uncertainty, and systematically profile the higher-dimensional space. Leveraging open-source tools, we share our approach at tackling these challenges for rare clinical cohorts acquired on our core’s Cytek Auroras.&nbsp;</p>
+</section>
+<section id="ccc-2026---quirks-and-all" class="level3">
+<h3 class="anchored" data-anchor-id="ccc-2026---quirks-and-all">CCC 2026 - Quirks and All</h3>
+<p><strong>Quirks and All: unlocking comprehensive biological discovery out of your spectral flow cytometry datasets</strong></p>
+<p>David Rach1</p>
+<p>Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</p>
+<p>Spectral flow cytometry (SFC), with its capacity to resolve remarkably similar fluorophores while rapidly acquiring millions of events, has permitted the profiling of immune systems at breadth and depths unimaginable just a few years ago. For researchers working with limited biospecimen, this has been a game changer, allowing for wider understanding of human immune heterogeneity, and the response to infection and immunization.</p>
+<p>While the analytical process remains essentially unchanged if only one cell subset is of interest, the increased dimensionality of the datasets compared to conventional flow cytometry necessitate the use of unsupervised or semi-supervised analytical approaches if researchers wish to characterize the majority of the cell populations within their acquired samples. However, many of these existing tools, originally developed for use with mass cytometry and single-cell RNA-seq, struggle due to both the increased number of events, as well as the inherent uncertainty in the unmixing process, with the resulting variation in MFI frequently introducing batch effects.</p>
+<p>To address these unique quirks, over the last two years, we have been working on developing open-source tools in both R and Rust, facilitating troubleshooting of unmixing errors due to tandem degradation and additional autofluorescence; pre-emptive identification of issues arising from failures of instrument quality control; and enabling more thorough and reproducible analysis to profile all cell populations present within our datasets. We highlight these approaches in context of an on-going analysis of a rare clinical cohort of HIV-exposed uninfected (HEU) neonates, using 32-fluorophore SFC panel for innate-like and conventional T cells, acquired on a 5-laser Cytek Aurora. All the while, weighing the question: “What good is any tool if the community as a whole is unable to use it?”</p>
+</section>
+<section id="bioc-2026---cytometry-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="bioc-2026---cytometry-in-r">BioC 2026 - Cytometry in R</h3>
 <p><strong>Cytometry in R: A free weekly course for flow cytometrist with no-to-little coding experience</strong></p>
 <p>David Rach1,2, Natarajan Ayithan2, Xiaoxuan Fan2</p>
 <p>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</p>
@@ -182,8 +246,8 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 <p>The course is scheduled to continue for 30 weeks, gradually covering intermediate and advanced content (https://umgcccfcsr.github.io/CytometryInR/Schedule). All recordings and course materials will remain available after the course concludes, providing a framework that future self-learners can utilize to make their learning journeys smoother than the ones we experienced when first getting started.</p>
 <p>We highlight what has worked, things we wish we had done differently, and unappreciated elements encountered while reducing barriers to entry to a community that would “rather die than ever touch a command line”. We hope the resources made available through the course enable wider utilization of Bioconductor flow cytometry packages, and inspire next generation of package maintainers and developers.</p>
 </section>
-<section id="cyto-2026---flow-awarenesss" class="level2">
-<h2 class="anchored" data-anchor-id="cyto-2026---flow-awarenesss">Cyto 2026 - Flow Awarenesss</h2>
+<section id="cyto-2026---flow-awarenesss" class="level3">
+<h3 class="anchored" data-anchor-id="cyto-2026---flow-awarenesss">Cyto 2026 - Flow Awarenesss</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Everything.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
@@ -198,8 +262,8 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 <p>This framework has expanded our situational awareness beyond what any individual vendor system can provide. It has allowed staff to intervene proactively—reaching out to users before substantial time, samples, and reagents are wasted—at a scale that would have seemed implausible only a few years ago. By standardizing oversight, reducing operator-dependent variability, and documenting performance trends, the system strengthens rigor and reproducibility across SRL workflows.</p>
 <p>We emphasize the piecemeal nature of our implementation, highlight what worked well and offer lessons learned from our experience in pursuit to orchestrate situational awareness in an SRL environment.</p>
 </section>
-<section id="cyto-2026---alpha-beta" class="level2">
-<h2 class="anchored" data-anchor-id="cyto-2026---alpha-beta">Cyto 2026 - Alpha Beta</h2>
+<section id="cyto-2026---alpha-beta" class="level3">
+<h3 class="anchored" data-anchor-id="cyto-2026---alpha-beta">Cyto 2026 - Alpha Beta</h3>
 <p><strong>A semi-supervised pipeline for a comprehensive and scalable analysis of immune heterogeneity in human samples</strong></p>
 <p>David Rach1,2, Nginache Nampota-Nkomba3,4, Godfrey Mvula3, Felix A. Mkandawire3, Osward M. Nyirenda3, Winter A. Okoth5,6, Daniela Franco4, Andrea G. Buchwald5, Franklin R. Toapanta5, Marcelo B. Sztein5, Miriam K. Laufer5, Kirsten E. Lyke5, Cristiana Cairo7.</p>
 <p>1Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, MD, United States 2Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, MD, United States 3Blantyre Malaria Project, Kamuzu University of Health Sciences, Blantyre, Malawi 4Graduate Program in Life Sciences, University of Maryland School of Medicine, Baltimore, MD, United States 5Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, MD, United States 6Geographic Medicine Division, Department of Medicine, University of Maryland School of Medicine, Baltimore, MD, United States 7Department of Microbiology and Immunology, University of Maryland School of Medicine, Baltimore, MD, United States</p>
@@ -210,8 +274,8 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 <p>Following acquisition, we carried out a semi-supervised analysis with a custom pipeline that we implemented in R and Rust. Briefly, we performed quality assurance of unmixing controls using the Luciernaga and PeacoQC R packages, replacing problematic single-colors and/or autofluorescence controls as appropriate before unmixing. Samples were biexponentially transformed and automated gating was implemented using the openCyto and flowMagic R packages. Using the interactive Shiny App in our R package Coereba, the calculated split-points between positive and negative events were visualized for each marker and manually adjusted as needed. Identity columns for the marker expression of individual cells were then generated and appended to the .fcs files.</p>
 <p>For select cell populations, all events were concatenated, normalized with CytoNorm v2, clustered with flowSOM, and visualized with PaCMAP. Identity data associated with cells across clusters was retrieved, allowing a comparison between algorithm and manual gating performance. In parallel, cells sorted into clusters on the basis of shared marker identity were analyzed to compare their abundance between exposure groups using existing Bioconductor workflows. This mixed approach allowed us to examine the immune response across timepoints, treatment conditions and exposure groups, enabling an exhaustive, comprehensive and scalable characterization of individual heterogeneity.</p>
 </section>
-<section id="cyto-2026---cytometry-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="cyto-2026---cytometry-in-r">Cyto 2026 - Cytometry In R</h2>
+<section id="cyto-2026---cytometry-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="cyto-2026---cytometry-in-r">Cyto 2026 - Cytometry In R</h3>
 <p><strong>Cytometry in R: A free weekly course for coding beginners</strong></p>
 <p>David Rach1,2, Natarajan Ayithan2, Xiaoxuan Fan2 1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</p>
 <p>As spectral flow cytometry panels continue to expand in complexity, comprehensive analysis of the resulting high-dimensional datasets becomes increasingly challenging. The identification of previously uncharacterized cell populations within this multidimensional space remains a significant obstacle. To address this, both semi-supervised and unsupervised analytical approaches are required to enable unbiased discovery of cell subsets. Many of these advanced computational methods and algorithmic frameworks are implemented and readily accessible through R-based packages.</p>
@@ -220,13 +284,16 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 <p>Launched in February 2026, the course has generated substantial community interest, with over 1988 individuals completing the interest form. Using various metrics (Google Analytics, YouTube views, GitHub fork updates) around 500 participants have started the course, with between 250 and 350 active weekly participants. Overall reception has been highly positive, and the course continues to evolve in response to participant feedback and ongoing evaluation.</p>
 <p>The course is comprehensive, with over 30 weeks of topics planned, intended to provide beginners solid foundations in R before moving on to intermediate and advanced cytometry topics as their coding skills and troubleshooting expertise develops. As all recordings and teaching materials will remain freely available after course completion, we hope to significantly reduce the existing barriers to analyzing cytometry data in R, permitting anyone who starts their own self-study journey in the future has a smoother journey than the one we ourselves experienced when first getting started.</p>
 </section>
-<section id="abrf-2026---complex-data-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="abrf-2026---complex-data-analysis">ABRF 2026 - Complex Data Analysis</h2>
+<section id="abrf-2026---complex-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="abrf-2026---complex-data-analysis">ABRF 2026 - Complex Data Analysis</h3>
 <p>As flow cytometry advances with new technologies and techniques, the data generated becomes increasingly rich and complex. This session features a panel of three speakers who are tackling these modern datasets head-on. The presentations are designed not only to inform attendees about the current state of the field but to inspire them to engage with these powerful tools. By breaking down the “art” of dealing with complex data, this session aims to strip away the intimidation factor and make high-dimensional analysis accessible to the wider flow community.</p>
 <p><a href="./ABRF_2026.pdf">Click Here for Presentation PDF</a></p>
 </section>
-<section id="cyto-2025---autofluorescence---p267" class="level2">
-<h2 class="anchored" data-anchor-id="cyto-2025---autofluorescence---p267">Cyto 2025 - Autofluorescence - P267</h2>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2025</h2>
+<section id="cyto-2025---autofluorescence---p267" class="level3">
+<h3 class="anchored" data-anchor-id="cyto-2025---autofluorescence---p267">Cyto 2025 - Autofluorescence - P267</h3>
 <p><strong>“Are these autofluorescences in the room with us right now?” Quantifying impact of autofluorescence variation on unmixing</strong></p>
 <p>David Rach1, Kirsten E. Lyke2, Cristiana Cairo3</p>
 <p><em>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, USA 3 Department of Microbiology and Immunology, University of Maryland School of Medicine, Baltimore, MD, United States.</em></p>
@@ -236,8 +303,8 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 <p>We found that the majority of the autofluorescence signatures within human mononuclear cells acquired on a 5-laser Cytek Aurora® share a common primary peak (typically on detector V7). Variation in the relative height of the second and third peak (typically UV7 and B3, respectively) was noted between CBMC and PBMC, as well as treatment conditions. A degree of variation in the height of the second and third peak was tolerated without impacting the unmixing. This pattern held true for rare “variant” signatures that did not have a primary peak on V7, as long as they shared the same primary peak. These variant signatures were different enough to cause unmixing errors when present in &gt;1% of PBMC, explaining unmixing issues we previously encountered.</p>
 <p>Our work highlights variation in autofluorescence signatures within human CBMC and PBMC cells activated with different stimuli, and established thresholds at which we observe impacts on the effect that unmixing controls had on resolving complex SFC panels. We provide a method by which shared variant autofluorescence signatures can be isolated and highlight the importance of collecting sufficient unstained cells to profile rarer variation in autofluorescence that might otherwise be missed.</p>
 </section>
-<section id="cyto-2025---single-colors---p299" class="level2">
-<h2 class="anchored" data-anchor-id="cyto-2025---single-colors---p299">Cyto 2025 - Single Colors - P299</h2>
+<section id="cyto-2025---single-colors---p299" class="level3">
+<h3 class="anchored" data-anchor-id="cyto-2025---single-colors---p299">Cyto 2025 - Single Colors - P299</h3>
 <p><strong>“Well, how bright does it need to be?”: Investigating the interplay of fluorescent signature and brightness in single-color unmixing controls.</strong></p>
 <p>David Rach1, Kirsten E. Lyke2, Cristiana Cairo3</p>
 <p><em>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, USA 3 Department of Microbiology and Immunology, University of Maryland School of Medicine, Baltimore, MD, United States.</em></p>
@@ -246,8 +313,8 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 <p>We therefore set out to quantitatively assess how variation in the fluorescence signature and/or brightness of controls impacts unmixing of full-stained samples. To this end, we have been working on an R package called Luciernaga, which includes a collection of tools for quality control and fluorescence signature profiling of unmixing controls. Leveraging its ability to characterize normalized fluorescence signatures for individual cells, we grouped and quantified, in every unmixing control, cells with similar signatures across 20 experiments. In the process, we identified “variant” signatures indicative of tandem degradation and non-specific binding of decoupled fluorophores associated with specific unmixing issues. We then grouped cells with shared variant signatures in each unmixing control and used them to generate a .fcs file containing a single variant signature. Keeping all unmixing controls but one constant, we swapped in a variant signature at a time, performing iterative unmixing in R with ordinary least squares. This process allowed us to characterize how variations in fluorescence signature, brightness, or both factors impact the unmixing of the full-stained sample. Our work builds on fluorescence signature, brightness, or both factors impact the unmixing of the full-stained sample.</p>
 <p>Our work builds on the existing guidelines for good unmixing controls, while providing mechanistic explanations for each. We also highlight advantages of profiling control signatures before performing unmixing as a means to mitigate unmixing issues.</p>
 </section>
-<section id="cyto-2025---mfi-drift-after-qc---p310" class="level1">
-<h1>Cyto 2025 - MFI Drift After QC - P310</h1>
+<section id="cyto-2025---mfi-drift-after-qc---p310" class="level3">
+<h3 class="anchored" data-anchor-id="cyto-2025---mfi-drift-after-qc---p310">Cyto 2025 - MFI Drift After QC - P310</h3>
 <p><strong>““Wait, when was QC last run???” Evaluating MFI drift after morning QC and its impact on unmixing.”</strong></p>
 <p>David Rach1, Mikayla Trainor2, Natarajan Ayithan2, Xiaoxuan Fan2</p>
 <p><em>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA 2 Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive Cancer Center, Baltimore, USA</em></p>
@@ -255,15 +322,18 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 <p>To evaluate this, we acquired 5000 SpectroFlo QC beads as fcs files, i) before morning QC, ii) after morning QC, iii) before evening QC, and iv) after evening QC. These samples were acquired on a 3, 4, and 5-laser Aurora over a several month period, for both the 2005 and 2006 SpectroFlo QC bead lots. For analysis, acquired FCS files were imported to R, singlet beads gated, and gate placement validated using the flowWorkspace, openCyto and Luciernaga R packages. From the gated events, median MFI and RCV values were calculated for each detector, and voltage/gain metadata for individual .fcs files was retrieved using the Luciernaga package. We then visualized this data in R using various tidyverse packages. We observed that for most detectors, there were limited changes in MFI values between the After Morning QC and Before Evening QC timepoints. However, we noted consistent and significant shifts in MFI for a few detectors by the time of evening QC, notably the YG2, YG3, and R1 detectors. To evaluate whether these observed drifts in MFI would have altered normalized fluorescent signature, we simulated the equivalent day-specific adjustment to reference signatures of over 100 fluorophores, plotting the adjusted signatures against the original reference signature. We observed that the drift in the handful of detectors did not significantly alter the normalized fluorescent spectra of the fluorophore, with exception of a few fluorophores where the detector in question landed on the secondary peak of the spectra. When evaluating the signatures by their cosine value, the differences were within range we would anticipate limited impact on unmixing.</p>
 <p>Finally using the same approach, we adjusted raw reference controls and full-stained samples acquired following morning QC and imported into SpectroFlo for unmixing. We did not observe any major changes to the unmixing in medium-sized panels. In summary, for the instruments at our core, the majority of detector MFI values remain stable following morning QC. Additionally, for the few detectors that did consistently shift, based on both simulated and experimental data, the observed changes would have minimal impact for most fluorophores signatures and subsequent unmixing. Whether these observed small changes are enough to affect unmixing in large panels (40+) colors remains an area that merits further investigation.</p>
 </section>
-<section id="th-international-γδ-t-cell-conference-2023---p55" class="level1">
-<h1>10th International γδ T cell Conference 2023 - P55</h1>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2023</h2>
+<section id="th-international-γδ-t-cell-conference-2023---p55" class="level3">
+<h3 class="anchored" data-anchor-id="th-international-γδ-t-cell-conference-2023---p55">10th International γδ T cell Conference 2023 - P55</h3>
 <p><strong>Vγ9Vδ2 T cell responses in HIV‑exposed Uninfected (HEU) Infants</strong></p>
 <p>David Rach1, Hao-Ting Hsu2, Nginache Nampota3, Godfrey Mvula3, Felix A. Mkandawire3, Osward M. Nyirenda3, Bernadette Hritzo1, Ingrid Peterson4, Franklin R Toapanta4, Marcelo B Sztein4, Miriam Laufer4, Kirsten E. Lyke4, Cristiana Cairo2</p>
 <p><em>1Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA. 2Institute of Human Virology, University of Maryland School of Medicine, Baltimore, USA. 3Blantyre Malaria Project, Kamuzu University of Health Sciences, Blantyre, Malawi. 4Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, USA</em></p>
 <p>Maternal antiretroviral therapy (ART) effectively prevents perinatal infection of infants born to HIV+ women. However, during the first six months of life HIV-exposed, uninfected (HEU) infants exhibit increased infectious morbidity compared to HIV unexposed (HU) infants. Dysfunction of the infant immune system, driven directly or indirectly by prenatal HIV/ART exposure, is thought to contribute to this outcome. Vγ9Vδ2 T (Vδ2) cells, with their ability to rapidly release Th1 cytokines and respond to IL-23, are likely to play a key role against pathogens in early life. Due to elevated inflammation at the fetal-maternal interface, Vδ2 cells, which are sensitive to inflammatory cytokines, may be dysfunctional in HEU infants. This issue, however, has not been investigated. We are analyzing a well-characterized Malawian infant cohort, comparing infants born to women with: A) ART-treated HIV infection, with undetectable viral load since before conception (HEU-lo); B) HIV infection diagnosed and treated at mid-gestation or later, with high viral load at enrollment (HEU-hi); C) no HIV infection (HU). We are employing conventional and spectral flow cytometry for a detailed assessment of cord blood Vδ2 cells.Ex vivo, we observed an increased frequency of Vδ2 cells in cord blood of HEU-hi infants compared to HU infants. Following short polyclonal stimulation, the frequency of Vδ2 cells producing IFNγ, or both INFγ and TNFα was only significantly elevated in HEU-lo infants. TCR-mediated restimulation of Vδ2 cells resulted in lower frequency of Th1 cytokine producing cells and CD107a+ cells in HEU-hi infants after expansion with BCG, but not after expansion with Zoledronate. Results for our Malawian neonates confirm elevated Vδ2 cell frequencies in the cord blood of HEU infants, which we previously observed in a Nigerian cohort.To optimize the use of precious clinical specimens and extend the analyses to the other human innate-like subsets, we designed a 29-color spectral flow cytometry panel that enables a comprehensive profiling of Vδ2 T, MAIT and NKT cells. The direct comparison of conventional and spectral data for Vδ2 cells will help validate the performance of large spectral flow cytometry panels to highlight the impact of HIV prenatal exposure on these rare subsets.</p>
 </section>
-<section id="cyto-2023---p195" class="level1">
-<h1>Cyto 2023 - P195</h1>
+<section id="cyto-2023---p195" class="level3">
+<h3 class="anchored" data-anchor-id="cyto-2023---p195">Cyto 2023 - P195</h3>
 <p><strong>Spectral flow cytometry analysis of Innate-like T cell responses in Malawian HIV-exposed Uninfected (HEU) Infants.</strong></p>
 <p>David Rach1, Hao-Ting Hsu2, Nginache Nampota3, Godfrey Mvula3, Felix A. Mkandawire3, Osward M. Nyirenda3, Ingrid Peterson4, Franklin R. Toapanta4, Marcelo B. Sztein4, Miriam Laufer4, Kirsten E. Lyke4, Cristiana Cairo2</p>
 <p><em>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, USA. 2 Institute of Human Virology, University of Maryland School of Medicine, Baltimore, USA. 3 Blantyre Malaria Project, Kamuzu University of Health Sciences, Blantyre, Malawi. 4 Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, USA</em></p>
@@ -271,14 +341,18 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
 <p>Innate-like T cells (ILTs), including Natural Killer T cells (NKTs), Mucosal-associated Invariant T cells (MAITs), and Vg9Vd2 (Vd2) T cells may be perturbed due to elevated inflammation at the fetal maternal interface during maternal HIV infection. ILTs, which are thought to play important roles against pathogens in early life, are activated by microbial metabolites as well as by innate cytokines, mounting Th1-like and cytotoxic responses in the early phase of infection. The effect exerted by in utero HIV exposure on infant ILTs is unknown, as the markers required for their identification are not routinely included in conventional flow cytometry panels, and their low abundance in infant blood makes mass cytometry impractical for their assessment.</p>
 <p>To overcome these limitations, we designed a 29-color spectral flow cytometry panel that allows for concomitant assessment of ILT subsets, employing human CD1d and MR1 tetramers to identify NKTs and MAITs, respectively. A preliminary analysis of cord blood specimens from neonates in our Malawian cohort by conventional flow cytometry has shown an increased Vd2 cell frequency, differentiation, and activation in HEU-hi infants, while the frequency of Vd2 cells producing IFNg or both INFg and TNFa upon polyclonal stimulation was significantly elevated in HEU-lo infants. In a distinct African cohort, HEU infants also displayed elevated MAIT frequency at birth. We thus incorporated markers that characterize ILT subset activation, differentiation, and function. The spectral flow cytometry results that we will present will be corroborated by direct comparison to conventional flow cytometry data. The implementation of this optimized spectral panel will allow a comprehensive profiling of these rare subsets in infants and help highlight effects arising in context of HIV prenatal exposure.</p>
 </section>
-<section id="astmh-2021---p369" class="level1">
-<h1>ASTMH 2021 - P369</h1>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2021</h2>
+<section id="astmh-2021---p369" class="level3">
+<h3 class="anchored" data-anchor-id="astmh-2021---p369">ASTMH 2021 - P369</h3>
 <p><strong>INNATE-LIKE T CELL RESPONSES IN HIV EXPOSED UNINFECTED MALAWIAN INFANTS</strong></p>
 <p>David Thomas Rach1, Hao-Ting Hsu2, Nginache Nampota3, Godfrey Mvula3, Franklin R. Toapanta4, Marcelo B. Sztein4, Miriam Laufer4, Kirsten E. Lyke4, Cristiana Cairo2</p>
 <p><em>1 Molecular Microbiology and Immunology Graduate Program, University of Maryland School of Medicine, Baltimore, MD, United States, 2 Institute for Human Virology, University of Maryland School of Medicine, Baltimore, MD, United States, 3 Blantyre Malaria Project, University of Malawi College of Medicine, Blantyre, Malawi, 4 Center for Vaccine Development and Global Health, University of Maryland School of Medicine, Baltimore, MD, United States</em></p>
 <p>Each year, an estimated 1.5 million HIV+ women give birth. Increased access to antiretroviral therapy (ART) ensures most infants born to HIV+ women do not contract the infection vertically, and thus remain HIV exposed but uninfected (HEU). During their first year of life, HEU infants exhibit increased rates of lower respiratory tract infections and diarrheal diseases, compared to HIV unexposed (HU) infants. It is hypothesized that exposure to HIV (and ART) before birth perturbs the developing fetal immune system by increasing inflammation at the fetal-maternal interface and induces long term effects that contribute to the increased infectious morbidity in HEU infants. The specific immunologic mechanisms behind this clinical outcome remain unclear. Among the subsets that may be perturbed by increased inflammation, innate-like T cells (γδ, MAIT, NKT cells) may play an important role against pathogens in early life. We hypothesize that prenatal HIV exposure results in early life activation of innate-like T cell subsets. Utilizing a well-characterized cohort of Malawianinfants, we compare three groups of infants born to women with: 1) HIV infection but undetectable viremia through pregnancy (HEU-lo); 2) HIV infection diagnosed at mid-gestation or later, with high viral loads (HEUhi); 3) no HIV infection (HU). A preliminary analysis of cord blood Vδ2 T cells suggests that production of Th1 cytokines in response to polyclonal stimulation is increased in HEU neonates. The frequency of TNFα+ Vδ2 T cells is highest in HEU-hi neonates, while the frequency of polyfunctional (IFNγ+TNFα+) Vδ2 cells is highest in HEU-lo neonates. These findings, if confirmed, would suggest that exposure to replicating maternal HIV results in more robust TNFα production, while prolonged exposure to ART in HEU-lo neonates may contribute to the observed differences in Vδ2 cells polyfunctionality. This study provides an opportunity to assess immune perturbation of innate-like subsets in HEU infants, contributing to our understanding of immune responses and mechanisms of increased infectious morbidity in this vulnerable population.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -333,13 +407,14 @@ gtag('config', 'G-B7X33YDF5P', { 'anonymize_ip': true});
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
