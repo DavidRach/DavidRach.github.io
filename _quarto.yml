@@ -13,14 +13,25 @@ website:
     right:
       - href: about.qmd
         text: About
-      - href: posts.qmd
-        text: Blog
       - text: Research
         menu: 
-          - href: abstracts.qmd
-            text: Abstracts
+          - href: courses.qmd
+            text: Courses
+          - href: publications.qmd
+            text: Papers
+          - href: talks.qmd
+            text: Talks
+          - href: research.qmd
+            text: Research
+          - href: software.qmd
+            text: Software
       - href: Resume_2026.pdf
         text: Resume
+      - href: posts.qmd
+        text: Blog
+      - icon: youtube
+        href: https://www.youtube.com/@StepUpCytometry
+        aria-label: YouTube
       - icon: github
         href: https://github.com/DavidRach/
   page-footer: 
