@@ -196,7 +196,7 @@ The course is comprehensive, with over 30 weeks of topics planned, intended to p
 As flow cytometry advances with new technologies and techniques, the data generated becomes increasingly rich and complex. This session features a panel of three speakers who are tackling these modern datasets head-on. The presentations are designed not only to inform attendees about the current state of the field but to inspire them to engage with these powerful tools. By breaking down the "art" of dealing with complex data, this session aims to strip away the intimidation factor and make high-dimensional analysis accessible to the wider flow community.
 
 [Code](https://github.com/DavidRach/ComplexDataAnalysis_ABRF2026) 
-[Slides](https://davidrach.github.io/ABRF_2026.pdf) 
+[Slides](https://davidrach.github.io/ComplexDataAnalysis_ABRF2026/ABRF_2026.pdf) 
 [Recording](https://youtu.be/l9LQZ52gv3k?t=3699)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l9LQZ52gv3k?si=Y4deP39xas7tucSO&amp;start=3707" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -240,8 +240,8 @@ We found that the majority of the autofluorescence signatures within human monon
 
 Our work highlights variation in autofluorescence signatures within human CBMC and PBMC cells activated with different stimuli, and established thresholds at which we observe impacts on the effect that unmixing controls had on resolving complex SFC panels. We provide a method by which shared variant autofluorescence signatures can be isolated and highlight the importance of collecting sufficient unstained cells to profile rarer variation in autofluorescence that might otherwise be missed.
 
-[Code](https://github.com/DavidRach/SingleColors_Cyto2025) 
-[Poster](https://davidrach.github.io/SingleColors_Cyto2025/SingleColorsPoster.pdf)    
+[Code](https://github.com/DavidRach/Autofluorescence_Cyto2025)
+[Poster](https://davidrach.github.io/Autofluorescence_Cyto2025/AutofluorescencePoster.pdf)   
 
 ### Cyto 2025 - Single Colors - P299
 
@@ -259,8 +259,8 @@ We therefore set out to quantitatively assess how variation in the fluorescence 
 
 Our work builds on the existing guidelines for good unmixing controls, while providing mechanistic explanations for each. We also highlight advantages of profiling control signatures before performing unmixing as a means to mitigate unmixing issues.
 
-[Code](https://github.com/DavidRach/Autofluorescence_Cyto2025)
-[Poster](https://davidrach.github.io/Autofluorescence_Cyto2025/AutofluorescencePoster.pdf)   
+[Code](https://github.com/DavidRach/SingleColors_Cyto2025) 
+[Poster](https://davidrach.github.io/SingleColors_Cyto2025/SingleColorsPoster.pdf)    
 
 ### Cyto 2025 - MFI Drift After QC - P310
 

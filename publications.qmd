@@ -2,24 +2,26 @@
 title: ""
 ---
 
-#### Co-Author Publications
+#### First Author Publications
 
 Cord Blood Innate-like T cell responses in neonates born to healthy women and women living with HIV. \
 Rach, Hsu, Nampota, Mvula, Mkandawire, Nyirenda, Hritzo, Boldrin, Degiacomi, Mazzabò, Manganelli, Buchwald, Toapanta, Sztein, Laufer, Lyke and Cairo.\
 *Frontiers in Immunology*, 2025.\
-[\[link\]](https://doi:10.3389/fimmu.2025.1628145)
+[\[link\]](https://doi:10.3389/fimmu.2025.1628145) [\[PDF\]](/papers/Frontiers2025_Main.pdf) [\[Supplementals\]](/papers/Frontiers2025_Supplemental.pdf) 
+
+#### Co-Author Publications
 
 Concomitant assessment of PD-1 and CD56 expression identifies subsets of resting cord blood Vδ2 T cells with disparate cytotoxic potential.\
 Hsu, Zanettini, Coker, Boudova, Rach, Mvula, Divala, Mungwira, Boldrin, Degiacomi, Mazzabo, Manganelli, Laufer, Zhang, Marchionni and Cairo.\
 *Cellular Immunology*, 2023.\
-[\[link\]](https://doi.org/10.1016/j.cellimm.2023.104797)
+[\[link\]](https://doi.org/10.1016/j.cellimm.2023.104797) [\[PDF\]](/papers/Cellular2024_Main.pdf) [\[Supplementals\]](/papers/Cellular2024_Supplemental.pdf)
 
 Age-related changes in PD-1 expression coincide with increased cytotoxic potential in Vδ2 T cells during infancy.\
 Hsu, Boudova, Mvula, Divala, Rach, Mungwira, Boldrin, Degiacomi, Manganelli, Laufer and Cairo.\
 *Cellular Immunology*, 2021.\
-[\[link\]](https://doi.org/10.1016/j.cellimm.2020.104244)
+[\[link\]](https://doi.org/10.1016/j.cellimm.2020.104244) [\[PDF\]](/papers/Cellular2021_Main.pdf) [\[Supplementals\]](/papers/Cellular2021_Supplemental.pdf)
 
 NK Cells Negatively Regulate CD8 T Cells to Promote Immune Exhaustion and Chronic Toxoplasma gondii Infection\
 Ivanova, Krempels, Denton, Fettel, Saltz, Rach, Fatima, Mundhenke, Materi, Dunay and Gigley.\
 *Frontiers in Cellular and Infection Microbiology*, 2020.\
-[\[link\]](https://doi.org/10.3389/fcimb.2020.00313)
+[\[link\]](https://doi.org/10.3389/fcimb.2020.00313) [\[PDF\]](/papers/Frontiers2020_Main.pdf)
