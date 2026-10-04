@@ -47,11 +47,12 @@ My family, originally from southwest Michigan, USA moved to Chiapas, Mexico for 
 <br></br>
 
 :::::::: columns
+
 ::: {.column width="4%"}
 :::
 
 ::: {.column width="55%"}
-I moved back to the US for university when I was 17. I graduated from [Northwest College](https://nwc.edu/), receiving my A.S in Natural Resources Biology. It was during my time in Powell, Wyoming that thanks to undergraduate research opportunities through [INBRE](http://www.uwyo.edu/wyominginbre/) that I first became interested in Microbiology. After Northwest, I transferred to the [University of Wyoming](http://www.uwyo.edu/) where I received a B.S. in Molecular Biology and Microbiology, and got my first taste of immunology researching Natural Killer cell responses in mice to secondary *Toxoplasma gondii* infection in the lab of Dr.[Jason Gigley](http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html).
+I moved back to the US for university when I was 17. I graduated from [Northwest College](https://nwc.edu/), receiving my A.S in Natural Resources Biology. It was during my time in Powell, Wyoming that thanks to undergraduate research opportunities through [INBRE](http://www.uwyo.edu/wyominginbre/) working with Dr. [Eric C. Atkinson](https://nwc.edu/directory/faculty-staff/atkinson-eric.html) that I first became interested in Microbiology. After Northwest, I transferred to the [University of Wyoming](http://www.uwyo.edu/) where I received a B.S. in Molecular Biology and Microbiology, and got my first taste of immunology researching [Natural Killer](/publications.qmd) cell responses in mice to secondary *Toxoplasma gondii* infection in the lab of Dr. [Jason Gigley](http://www.uwyo.edu/molecbio/faculty-and-staff/jason-gigley/index.html).
 :::
 
 ::: {.column width="2%"}
@@ -63,7 +64,10 @@ I moved back to the US for university when I was 17. I graduated from [Northwest
 
 ::: {.column width="4%"}
 :::
+
 ::::::::
+
+<br></br>
 
 :::::::: columns
 ::: {.column width="4%"}
@@ -82,14 +86,18 @@ I moved back to the US for university when I was 17. I graduated from [Northwest
 
 ::: {.column width="4%"}
 :::
+
 ::::::::
 
+<br></br>
+
 :::::::: columns
+
 ::: {.column width="4%"}
 :::
 
 ::: {.column width="55%"}
-<br></br> I moved to Baltimore for my PhD in 2018. After a year and a half of classes and passing my qualifying exam, I was excited to finally start full time in the lab. Since that was March 2020, that was not going to happen. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the [University of Maryland Center for Vaccine Development](https://www.medschool.umaryland.edu/cvd/trials/) and somehow ended up having family and friends telling me they saw my arm in the newspaper for the next nine [months](https://wjla.com/news/local/university-of-maryland-covid-trial-vaccine-recipient-success-indicators).
+<br></br> I moved to Baltimore for my PhD in 2018, before starting my thesis research under the supervision of Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/). After passing my qualifying exam, COVID-19 happened, and everything paused. While stuck at home, I volunteered for the Pfizer Phase I clinical trial taking place at the [University of Maryland Center for Vaccine Development](https://www.medschool.umaryland.edu/cvd/trials/) and somehow ended up having family and friends telling me they saw my arm in the newspaper for the next nine [months](https://wjla.com/news/local/university-of-maryland-covid-trial-vaccine-recipient-success-indicators).
 
 :::
 
@@ -100,15 +108,103 @@ I moved back to the US for university when I was 17. I graduated from [Northwest
 ![](images/Covid.jpeg){width="95%"}
 :::
 
-<br></br>  My PhD research was focused on understanding the impact that exposure to maternal HIV infection and antiretrovirals before birth had on immune systems of HIV-exposed uninfected (HEU) infants. Our main cell types of interest were Innate-like T cells (gamma-delta T cells, MAIT, and NKTs) and adaptive T cell subsets (specifically antigen-specific CD4 and CD8 T cells). While we started off working with conventional flow cytometry while planning on doing mass cytometry, we transitioned to spectral flow cytometry (SFC) during the pandemic due to availability.
-
-<br></br>  As early adopters of the technology at our local institution, through trial-and-error we re-discovered that you can't treat spectral flow cytometry like a conventional flow cytometry and just throw compensation at it to fix the problem. From these early mistakes and encountering best practices shared by the University of Chicago (thanks Laura!) we quickly progressed to getting good unmixing and building larger panels. 
-
-Around this time I became interested in unsupervised analysis. I ended up teaching myself R in the course of the year, but encountered issues where existing R packages wouldn't scale to our SFC dataset size when we were acquiring 3 million cells per sample to get decent ILT numbers from cord blood. After discovering Bioconductor, I started working on two R packages (Luciernaga and Coereba) to address some of these areas. 
-
-And that's journey here. The current questions that wake me up at 2 AM are figuring out how to work with uncertainty in unmixing to get better resolution and consistency in SFC experiments, and more robust ways to analyse and draw meaning from the results where we are not just unaware of what is happening in the other 99% of the collected sample. 
-
+::::::::
 
 ::: {.column width="4%"}
 :::
+
+<br></br> 
+
+:::::::: columns
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="35%"}
+![](images/EarlyAdopters.png){width="95%"}
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="55%"}
+My PhD research was focused on understanding the impact that prenatal exposure to maternal viral load and antiretrovirals has on the functional responses of [Innate-like](/publications.qmd) and Adaptive T cells of HIV-exposed Uninfected Infants at birth and during early life. Our lab was an early adopter of spectral flow cytometry (SFC) as COVID-19 clinical samples reduced availability to the mass cytometers on campus. Through trial-and-error, we re-discovered that you can't treat spectral flow cytometry like a conventional flow cytometry and just throw compensation at unmixing errors to fix the problem. Thanks to community-shared best practices from the [University of Chicago](https://www.youtube.com/@UChicagoFlow), we got back on track to good unmixing and building larger panels. 
+:::
+
+::: {.column width="4%"}
+:::
+
+::::::::
+
+<br></br>  
+
+:::::::: columns
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="35%"}
+<br></br>
+<br> </br>
+I had become interested in unsupervised analysis, but quickly realized existing software struggled with SFC datasets due to the number of acquired cells, and unmixing errors that introduced batch effects. While chasing down a second autofluorescence signature in our panel, I ended up teaching myself over R over the course of the following year. After discovering [Bioconductor](https://www.bioconductor.org/), I began branching into [software development](/software.qmd) to address the areas where our current analysis struggles. 
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="55%"}
+![](images/Software.png){width="95%"}
+:::
+
+::: {.column width="4%"}
+:::
+
+::::::::
+
+<br></br>  
+
+:::::::: columns
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="35%"}
+![](images/BarrierEntry.png){width="95%"}
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="55%"}
+
+<br> </br>
+Ultimately, what good is any tool if the community isn't able to use it? Realizing learning R was a barrier to entry for high-dimensional cytometry analysis, I created our free virtual [Cytometry in R](https://umgcccfcsr.github.io/CytometryInR/course/) course to hopefylly spare future graduate students having to learn the hard way as I had. 
+:::
+
+::: {.column width="4%"}
+:::
+
+::::::::
+
+<br></br> 
+
+:::::::: columns
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="35%"}
+Having defended my Thesis, I am currently working at the UMGCCC Flow Cytometry Shared Resource. When not implementing automated dashboards, or figuring out how to automatically screen all acquired unmixing controls for tandem degradation, I am working to push spectral flow cytometry to its technical limits, while developing the software tools needed to enable it to achieve its full biological discovery potential. 
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="55%"}
+![](images/BeyondLimits.png){width="95%"}
+:::
+
+::: {.column width="4%"}
+:::
+
 ::::::::
