@@ -25,6 +25,8 @@ website:
             text: Research
           - href: software.qmd
             text: Software
+          - href: Thesis_2026.pdf
+            text: Thesis
       - href: Resume_2026.pdf
         text: Resume
       - href: posts.qmd
