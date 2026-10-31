@@ -4,6 +4,7 @@ page-layout: full
 ---
 
 :::::::: columns
+
 ::: {.column width="5%"}
 :::
 
@@ -15,15 +16,15 @@ page-layout: full
 :::
 
 ::: {.column width="55%"}
-<br></br>
 
-<br></br>
+I am a research scientist, computational biologist and cytomery enthusiast, specializing in high-parameter spectral flow cytometry, from panel design through unsupervised analysis. 
 
-I am a Molecular Microbiology and Immunology PhD Candidate at the University of Maryland, Baltimore. My thesis advisers are Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/)
+My research interest lie at the intersection of high-dimensional cytometry, computational biology, and statistics. I seek to push spectral flow cytometry to its technological limits, while developing [software tools](/software.qmd) to enable it to realize its full biological discovery potential. I advocate for open-source and open-science, and have a passion for [teaching](/courses.qmd) and training others. 
 
-My [thesis research](research.qmd) seeks to understand the impact that prenatal exposure to maternal viral load and antiretrovirals has on Innate-like and Adaptive T cells of HIV-exposed Uninfected Infants at birth and during early life. Working with a Malawian clinical cohort, we processed cryopreserved cord blood mononuclear cells (CBMCs) and peripheral blood mononuclear cells (PBMCs) with 30+ color Spectral Flow Cytometry (SFC) panels. 
+I am currently a research fellow at the University of Maryland Greenebaum Comprehensive Cancer Center Flow Cytometry Shared Resource under the supervision of [Dr. Xiaoxuan Fan](https://www.medschool.umaryland.edu/profiles/xiaoxuan-fan/). I received my Ph.D. from the University of Maryland, Baltimore under the supervision of  Drs. [Cristiana Cairo](https://www.medschool.umaryland.edu/profiles/Cairo-Cristiana/) and [Kirsten Lyke.](https://www.medschool.umaryland.edu/profiles/Lyke-Kirsten/). My thesis project focused on understanding the impact that prenatal exposure to maternal viral load and antiretrovirals has on [Innate-like](/publications.qmd) and Adaptive T cells of HIV-exposed Uninfected Infants at birth and during early life.
 
 When not in lab (or thinking about autofluorescence), I enjoy birding, trail running, kayaking, coffee, learning new languages and have occasionally had a plant survive my summer gardening attempts.
+
 :::
 
 ::: {.column width="5%"}
