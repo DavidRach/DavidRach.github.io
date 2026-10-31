@@ -20,7 +20,8 @@ Shared-resource laboratories play important roles in the ecosystem, allowing acc
 
 In this talk, we share our on-going work leveraging routinely acquired start-up and quality control samples (Contrad, Water, QC/CST, etc.) as well as unmixing controls (both single-color and unstained) to track instument stability on our individual instruments. We additionally showcase examples where observed variation likely resulted in specific unmixing errors for user-acquired experiments on those same days. We discuss how to build and implement similar systems for your own facility, enabling you to speed up the deciphering of unexplained unmixing errors.  
 
-[Code](https://github.com/DavidRach/Deciphering_NECyto2026) 
+[Code](https://github.com/DavidRach/Deciphering_NECyto2026)
+[Slides](https://davidrach.github.io/Deciphering_NECyto2026/Rach_Deciphering_NECyto2026.pdf)
 Talk will be on **November 5, 2026**
 
 ### Cytek UGM 2026 - Why Not Both
@@ -34,7 +35,10 @@ Flow Cytometry Shared Resource, University of Maryland Greenebaum Comprehensive 
 As spectral panels grow increasingly complex, unlocking their full potential for biological discovery depends on our ability to handle uncertainty, and systematically profile the higher-dimensional space. Leveraging open-source tools, we share our approach at tackling these challenges for rare clinical cohorts acquired on our core's Cytek Auroras. 
 
 [Code](https://github.com/DavidRach/WhyNotBoth_CytekUGM2026) 
-Talk will be on **October 28, 2026**
+[Slides](https://davidrach.github.io/WhyNotBoth_CytekUGM2026/Rach_WhyNotBoth_CytekUGM2026.pdf)
+[Recording](https://youtu.be/6to50ebtxsM?si=09E_6CZARzt697mx)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6to50ebtxsM?si=nyiocUcH2t5BlukS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### MetroFlow 2026 - No Cell Left Behind
 
@@ -53,7 +57,7 @@ To address these technology specific challenges, we have been developing open-so
 All the while, we contemplate the broader question: “What good is any tool, if the vast majority of the community is unable to use it?” 
 
 [Code](https://github.com/DavidRach/NoCellLeftBehind_MetroFlow2026) 
-Talk will be on **October 23, 2026**
+[Slides](https://davidrach.github.io/NoCellLeftBehind_MetroFlow2026/Rach_NoCellsLeftBehind_MetroFlow2026.pdf)
 
 ### Cytek Internal 2026 - Semisupervised Pipeline
 
@@ -67,6 +71,9 @@ As spectral panels grow increasingly complex, unlocking their full potential for
 
 [Code](https://github.com/DavidRach/SemiSupervised_Cytek2026) 
 [Slides](https://davidrach.github.io/SemiSupervised_Cytek2026/Rach_SemiSupervised_Cyto2026.pdf)
+[Recording](https://youtu.be/6to50ebtxsM?si=09E_6CZARzt697mx)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6to50ebtxsM?si=nyiocUcH2t5BlukS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### CCC 2026 - Quirks and All
 
